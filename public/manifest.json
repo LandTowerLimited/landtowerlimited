@@ -1,0 +1,42 @@
+{
+  "theme_color": "#CEAA64",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": ".",
+  "name": "Land Tower Limited",
+  "short_name": "Land Tower Limited",
+  "description": "Land Tower is a Construction Engineering Company 🏗️, Real Estate and Luxury Homes, Sales and Investment, Heavy Duty Equipments",
+  "icons": [
+      {
+        "src": "/icon/landtowerlimited-icon-maskable-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/icon/landtowerlimited-icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/icon/landtowerlimited-icon-256x256.png",
+        "sizes": "256x256",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/icon/landtowerlimited-icon-384x384.png",
+        "sizes": "384x384",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/icon/landtowerlimited-icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+  ]
+}
