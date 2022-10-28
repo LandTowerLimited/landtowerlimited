@@ -5,7 +5,7 @@ import LTLAboutImage2 from "../../assets/img/ltl-about-us-page-Image2.jpg";
 import LTLAboutImage3 from "../../assets/img/ltl-about-us-page-Image3.jpg";
 import LTLAboutImage4 from "../../assets/img/ltl-about-us-page-Image4.jpg";
 import Footer from "../../components/footer/footer";
-// import PagesHeaderCard from "../../components/header/pagesHeaderCard";
+import PagesHeaderCard from "../../components/header/pagesHeaderCard";
 
 function AboutUs() {
   const [cardDisplayed, setCardDisplayed] = useState(false);
@@ -22,14 +22,15 @@ function AboutUs() {
 
   return (
     <div>
-      {/* {cardDisplayed ? (
+      {cardDisplayed ? (
         <PagesHeaderCard
           setCardDisplayed={setCardDisplayed}
           cardDisplayed={cardDisplayed}
         />
       ) : (
+        // </div>
         <span />
-      )} */}
+      )}
       <div className="w-full">
         <PagesHeader
           setCardDisplayed={setCardDisplayed}
@@ -65,17 +66,17 @@ function AboutUs() {
             />
           </div>
         </div>
-        <div>
+        <div className="px-6 lg:w-3/5 md:lg:w-3/5 ">
           <p className="mt-14 font-georgiaBold text-7xl text-grey-400 text-center">
             About Us
           </p>
           <div className="px-2 mb-20 mt-6 font-graphikRegular text-lg text-grey-400 text-center">
-            <p className="pb-6">
+            <p className="pb-6 font-graphikMedium">
               We have no smaller or greater mastery than mastery of Self.
-              &#34;Leonardo Da Vinci&#34;..
+              &#34;Leonardo Da Vinci&#34;...
             </p>
             <p className="pb-6">
-              The Brand that exceeds Limits Land Tower Ltd (RC: 1930480) is a
+              The Brand that exceeds Limits, Land Tower LTD (RC: 1930480) is a
               reliable contracting engineering company that is known for
               building &#34;State of the art&#34; residential buildings as well
               as private and public sectors projects from inception. Our success

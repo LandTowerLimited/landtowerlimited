@@ -40,7 +40,6 @@ function HeaderCard({ setCardDisplayed, cardDisplayed }) {
               <MobilePhoneIcon />
             </div>
           </div>
-
           <ul>
             <li>
               <button
@@ -51,15 +50,7 @@ function HeaderCard({ setCardDisplayed, cardDisplayed }) {
                 HOME
               </button>
             </li>
-            <li>
-              <button
-                type="button"
-                className="px-5 w-full text-left border-b-is0point5 border-gray-500"
-                onClick={() => navigate(NonAuthRoutes.ourTeam)}
-              >
-                OUR TEAM
-              </button>
-            </li>
+
             <li>
               <button
                 type="button"
@@ -73,7 +64,16 @@ function HeaderCard({ setCardDisplayed, cardDisplayed }) {
                 type="button"
                 className="px-5 w-full text-left border-b-is0point5 border-gray-500"
               >
-                EQUIPMENTS
+                GALLERY
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                className="px-5 w-full text-left border-b-is0point5 border-gray-500"
+                onClick={() => navigate(NonAuthRoutes.ourTeam)}
+              >
+                OUR TEAM
               </button>
             </li>
             <li>

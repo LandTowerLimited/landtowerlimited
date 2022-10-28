@@ -1,4 +1,6 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { NonAuthRoutes } from "../../constants";
 import { ReactComponent as MapIcon } from "../../assets/svg/mapIcon.svg";
 import { ReactComponent as TimeIcon } from "../../assets/svg/timeIcon.svg";
 import { ReactComponent as PhoneOfficeIcon } from "../../assets/svg/phoneOfficeIcon.svg";
@@ -10,6 +12,8 @@ import LandTowerLogoImage from "../../assets/img/landTowerLogo.png";
 import TheFrenzyEmpireLogo from "../../assets/img/TheFrenzyEmpire-Technology-Software-and-Technology-Development.png";
 
 function Footer() {
+  const navigate = useNavigate();
+
   return (
     <div className="lg:pt-40">
       <div className="relative w-full hidden md:hidden lg:block bg-black">
@@ -66,11 +70,17 @@ function Footer() {
           <div>
             <div className="flex items-center justify-between w-full">
               <div className="w-450">
-                <img
-                  src={LandTowerLogoImage}
-                  alt="Land Tower Logo"
-                  className="w-60 h-10"
-                />
+                <button
+                  type="button"
+                  onClick={() => navigate(NonAuthRoutes.landingPage)}
+                >
+                  <img
+                    src={LandTowerLogoImage}
+                    alt="Land Tower Logo"
+                    title="Land Tower"
+                    className="w-60 h-10"
+                  />
+                </button>
                 <p className="font-graphikRegular text-white text-xs leading-5 mt-6 ml-3 pr-20">
                   Land Tower is a competent team of engineers that design,
                   construct, market and sell building projects from foundation
@@ -79,20 +89,48 @@ function Footer() {
                   given timeline.
                 </p>
               </div>
-              <div className="flex justify-between w-350 pl-10 font-graphikRegular text-white text-sm leading-8 ">
+              <div className="flex justify-between w-350 pl-10 font-graphikMedium text-white text-sm leading-10 ">
                 <ul>
-                  <li>Apartmemts</li>
-                  <li>Suites</li>
-                  <li>News</li>
-                  <li>Team</li>
-                  <li>Contact Center</li>
+                  <li className="mr-8 cursor-pointer">
+                    <button
+                      type="button"
+                      onClick={() => navigate(NonAuthRoutes.landingPage)}
+                    >
+                      Home
+                    </button>
+                  </li>
+                  <li className="mr-8 cursor-pointer">
+                    <button type="button">Gallery</button>
+                  </li>
+                  <li className="mr-8 cursor-pointer">
+                    <button type="button">Apartmemts</button>
+                  </li>
                 </ul>
                 <ul>
-                  <li>Apartmemts</li>
-                  <li>Suites</li>
-                  <li>News</li>
-                  <li>Team</li>
-                  <li>Contact Center</li>
+                  <li className="mr-8 cursor-pointer">
+                    <button
+                      type="button"
+                      onClick={() => navigate(NonAuthRoutes.ourTeam)}
+                    >
+                      Our Team
+                    </button>
+                  </li>
+                  <li className="mr-8 cursor-pointer">
+                    <button
+                      type="button"
+                      onClick={() => navigate(NonAuthRoutes.aboutUs)}
+                    >
+                      About Us
+                    </button>
+                  </li>
+                  <li className="mr-8 cursor-pointer">
+                    <button
+                      type="button"
+                      onClick={() => navigate(NonAuthRoutes.contactUs)}
+                    >
+                      Contact Us
+                    </button>
+                  </li>
                 </ul>
               </div>
               <div className="w-522 text-right">
@@ -205,11 +243,16 @@ function Footer() {
         <div className="w-full mt-10 bg-black">
           <div className="mx-4">
             <div className="py-6">
-              <img
-                src={LandTowerLogoImage}
-                alt="Land Tower Logo"
-                className=" mt-2 mb-4"
-              />
+              <button
+                type="button"
+                onClick={() => navigate(NonAuthRoutes.landingPage)}
+              >
+                <img
+                  src={LandTowerLogoImage}
+                  alt="Land Tower Logo"
+                  className=" mt-2 mb-4"
+                />
+              </button>
               <p className="font-graphikRegular text-white text-xs leading-5 mt-6">
                 Land Tower is a competent team of engineers that design,
                 construct, market and sell building projects from foundation to
@@ -218,20 +261,48 @@ function Footer() {
                 timeline.
               </p>
             </div>
-            <div className="flex px-4 py-6 justify-between font-graphikRegular text-white text-sm leading-8">
+            <div className="flex px-4 py-6 justify-between font-graphikMedium text-white text-sm leading-10">
               <ul>
-                <li>Apartmemts</li>
-                <li>Suites</li>
-                <li>News</li>
-                <li>Team</li>
-                <li>Contact Center</li>
+                <li className="mr-8 cursor-pointer">
+                  <button
+                    type="button"
+                    onClick={() => navigate(NonAuthRoutes.landingPage)}
+                  >
+                    Home
+                  </button>
+                </li>
+                <li className="mr-8 cursor-pointer">
+                  <button type="button">Gallery</button>
+                </li>
+                <li className="mr-8 cursor-pointer">
+                  <button type="button">Apartmemts</button>
+                </li>
               </ul>
               <ul>
-                <li>Apartmemts</li>
-                <li>Suites</li>
-                <li>News</li>
-                <li>Team</li>
-                <li>Contact Center</li>
+                <li className="mr-8 cursor-pointer">
+                  <button
+                    type="button"
+                    onClick={() => navigate(NonAuthRoutes.ourTeam)}
+                  >
+                    Our Team
+                  </button>
+                </li>
+                <li className="mr-8 cursor-pointer">
+                  <button
+                    type="button"
+                    onClick={() => navigate(NonAuthRoutes.aboutUs)}
+                  >
+                    About Us
+                  </button>
+                </li>
+                <li className="mr-8 cursor-pointer">
+                  <button
+                    type="button"
+                    onClick={() => navigate(NonAuthRoutes.contactUs)}
+                  >
+                    Contact Us
+                  </button>
+                </li>
               </ul>
             </div>
             <div className="py-6">

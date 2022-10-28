@@ -48,7 +48,7 @@ function LandingPage() {
     {
       url: `${LTLSliderImage2}`,
       captionHeader: "World Class Interiors",
-      captionDescription: "From Tokyo - Japan to Banana Island - Ikoyi",
+      captionDescription: "From Tokyo - Japan to Banana Island - Lagos",
     },
     {
       url: `${LTLSliderImage3}`,

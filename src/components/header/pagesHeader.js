@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ReactComponent as LandTowerLogo } from "../../assets/svg/landTowerLogoBlack.svg";
 import LandTowerLogoImage from "../../assets/img/landTowerLogoBlack.png";
@@ -9,7 +9,13 @@ import { NonAuthRoutes } from "../../constants";
 
 function PagesHeader({ setCardDisplayed, cardDisplayed }) {
   const navigate = useNavigate();
+  const [hideHeaderPages, setHideHeaderPages] = useState(false);
   // const [cardDisplayed, setCardDisplayed] = useState(false);
+
+  /** Handle Show and Hide Header Pages */
+  const handleShowHideHeaderPages = () => {
+    setHideHeaderPages(!hideHeaderPages);
+  };
 
   return (
     <div className="sticky bg-white top-0 z-10">
@@ -44,57 +50,63 @@ function PagesHeader({ setCardDisplayed, cardDisplayed }) {
             </div>
             <button
               type="button"
+              title="Menu Bar"
               className="pl-6 border-l-2 border-gray-400 cursor-pointer"
+              onClick={() => handleShowHideHeaderPages()}
             >
               <MenuBar />
             </button>
           </div>
         </div>
-        <div className="flex justify-between pt-4 pb-6 mx-12">
-          <div />
-          <ul className="flex items-end font-graphikMedium text-sm text-gray-700">
-            <li className="mr-8 cursor-pointer">
-              <button
-                type="button"
-                // className="pl-5 w-full text-left border-y-is0point5 border-gray-500"
-                onClick={() => navigate(NonAuthRoutes.landingPage)}
-              >
-                HOME
-              </button>
-            </li>
-            <li className="mr-8 cursor-pointer">
-              <button
-                type="button"
-                // className="px-5 w-full text-left border-b-is0point5 border-gray-500"
-                onClick={() => navigate(NonAuthRoutes.ourTeam)}
-              >
-                OUR TEAM
-              </button>
-            </li>
-            <li className="mr-8 cursor-pointer">
-              <button type="button">APARTMENTS</button>
-            </li>
-            <li className="mr-8 cursor-pointer">
-              <button type="button">EQUIPMENTS</button>
-            </li>
-            <li className="mr-8 cursor-pointer">
-              <button
-                type="button"
-                onClick={() => navigate(NonAuthRoutes.aboutUs)}
-              >
-                ABOUT US
-              </button>
-            </li>
-            <li className="mr-8 cursor-pointer">
-              <button
-                type="button"
-                onClick={() => navigate(NonAuthRoutes.contactUs)}
-              >
-                CONTACT US
-              </button>
-            </li>
-          </ul>
-        </div>
+        {hideHeaderPages ? (
+          <span />
+        ) : (
+          <div className="flex justify-between pt-4 pb-6 mx-12">
+            <div />
+            <ul className="flex items-end font-graphikMedium text-sm text-gray-700">
+              <li className="mr-8 cursor-pointer">
+                <button
+                  type="button"
+                  // className="pl-5 w-full text-left border-y-is0point5 border-gray-500"
+                  onClick={() => navigate(NonAuthRoutes.landingPage)}
+                >
+                  HOME
+                </button>
+              </li>
+              <li className="mr-8 cursor-pointer">
+                <button type="button">APARTMENTS</button>
+              </li>
+              <li className="mr-8 cursor-pointer">
+                <button type="button">GALLERY</button>
+              </li>
+              <li className="mr-8 cursor-pointer">
+                <button
+                  type="button"
+                  // className="px-5 w-full text-left border-b-is0point5 border-gray-500"
+                  onClick={() => navigate(NonAuthRoutes.ourTeam)}
+                >
+                  OUR TEAM
+                </button>
+              </li>
+              <li className="mr-8 cursor-pointer">
+                <button
+                  type="button"
+                  onClick={() => navigate(NonAuthRoutes.aboutUs)}
+                >
+                  ABOUT US
+                </button>
+              </li>
+              <li className="mr-8 cursor-pointer">
+                <button
+                  type="button"
+                  onClick={() => navigate(NonAuthRoutes.contactUs)}
+                >
+                  CONTACT US
+                </button>
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
       <div className="md:hidden lg:hidden">
         <div className="px-4 flex justify-between border-b-is0point5 border-gray-400">

@@ -16,10 +16,10 @@ import NzeakorIfeanyichukwu from "../../assets/img/ltl-team-Nzeakor-Ifeanyichukw
 import ChristopherNwankwo from "../../assets/img/ltl-team-Christopher-Nwankwo.png";
 import ChukwudubemOkechukwu from "../../assets/img/ltl-team-Chukwudubem-Okechukwu.png";
 import KingsleyNwaokobia from "../../assets/img/ltl-team-Kingsley-Nwaokobia.png";
-import AyinlaQuadri from "../../assets/img/ltl-team-Ayinla-Quadri.png";
+import AyinlaQuadri from "../../assets/img/ltl-team-Ayinla-Quadri.jpg";
 import UdenkaChukwuemeka from "../../assets/img/ltl-team-Udenka-Chukwuemeka.png";
 import Footer from "../../components/footer/footer";
-// import PagesHeaderCard from "../../components/header/pagesHeaderCard";
+import PagesHeaderCard from "../../components/header/pagesHeaderCard";
 import { NonAuthRoutes } from "../../constants";
 
 /** Reusable components for Team Details */
@@ -56,9 +56,9 @@ function TeamDetails({
         <button
           onClick={() => navigate(memberLink)}
           type="button"
-          className="landTower-transparent-btn font-georgiaRegular py-2 px-10 mr-6 text-base outline-none hover:bg-landTower-gold3-color hover:text-white"
+          className="font-georgiaRegular py-2 px-10 mr-6 text-base outline-none bg-landTower-gold3-color text-white"
         >
-          Learn More
+          Read More
         </button>
       </div>
     </div>
@@ -81,14 +81,14 @@ function OurTeam() {
 
   return (
     <div>
-      {/* {cardDisplayed ? (
+      {cardDisplayed ? (
         <PagesHeaderCard
           setCardDisplayed={setCardDisplayed}
           cardDisplayed={cardDisplayed}
         />
       ) : (
         <span />
-      )} */}
+      )}
       <div className="w-full">
         <PagesHeader
           setCardDisplayed={setCardDisplayed}
@@ -128,22 +128,24 @@ function OurTeam() {
           <p className="mt-14 font-georgiaBold text-7xl text-grey-400 text-center">
             Our Team
           </p>
-          <div className="px-2 mb-20 mt-6 font-graphikRegular text-lg text-grey-400 text-center">
-            <p className="pb-6">
-              Land Tower LTD is an excellence driven Real Estate development
-              company driven by professionals with the sole aim of building
-              grandeur and ultra-modern homes for professionals, business and
-              upwardly mobile individuals, providing them a seamless living
-              experience.
-            </p>
-            <p className="pb-6">
-              Excellence We&#39;re the belief that mastery demands all of a
-              person; we grow through creativity, invention and innovation.
-            </p>
-            <p>
-              We love and cherish our employees by obliging them to adhere to
-              (Health & Safety Regulations) HSE.
-            </p>
+          <div className="flex justify-center items-center">
+            <div className="mb-20 mt-6 px-6 lg:w-3/5 md:lg:w-3/5 font-graphikRegular text-lg text-grey-400 text-center">
+              <p className="pb-6">
+                Land Tower LTD is an excellence driven Real Estate development
+                company driven by professionals with the sole aim of building
+                grandeur and ultra-modern homes for professionals, business and
+                upwardly mobile individuals, providing them a seamless living
+                experience.
+              </p>
+              <p className="pb-6">
+                We are of the belief that mastery demands all of a person, we
+                grow through creativity, invention and innovation.
+              </p>
+              <p>
+                We love and cherish our entire team and employees, we also make
+                sure they adhere to (Health & Safety Regulations) HSE.
+              </p>
+            </div>
           </div>
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 px-6">

@@ -9,7 +9,7 @@ function PagesHeaderCard({ setCardDisplayed, cardDisplayed }) {
 
   return (
     <div>
-      <div className="w-60 text-xs text-landTower-gold-color font-graphikSemibold rounded right-2 top-2 bg-black border border-gray-500">
+      <div className="absolute z-20 w-60 text-xs text-landTower-gold-color font-graphikSemibold rounded right-2 top-2 bg-black border border-gray-500">
         <div className="leading-10">
           <div className="flex justify-between">
             <span />
@@ -46,17 +46,9 @@ function PagesHeaderCard({ setCardDisplayed, cardDisplayed }) {
               <button
                 type="button"
                 className="pl-5 w-full text-left border-y-is0point5 border-gray-500"
+                onClick={() => navigate(NonAuthRoutes.landingPage)}
               >
                 HOME
-              </button>
-            </li>
-            <li>
-              <button
-                type="button"
-                className="px-5 w-full text-left border-b-is0point5 border-gray-500"
-                onClick={() => navigate(NonAuthRoutes.ourTeam)}
-              >
-                OUR TEAM
               </button>
             </li>
             <li>
@@ -72,7 +64,16 @@ function PagesHeaderCard({ setCardDisplayed, cardDisplayed }) {
                 type="button"
                 className="px-5 w-full text-left border-b-is0point5 border-gray-500"
               >
-                EQUIPMENTS
+                GALLERY
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                className="px-5 w-full text-left border-b-is0point5 border-gray-500"
+                onClick={() => navigate(NonAuthRoutes.ourTeam)}
+              >
+                OUR TEAM
               </button>
             </li>
             <li>

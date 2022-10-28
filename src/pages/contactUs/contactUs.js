@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PagesHeader from "../../components/header/pagesHeader";
 import Footer from "../../components/footer/footer";
-// import PagesHeaderCard from "../../components/header/pagesHeaderCard";
+import PagesHeaderCard from "../../components/header/pagesHeaderCard";
 
 function ContactUs() {
   const [cardDisplayed, setCardDisplayed] = useState(false);
@@ -19,14 +19,14 @@ function ContactUs() {
 
   return (
     <div>
-      {/* {cardDisplayed ? (
+      {cardDisplayed ? (
         <PagesHeaderCard
           setCardDisplayed={setCardDisplayed}
           cardDisplayed={cardDisplayed}
         />
       ) : (
         <span />
-      )} */}
+      )}
       <div className="w-full">
         <PagesHeader
           setCardDisplayed={setCardDisplayed}
