@@ -9,14 +9,15 @@ const NonAuthRoutes = {
   munachimNweke: "/team/member/munachim-nweke",
   ifeanyiClementNweke: "/team/member/ifeanyi-clement-nweke",
   obioraNworji: "/team/member/obiora-nworji",
-  rasaqOlaniyiIsiaq: "/team/member/rasaq-olaniyi-isiaq",
+  sundayEmeagwai: "/team/member/sunday-emeagwai",
   oluwaseunAdeyemiSekoni: "/team/member/oluwaseun-adeyemi-sekoni",
   nzeakorIfeanyichukwu: "/team/member/nzeakor-ifeanyichukwu",
   christopherNwankwo: "/team/member/christopher-nwankwo",
   chukwudubemOkechukwu: "/team/member/chukwudubem-okechukwu",
   kingsleyNwaokobia: "/team/member/kingsley-nwaokobia",
-  ayinlaQuadri: "/team/member/ayinla-quadri",
+  rasaqOlaniyiIsiaq: "/team/member/rasaq-olaniyi-isiaq",
   udenkaChukwuemeka: "/team/member/udenka-chukwuemeka",
+  ayinlaQuadri: "/team/member/ayinla-quadri",
 };
 
 export { AuthRoutes, NonAuthRoutes };

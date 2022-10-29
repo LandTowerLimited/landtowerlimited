@@ -10,14 +10,15 @@ import LTLTeamImage4 from "../../assets/img/ltl-team-page-Image4.jpeg";
 import MunachimNweke from "../../assets/img/ltl-team-Munachim-Nweke.png";
 import IfeanyiClementNweke from "../../assets/img/ltl-team-Ifeanyi-Clement-Nweke.png";
 import ObioraNworji from "../../assets/img/ltl-team-Obiora-Nworji.png";
-import RasaqOlaniyiIsiaq from "../../assets/img/ltl-team-Rasaq-Olaniyi-Isiaq.png";
+import SundayEmeagwai from "../../assets/img/ltl-team-Sunday-Emeagwai.png";
 import OluwaseunAdeyemiSekoni from "../../assets/img/ltl-team-Oluwaseun-Adeyemi-Sekoni.png";
 import NzeakorIfeanyichukwu from "../../assets/img/ltl-team-Nzeakor-Ifeanyichukwu.png";
 import ChristopherNwankwo from "../../assets/img/ltl-team-Christopher-Nwankwo.png";
 import ChukwudubemOkechukwu from "../../assets/img/ltl-team-Chukwudubem-Okechukwu.png";
 import KingsleyNwaokobia from "../../assets/img/ltl-team-Kingsley-Nwaokobia.png";
-import AyinlaQuadri from "../../assets/img/ltl-team-Ayinla-Quadri.jpg";
+import RasaqOlaniyiIsiaq from "../../assets/img/ltl-team-Rasaq-Olaniyi-Isiaq.png";
 import UdenkaChukwuemeka from "../../assets/img/ltl-team-Udenka-Chukwuemeka.png";
+import AyinlaQuadri from "../../assets/img/ltl-team-Ayinla-Quadri.jpg";
 import Footer from "../../components/footer/footer";
 import PagesHeaderCard from "../../components/header/pagesHeaderCard";
 import { NonAuthRoutes } from "../../constants";
@@ -180,12 +181,12 @@ function OurTeam() {
             biography="Obiora Nworji is an Architect of over 8 years of experience. He has a Master’s Degree from Covenant University's Department of Architecture and has certificates in Interior Design, Architectural Imagination and green building from institutions such as the Harvard Graduate School of Design and Ugreen building school. He started his professional career with Matrix Design & Works Ltd as a company Architect before being promoted to Head of Design..."
           />
           <TeamDetails
-            memberLink={NonAuthRoutes.rasaqOlaniyiIsiaq}
-            image={RasaqOlaniyiIsiaq}
-            title="Rasaq Olaniyi Isiaq Lead Quantity Surveyor at Land Tower Limited"
-            name="Rasaq Olaniyi Isiaq"
-            position="Lead Quantity Surveyor"
-            biography="Rasaq Olaniyi Isiaq is a seasoned Quantity Surveyor with over 5 years working experience. He graduated from the University of Ilorin with second class upper division in Quantity Surveying and undergo his one year mandatory NYSC service at Ministry of Works,  state secretariat Owerri, Imo state. He started his career with Avalon and Partner, Ibadan. A QS consulting firm saddled with contract administration and..."
+            memberLink={NonAuthRoutes.sundayEmeagwai}
+            image={SundayEmeagwai}
+            title="Sunday Emeagwai Lead Mechanical Expert at Land Tower Limited"
+            name="Sunday Emeagwai"
+            position="Lead Mechanical Expert"
+            biography="Sunday Emeagwai is a Mechanical Expert with over 20 years of experience he is highly specialised in both domestic and industrial plumbing installation and services, He has worked in numerous electromechanical companies with various years of experience, He later joined NAIRDA Electromechanical company as a plumbing supervisor CBN Lokoja projects in Kogi state, FF Millenium Towers Lagos, Festival Mall Festac Lagos, Golden Tulip Hotels / Residence Lagos, Tinapa projects Calabar..."
           />
           <TeamDetails
             memberLink={NonAuthRoutes.oluwaseunAdeyemiSekoni}
@@ -228,12 +229,12 @@ function OurTeam() {
             biography="Kingsley Nwaokobia is an Electrical Expert with over 15 years of experience he is highly specialised in both domestic and industrial Electrical installation and services . He has trade test grade A B C in Electrical works. He has worked in numerous electromechanical companies with various years of experience. He started his professional career with Rhomega electrical company where he worked as a work man before being promoted to a foreman..."
           />
           <TeamDetails
-            memberLink={NonAuthRoutes.ayinlaQuadri}
-            image={AyinlaQuadri}
-            title="Ayinla Quadri Head of Upholstery & Carpentry at Land Tower Limited"
-            name="Ayinla Quadri"
-            position="Head of Upholstery & Carpentry"
-            biography="Ayinla Quadri Ayomide is a professional  Upholstery and Carpentry expert, interior and exterior decorator in all classes of doors, kitchen, wardrobes, naminate doors. with over 10 years of experience and highly specialised in all classes of house furnishings. I went to Iroko Community College, Oyo State. where I obtained my SSCE, I've worked with so many companies the likes,  home and you group of furniture..."
+            memberLink={NonAuthRoutes.rasaqOlaniyiIsiaq}
+            image={RasaqOlaniyiIsiaq}
+            title="Rasaq Olaniyi Isiaq Lead Quantity Surveyor at Land Tower Limited"
+            name="Rasaq Olaniyi Isiaq"
+            position="Lead Quantity Surveyor"
+            biography="Rasaq Olaniyi Isiaq is a seasoned Quantity Surveyor with over 5 years working experience. He graduated from the University of Ilorin with second class upper division in Quantity Surveying and undergo his one year mandatory NYSC service at Ministry of Works,  state secretariat Owerri, Imo state. He started his career with Avalon and Partner, Ibadan. A QS consulting firm saddled with contract administration and..."
           />
           <TeamDetails
             memberLink={NonAuthRoutes.udenkaChukwuemeka}
@@ -242,6 +243,14 @@ function OurTeam() {
             name="Udenka Chukwuemeka"
             position="Lead HVAC Technician"
             biography="Udenka Chukwuemeka joel is an HVAC Technician (Heating, ventilation, and air conditioning), with over 9years experience he started working with Gods time insulation company at sokoto in 2013 till 2018 as air conditioner technician later join de light company as supervisor in 2018 till 2021 later join powerful insulation company till date as a foreman later as supervisor at periwinkle towers lagos..."
+          />
+          <TeamDetails
+            memberLink={NonAuthRoutes.ayinlaQuadri}
+            image={AyinlaQuadri}
+            title="Ayinla Quadri Head of Upholstery & Carpentry at Land Tower Limited"
+            name="Ayinla Quadri"
+            position="Head of Upholstery & Carpentry"
+            biography="Ayinla Quadri Ayomide is a professional  Upholstery and Carpentry expert, interior and exterior decorator in all classes of doors, kitchen, wardrobes, naminate doors. with over 10 years of experience and highly specialised in all classes of house furnishings. I went to Iroko Community College, Oyo State. where I obtained my SSCE, I've worked with so many companies the likes,  home and you group of furniture..."
           />
         </div>
         <Footer />
