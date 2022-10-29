@@ -45,33 +45,13 @@ function ContactUs() {
                 <div className="mt-16 w-522">
                   <label
                     className="flex justify-center items-center text-gray-700 text-sm mb-2 leading-5"
-                    htmlFor="firstName"
+                    htmlFor="name"
                   >
-                    <p className="text-lg font-graphikRegular w-48">
-                      First Name:
-                    </p>
+                    <p className="text-lg font-graphikRegular w-48">Name</p>
                     <input
-                      id="firstName"
-                      type="firstName"
-                      placeholder="Enter First Name"
-                      // value={userEmail}
-                      // onChange={(e) => handleEmailValue(e.target.value)}
-                      className="ml-4 h-14 w-full text-base leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
-                    />
-                  </label>
-                </div>
-                <div className="mt-6 w-522">
-                  <label
-                    className="flex justify-center items-center text-gray-700 text-sm mb-2 leading-5"
-                    htmlFor="lastName"
-                  >
-                    <p className="text-lg font-graphikRegular w-48">
-                      Last Name:
-                    </p>
-                    <input
-                      id="lastName"
-                      type="lastName"
-                      placeholder="Enter Last Name"
+                      id="name"
+                      type="name"
+                      placeholder="Enter Name"
                       // value={userEmail}
                       // onChange={(e) => handleEmailValue(e.target.value)}
                       className="ml-4 h-14 w-full text-base leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
@@ -83,9 +63,7 @@ function ContactUs() {
                     className="flex justify-center items-center text-gray-700 text-sm mb-2 leading-5"
                     htmlFor="email"
                   >
-                    <p className="text-lg font-graphikRegular w-48">
-                      Email Address:
-                    </p>
+                    <p className="text-lg font-graphikRegular w-48">Email</p>
                     <input
                       id="email"
                       type="email"
@@ -112,32 +90,16 @@ function ContactUs() {
                     />
                   </label>
                 </div>
-                <div className="mt-6 w-522">
-                  <label
-                    className="flex justify-center items-center text-gray-700 text-sm mb-2 leading-5"
-                    htmlFor="subject"
-                  >
-                    <p className="text-lg font-graphikRegular w-48">Subject:</p>
-                    <input
-                      id="subject"
-                      type="subject"
-                      placeholder="Enter Subject"
-                      // value={userEmail}
-                      // onChange={(e) => handleEmailValue(e.target.value)}
-                      className="ml-4 h-14 w-full text-base leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
-                    />
-                  </label>
-                </div>
                 <div className="mt-8 w-522">
                   <label
                     className="flex justify-center  text-gray-700 text-sm mb-2 leading-5"
-                    htmlFor="details"
+                    htmlFor="message"
                   >
-                    <p className="text-lg font-graphikRegular w-48">Details:</p>
+                    <p className="text-lg font-graphikRegular w-48">Message</p>
                     <textarea
-                      id="details"
-                      type="details"
-                      placeholder="Enter Details"
+                      id="message"
+                      type="message"
+                      placeholder="Enter Message"
                       // value={userEmail}
                       // onChange={(e) => handleEmailValue(e.target.value)}
                       className="ml-4 w-full h-250 text-base leading-4 py-3 px-4 resize-none appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
@@ -165,31 +127,13 @@ function ContactUs() {
               <div className="mt-16 mx-8 w-300">
                 <label
                   className="text-gray-700 text-sm mb-2 leading-5"
-                  htmlFor="firstName"
+                  htmlFor="name"
                 >
-                  <p className="text-lg font-graphikRegular mb-2">
-                    First Name:
-                  </p>
+                  <p className="text-lg font-graphikRegular mb-2">Name</p>
                   <input
-                    id="firstName"
-                    type="firstName"
-                    placeholder="Enter First Name"
-                    // value={userEmail}
-                    // onChange={(e) => handleEmailValue(e.target.value)}
-                    className="h-14 w-full text-lg leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
-                  />
-                </label>
-              </div>
-              <div className="mt-6 mx-8 w-300">
-                <label
-                  className="text-gray-700 text-sm mb-2 leading-5"
-                  htmlFor="lastName"
-                >
-                  <p className="text-lg font-graphikRegular mb-2">Last Name:</p>
-                  <input
-                    id="lastName"
-                    type="lastName"
-                    placeholder="Enter Last Name"
+                    id="name"
+                    type="name"
+                    placeholder="Enter Name"
                     // value={userEmail}
                     // onChange={(e) => handleEmailValue(e.target.value)}
                     className="h-14 w-full text-lg leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
@@ -201,9 +145,7 @@ function ContactUs() {
                   className="text-gray-700 text-sm mb-2 leading-5"
                   htmlFor="email"
                 >
-                  <p className="text-lg font-graphikRegular mb-2">
-                    Email Address:
-                  </p>
+                  <p className="text-lg font-graphikRegular mb-2">Email</p>
                   <input
                     id="email"
                     type="email"
@@ -219,7 +161,7 @@ function ContactUs() {
                   className="text-gray-700 text-sm mb-2 leading-5"
                   htmlFor="company"
                 >
-                  <p className="text-lg font-graphikRegular mb-2">Company:</p>
+                  <p className="text-lg font-graphikRegular mb-2">Company</p>
                   <input
                     id="company"
                     type="company"
@@ -233,29 +175,13 @@ function ContactUs() {
               <div className="mt-6 mx-8 w-300">
                 <label
                   className="text-gray-700 text-sm mb-2 leading-5"
-                  htmlFor="subject"
+                  htmlFor="message"
                 >
-                  <p className="text-lg font-graphikRegular mb-2">Subject:</p>
-                  <input
-                    id="subject"
-                    type="subject"
-                    placeholder="Enter Subject"
-                    // value={userEmail}
-                    // onChange={(e) => handleEmailValue(e.target.value)}
-                    className="h-14 w-full text-lg leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
-                  />
-                </label>
-              </div>
-              <div className="mt-6 mx-8 w-300">
-                <label
-                  className="text-gray-700 text-sm mb-2 leading-5"
-                  htmlFor="details"
-                >
-                  <p className="text-lg font-graphikRegular mb-2">Details:</p>
+                  <p className="text-lg font-graphikRegular mb-2">Message</p>
                   <textarea
-                    id="details"
-                    type="details"
-                    placeholder="Enter Details"
+                    id="message"
+                    type="message"
+                    placeholder="Enter Message"
                     // value={userEmail}
                     // onChange={(e) => handleEmailValue(e.target.value)}
                     className="w-full h-250 text-lg leading-4 py-3 px-4 resize-none appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
