@@ -1,9 +1,16 @@
+/* eslint-disable no-return-assign */
 import React, { useEffect, useState } from "react";
 import PagesHeader from "../../components/header/pagesHeader";
 import Footer from "../../components/footer/footer";
 
 function ContactUs() {
   const [cardDisplayed, setCardDisplayed] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [companyName, setCompanyName] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [warning, setWarning] = useState(false);
 
   useEffect(() => {
     const ac = new AbortController();
@@ -15,6 +22,39 @@ function ContactUs() {
       ac.abort();
     };
   }, []);
+
+  const handleContactForm = () => {
+    if (
+      name.length === 0 ||
+      email.length === 0 ||
+      companyName.length === 0 ||
+      subject.length === 0 ||
+      message.length === 0
+    ) {
+      setWarning(true);
+    } else {
+      window.location = `mailto:LandTower.Ltd@gmail.com?subject=LandTowerLimited Contact Us Page: My name is ${name} and I'll like to talk about ${subject}&body=I work at ${companyName}, and ${message}`;
+      setTimeout(() => {
+        setName("");
+        setEmail("");
+        setCompanyName("");
+        setSubject("");
+        setMessage("");
+      }, 5000);
+    }
+    setTimeout(() => {
+      setWarning(false);
+    }, 2000);
+  };
+
+  /** displays Warning */
+  const displayWarning = () => {
+    return (
+      <p className="my-2 px-4 py-4 font-graphikRegular text-base text-center text-red-500 border-2 border-red-400 bg-red-100">
+        All entries and required to send a contact email...
+      </p>
+    );
+  };
 
   return (
     <div>
@@ -38,7 +78,7 @@ function ContactUs() {
           </div>
           <div className="hidden md:block lg:block">
             <div className="flex justify-center items-center">
-              <form>
+              <form action="mailto:TheFrenzyEmpireInfo@gmail.com?subject=The Celeb Frenzy - Contact Page Form">
                 <div className="mt-16 w-522">
                   <label
                     className="flex justify-center items-center text-gray-700 text-sm mb-2 leading-5"
@@ -47,10 +87,9 @@ function ContactUs() {
                     <p className="text-lg font-graphikRegular w-48">Name</p>
                     <input
                       id="name"
-                      type="name"
                       placeholder="Enter Name"
-                      // value={userEmail}
-                      // onChange={(e) => handleEmailValue(e.target.value)}
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                       className="ml-4 h-14 w-full text-base leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
                     />
                   </label>
@@ -65,8 +104,8 @@ function ContactUs() {
                       id="email"
                       type="email"
                       placeholder="Enter Email Address"
-                      // value={userEmail}
-                      // onChange={(e) => handleEmailValue(e.target.value)}
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       className="ml-4 h-14 w-full text-base leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
                     />
                   </label>
@@ -79,10 +118,24 @@ function ContactUs() {
                     <p className="text-lg font-graphikRegular w-48">Company</p>
                     <input
                       id="company"
-                      type="company"
                       placeholder="Enter Company Name"
-                      // value={userEmail}
-                      // onChange={(e) => handleEmailValue(e.target.value)}
+                      value={companyName}
+                      onChange={(e) => setCompanyName(e.target.value)}
+                      className="ml-4 h-14 w-full text-base leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
+                    />
+                  </label>
+                </div>
+                <div className="mt-6 w-522">
+                  <label
+                    className="flex justify-center items-center text-gray-700 text-sm mb-2 leading-5"
+                    htmlFor="subject"
+                  >
+                    <p className="text-lg font-graphikRegular w-48">Subject</p>
+                    <input
+                      id="subject"
+                      placeholder="Enter Subject"
+                      value={subject}
+                      onChange={(e) => setSubject(e.target.value)}
                       className="ml-4 h-14 w-full text-base leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
                     />
                   </label>
@@ -95,10 +148,9 @@ function ContactUs() {
                     <p className="text-lg font-graphikRegular w-48">Message</p>
                     <textarea
                       id="message"
-                      type="message"
                       placeholder="Enter Message"
-                      // value={userEmail}
-                      // onChange={(e) => handleEmailValue(e.target.value)}
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                       className="ml-4 w-full h-250 text-base leading-4 py-3 px-4 resize-none appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
                     />
                   </label>
@@ -106,14 +158,17 @@ function ContactUs() {
               </form>
             </div>
             <div className="flex justify-center items-center w-full my-6">
-              <button
-                // onClick={() => navigate(memberLink)}
-                type="submit"
-                title="submit"
-                className="font-georgiaBold w-522 py-4 px-10 text-2xl outline-none bg-landTower-gold-color text-white"
-              >
-                Submit
-              </button>
+              <div>
+                {warning ? displayWarning() : <span />}
+                <button
+                  onClick={() => handleContactForm()}
+                  type="submit"
+                  title="submit"
+                  className="font-georgiaBold w-522 py-4 px-10 text-2xl outline-none bg-landTower-gold-color text-white"
+                >
+                  Submit
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -129,10 +184,9 @@ function ContactUs() {
                   <p className="text-lg font-graphikRegular mb-2">Name</p>
                   <input
                     id="name"
-                    type="name"
                     placeholder="Enter Name"
-                    // value={userEmail}
-                    // onChange={(e) => handleEmailValue(e.target.value)}
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                     className="h-14 w-full text-lg leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
                   />
                 </label>
@@ -147,8 +201,8 @@ function ContactUs() {
                     id="email"
                     type="email"
                     placeholder="Enter Email Address"
-                    // value={userEmail}
-                    // onChange={(e) => handleEmailValue(e.target.value)}
+                    value={name}
+                    onChange={(e) => setEmail(e.target.value)}
                     className="h-14 w-full text-lg leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
                   />
                 </label>
@@ -161,10 +215,24 @@ function ContactUs() {
                   <p className="text-lg font-graphikRegular mb-2">Company</p>
                   <input
                     id="company"
-                    type="company"
                     placeholder="Enter Company Name"
-                    // value={userEmail}
-                    // onChange={(e) => handleEmailValue(e.target.value)}
+                    value={companyName}
+                    onChange={(e) => setCompanyName(e.target.value)}
+                    className="h-14 w-full text-lg leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
+                  />
+                </label>
+              </div>
+              <div className="mt-6 mx-8">
+                <label
+                  className="text-gray-700 text-sm mb-2 leading-5"
+                  htmlFor="subject"
+                >
+                  <p className="text-lg font-graphikRegular mb-2">Subject</p>
+                  <input
+                    id="company"
+                    placeholder="Enter Subject Title"
+                    value={subject}
+                    onChange={(e) => setSubject(e.target.value)}
                     className="h-14 w-full text-lg leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
                   />
                 </label>
@@ -177,10 +245,9 @@ function ContactUs() {
                   <p className="text-lg font-graphikRegular mb-2">Message</p>
                   <textarea
                     id="message"
-                    type="message"
                     placeholder="Enter Message"
-                    // value={userEmail}
-                    // onChange={(e) => handleEmailValue(e.target.value)}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     className="w-full h-250 text-lg leading-4 py-3 px-4 resize-none appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
                   />
                 </label>
