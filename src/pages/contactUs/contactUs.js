@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PagesHeader from "../../components/header/pagesHeader";
 import Footer from "../../components/footer/footer";
-import PagesHeaderCard from "../../components/header/pagesHeaderCard";
 
 function ContactUs() {
   const [cardDisplayed, setCardDisplayed] = useState(false);
@@ -19,26 +18,24 @@ function ContactUs() {
 
   return (
     <div>
-      {cardDisplayed ? (
-        <PagesHeaderCard
-          setCardDisplayed={setCardDisplayed}
-          cardDisplayed={cardDisplayed}
-        />
-      ) : (
-        <span />
-      )}
       <div className="w-full">
         <PagesHeader
           setCardDisplayed={setCardDisplayed}
           cardDisplayed={cardDisplayed}
         />
         <div>
-          <p className="mt-4 font-georgiaBold text-7xl text-grey-400 text-center">
-            Contact
-          </p>
-          <p className="mt-4 font-georgiaBold text-5xl text-landTower-gold3-color text-center">
-            Land Tower Limited
-          </p>
+          <div className="flex justify-center items-center">
+            <div className="px-6 lg:w-3/5 md:lg:w-3/5 ">
+              <div>
+                <p className="mt-4 font-georgiaBold text-5xl md:text-7xl lg:text-7xl text-grey-400 text-center">
+                  Contact
+                </p>
+                <p className="mt-4 font-georgiaBold text-3xl md:text-5xl lg:text-5xl text-landTower-gold3-color text-center">
+                  Land Tower Limited
+                </p>
+              </div>
+            </div>
+          </div>
           <div className="hidden md:block lg:block">
             <div className="flex justify-center items-center">
               <form>
@@ -122,9 +119,9 @@ function ContactUs() {
         </div>
 
         <div className="md:hidden lg:hidden">
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center px-6 ">
             <form>
-              <div className="mt-16 mx-8 w-300">
+              <div className="mt-16 mx-8">
                 <label
                   className="text-gray-700 text-sm mb-2 leading-5"
                   htmlFor="name"
@@ -140,7 +137,7 @@ function ContactUs() {
                   />
                 </label>
               </div>
-              <div className="mt-6 mx-8 w-300">
+              <div className="mt-6 mx-8">
                 <label
                   className="text-gray-700 text-sm mb-2 leading-5"
                   htmlFor="email"
@@ -156,7 +153,7 @@ function ContactUs() {
                   />
                 </label>
               </div>
-              <div className="mt-6 mx-8 w-300">
+              <div className="mt-6 mx-8">
                 <label
                   className="text-gray-700 text-sm mb-2 leading-5"
                   htmlFor="company"
@@ -172,7 +169,7 @@ function ContactUs() {
                   />
                 </label>
               </div>
-              <div className="mt-6 mx-8 w-300">
+              <div className="mt-6 mx-8">
                 <label
                   className="text-gray-700 text-sm mb-2 leading-5"
                   htmlFor="message"
@@ -190,12 +187,12 @@ function ContactUs() {
               </div>
             </form>
           </div>
-          <div className="flex justify-center items-center w-full mt-6 mb-10">
+          <div className="flex justify-center items-center mt-6 mb-10">
             <button
               // onClick={() => navigate(memberLink)}
               type="submit"
               title="submit"
-              className="font-georgiaBold w-300 py-4 px-10 text-2xl outline-none bg-landTower-gold-color text-white"
+              className="font-georgiaBold py-4 px-10 text-2xl outline-none bg-landTower-gold-color text-white"
             >
               Submit
             </button>

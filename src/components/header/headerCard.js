@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ReactComponent as CancelIcon } from "../../assets/svg/cancelIcon.svg";
 import { ReactComponent as MobilePhoneIcon } from "../../assets/svg/mobilePhoneIcon.svg";
-import { NonAuthRoutes } from "../../constants";
+import { NonAuthRoutes } from "../../url";
 
 function HeaderCard({ setCardDisplayed, cardDisplayed }) {
   const navigate = useNavigate();

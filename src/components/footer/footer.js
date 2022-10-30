@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { NonAuthRoutes } from "../../constants";
+import { NonAuthRoutes } from "../../url";
 import { ReactComponent as MapIcon } from "../../assets/svg/mapIcon.svg";
 import { ReactComponent as TimeIcon } from "../../assets/svg/timeIcon.svg";
 import { ReactComponent as PhoneOfficeIcon } from "../../assets/svg/phoneOfficeIcon.svg";

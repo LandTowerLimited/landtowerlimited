@@ -20,8 +20,7 @@ import RasaqOlaniyiIsiaq from "../../assets/img/ltl-team-Rasaq-Olaniyi-Isiaq.png
 import UdenkaChukwuemeka from "../../assets/img/ltl-team-Udenka-Chukwuemeka.png";
 import AyinlaQuadri from "../../assets/img/ltl-team-Ayinla-Quadri.jpg";
 import Footer from "../../components/footer/footer";
-import PagesHeaderCard from "../../components/header/pagesHeaderCard";
-import { NonAuthRoutes } from "../../constants";
+import { NonAuthRoutes } from "../../url";
 
 /** Reusable components for Team Details */
 function TeamDetails({
@@ -82,14 +81,6 @@ function OurTeam() {
 
   return (
     <div>
-      {cardDisplayed ? (
-        <PagesHeaderCard
-          setCardDisplayed={setCardDisplayed}
-          cardDisplayed={cardDisplayed}
-        />
-      ) : (
-        <span />
-      )}
       <div className="w-full">
         <PagesHeader
           setCardDisplayed={setCardDisplayed}
@@ -125,13 +116,13 @@ function OurTeam() {
             />
           </div>
         </div>
-        <div>
-          <p className="mt-14 font-georgiaBold text-7xl text-grey-400 text-center">
-            Our Team
-          </p>
-          <div className="flex justify-center items-center">
-            <div className="mb-20 mt-6 px-6 lg:w-3/5 md:lg:w-3/5 font-graphikRegular text-lg text-grey-400 text-center">
-              <p className="pb-6">
+        <div className="flex justify-center items-center w-full ">
+          <div className="px-6 lg:w-3/5 md:lg:w-3/5 ">
+            <p className="mt-14 font-georgiaBold text-7xl text-grey-400 text-center">
+              Our Team
+            </p>
+            <div className="mb-20 mt-6 font-graphikRegular text-lg text-grey-400 text-center">
+              <p className="pb-6 font-graphikMedium">
                 Land Tower LTD is an excellence driven Real Estate development
                 company driven by professionals with the sole aim of building
                 grandeur and ultra-modern homes for professionals, business and
@@ -149,7 +140,8 @@ function OurTeam() {
             </div>
           </div>
         </div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 px-6">
+
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 px-6 my-6">
           <TeamDetails
             memberLink={NonAuthRoutes.munachimNweke}
             image={MunachimNweke}
@@ -186,7 +178,7 @@ function OurTeam() {
             title="Sunday Emeagwai Lead Mechanical Expert at Land Tower Limited"
             name="Sunday Emeagwai"
             position="Lead Mechanical Expert"
-            biography="Sunday Emeagwai is a Mechanical Expert with over 20 years of experience he is highly specialised in both domestic and industrial plumbing installation and services, He has worked in numerous electromechanical companies with various years of experience, He later joined NAIRDA Electromechanical company as a plumbing supervisor CBN Lokoja projects in Kogi state, FF Millenium Towers Lagos, Festival Mall Festac Lagos, Golden Tulip Hotels / Residence Lagos, Tinapa projects Calabar..."
+            biography="Sunday Emeagwai is a Mechanical Expert with over 20 years of experience he is highly specialised in both domestic and industrial plumbing installation and services, He has worked in numerous electromechanical companies with various years of experience, He later joined NAIRDA Electromechanical company as a plumbing supervisor CBN Lokoja projects in Kogi state, FF Millenium Towers Lagos, Festival Mall Festac Lagos, Golden Tulip Hotels / Residence Lagos, Tinapa Projects Calabar..."
           />
           <TeamDetails
             memberLink={NonAuthRoutes.oluwaseunAdeyemiSekoni}

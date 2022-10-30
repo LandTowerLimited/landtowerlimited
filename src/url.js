@@ -6,7 +6,7 @@ const NonAuthRoutes = {
   aboutUs: "/about-us",
   contactUs: "/contact-us",
 
-  munachimNweke: "/team/member/munachim-nweke",
+  munachimNweke: "/Founder-and-CEO/munachim-nweke",
   ifeanyiClementNweke: "/team/member/ifeanyi-clement-nweke",
   obioraNworji: "/team/member/obiora-nworji",
   sundayEmeagwai: "/team/member/sunday-emeagwai",

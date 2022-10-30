@@ -4,8 +4,8 @@ import { ReactComponent as LandTowerLogo } from "../../assets/svg/landTowerLogoB
 import LandTowerLogoImage from "../../assets/img/landTowerLogoBlack.png";
 import { ReactComponent as MobilePhoneIcon } from "../../assets/svg/mobilePhoneIconBlack.svg";
 import { ReactComponent as MenuBar } from "../../assets/svg/menuBarBlack.svg";
-import { NonAuthRoutes } from "../../constants";
-// import { ReactComponent as CancelIcon } from "../../assets/svg/cancelIcon.svg";
+import { NonAuthRoutes } from "../../url";
+import PagesHeaderCard from "./pagesHeaderCard";
 
 function PagesHeader({ setCardDisplayed, cardDisplayed }) {
   const navigate = useNavigate();
@@ -109,6 +109,14 @@ function PagesHeader({ setCardDisplayed, cardDisplayed }) {
         )}
       </div>
       <div className="md:hidden lg:hidden">
+        {cardDisplayed ? (
+          <PagesHeaderCard
+            setCardDisplayed={setCardDisplayed}
+            cardDisplayed={cardDisplayed}
+          />
+        ) : (
+          <span />
+        )}
         <div className="px-4 flex justify-between border-b-is0point5 border-gray-400">
           <button
             type="button"

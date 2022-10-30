@@ -5,10 +5,10 @@ import LTLAboutImage2 from "../../assets/img/ltl-about-us-page-Image2.jpg";
 import LTLAboutImage3 from "../../assets/img/ltl-about-us-page-Image3.jpg";
 import LTLAboutImage4 from "../../assets/img/ltl-about-us-page-Image4.jpg";
 import Footer from "../../components/footer/footer";
-import PagesHeaderCard from "../../components/header/pagesHeaderCard";
 
 function AboutUs() {
   const [cardDisplayed, setCardDisplayed] = useState(false);
+
   useEffect(() => {
     const ac = new AbortController();
 
@@ -22,15 +22,6 @@ function AboutUs() {
 
   return (
     <div>
-      {cardDisplayed ? (
-        <PagesHeaderCard
-          setCardDisplayed={setCardDisplayed}
-          cardDisplayed={cardDisplayed}
-        />
-      ) : (
-        // </div>
-        <span />
-      )}
       <div className="w-full">
         <PagesHeader
           setCardDisplayed={setCardDisplayed}

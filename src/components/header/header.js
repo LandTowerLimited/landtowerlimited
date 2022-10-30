@@ -4,7 +4,7 @@ import { ReactComponent as LandTowerLogo } from "../../assets/svg/landTowerLogo.
 import LandTowerLogoImage from "../../assets/img/landTowerLogo.png";
 import { ReactComponent as MobilePhoneIcon } from "../../assets/svg/mobilePhoneIcon.svg";
 import { ReactComponent as MenuBar } from "../../assets/svg/menuBar.svg";
-import { NonAuthRoutes } from "../../constants";
+import { NonAuthRoutes } from "../../url";
 // import { ReactComponent as CancelIcon } from "../../assets/svg/cancelIcon.svg";
 
 function Header() {
