@@ -92,7 +92,7 @@ function LandingPage() {
   useEffect(() => {
     const ac = new AbortController();
 
-    document.title = "Land Tower • Exceeds Limits!";
+    document.title = "Land Tower Limited • The Brand That Exceeds Limits!";
     window.scrollTo(0, 0);
 
     return function cleanup() {
@@ -449,7 +449,7 @@ function LandingPage() {
                   Homes
                 </span>
                 <p className="font-graphikMedium text-gray-600 text-xl mt-2">
-                  Exceeds Limits ...
+                  The Brand That Exceeds Limits!
                 </p>
               </div>
             </div>
@@ -519,7 +519,7 @@ function LandingPage() {
                   Homes
                 </span>
                 <p className="font-graphikMedium text-gray-600 text-xl mt-2">
-                  Exceeds Limits ...
+                  The Brand That Exceeds Limits!
                 </p>
               </div>
             </div>
