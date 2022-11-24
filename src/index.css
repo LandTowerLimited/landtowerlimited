@@ -234,3 +234,7 @@ Font Weight	Numerical Weight
   color: #eaa94b;
   border: 2px solid #eccea8;
 }
+
+.tfe-font-size {
+  font-size: 8px;
+}

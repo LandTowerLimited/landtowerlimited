@@ -3,7 +3,8 @@
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/no-array-index-key */
 import React, { useEffect, useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { NonAuthRoutes } from "../../url";
 import Header from "../../components/header/header";
 import HeaderCard from "../../components/header/headerCard";
 import LTLSliderImage1 from "../../assets/img/ltl-landing-page-sliderImage1.jpg";
@@ -32,10 +33,9 @@ import { ReactComponent as SkyscrapperIcon } from "../../assets/svg/skyscrapperI
 import { ReactComponent as NextIcon } from "../../assets/svg/nextIcon.svg";
 import { ReactComponent as PreviousIcon } from "../../assets/svg/previousIcon.svg";
 import Footer from "../../components/footer/footer";
-// import authHandler from "../../authHandler";
 
 function LandingPage() {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [cardDisplayed, setCardDisplayed] = useState(false);
 
   /** Displays Slider */
@@ -167,6 +167,7 @@ function LandingPage() {
                           />
                           <LinkedinIcon
                             title="LinkedIn"
+                            href="https://www.linkedin.com/company/land-tower-limited/"
                             className="cursor-pointer w-10"
                           />
                         </div>
@@ -233,6 +234,7 @@ function LandingPage() {
                           />
                           <LinkedinIcon
                             title="LinkedIn"
+                            href="https://www.linkedin.com/company/land-tower-limited/"
                             className="cursor-pointer w-10"
                           />
                         </div>
@@ -596,15 +598,17 @@ function LandingPage() {
               <p className="font-graphikMedium text-gray-600 text-xl mt-3">
                 View our luxury living spaces...
               </p>
-              <div
+              <button
+                type="button"
                 title="SEE ALL GALLERY"
                 className="flex mt-8 items-center cursor-pointer w-40 pb-2 pl-2 border-b-4 border-black"
+                onClick={() => navigate(NonAuthRoutes.gallery)}
               >
                 <p className="font-graphikMedium text-sm text-gray-700">
                   SEE ALL GALLERY
                 </p>
                 <ArrowRightBlack className="ml-4 w-2 h-2" />
-              </div>
+              </button>
             </div>
             <div className="flex items-center justify-end w-9/12">
               <div className="mx-4">
@@ -679,15 +683,17 @@ function LandingPage() {
               </div>
             </div>
             <div className="flex justify-center">
-              <div
+              <button
+                type="button"
                 title="SEE ALL GALLERY"
                 className="flex my-8 items-center cursor-pointer w-40 pb-2 pl-2 border-b border-black"
+                onClick={() => navigate(NonAuthRoutes.gallery)}
               >
                 <p className="font-graphikMedium text-sm text-gray-700">
                   SEE ALL GALLERY
                 </p>
                 <ArrowRightBlack className="ml-4 w-2 h-2" />
-              </div>
+              </button>
             </div>
           </div>
         </div>

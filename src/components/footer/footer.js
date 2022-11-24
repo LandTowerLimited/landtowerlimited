@@ -53,7 +53,7 @@ function Footer() {
                 <p className="font-graphikRegular text-base text-gray-700 mt-4">
                   Call <span className="font-graphikMedium">Maryann</span> on{" "}
                   <a href="tel:+2349163494952" className="font-graphikMedium">
-                    0916349452
+                    09163494952
                   </a>{" "}
                   or <span className="font-graphikMedium">Cindy</span> on{" "}
                   <a href="tel:+2347015011779" className="font-graphikMedium">
@@ -100,10 +100,20 @@ function Footer() {
                     </button>
                   </li>
                   <li className="mr-8 cursor-pointer">
-                    <button type="button">Gallery</button>
+                    <button
+                      type="button"
+                      onClick={() => navigate(NonAuthRoutes.gallery)}
+                    >
+                      Gallery
+                    </button>
                   </li>
                   <li className="mr-8 cursor-pointer">
-                    <button type="button">Apartmemts</button>
+                    <button
+                      type="button"
+                      onClick={() => navigate(NonAuthRoutes.gallery)}
+                    >
+                      Apartmemts
+                    </button>
                   </li>
                 </ul>
                 <ul>
@@ -166,6 +176,7 @@ function Footer() {
                   />
                   <LinkedinIcon
                     title="LinkedIn"
+                    href="https://www.linkedin.com/company/land-tower-limited/"
                     className="cursor-pointer w-10"
                   />
                 </div>
@@ -173,6 +184,12 @@ function Footer() {
             </div>
             <div className="flex pt-4 justify-center items-center">
               <a href="https://www.TheFrenzyEmpire.com/">
+                <p
+                  title="The Frenzy Empire - Redefining Excellence!"
+                  className="tfe-font-size text-center font-graphikMedium"
+                >
+                  The Frenzy Empire TECHNOLOGY
+                </p>
                 <img
                   src={TheFrenzyEmpireLogo}
                   alt="Software and Technology Development by The Frenzy Empire
@@ -223,8 +240,11 @@ function Footer() {
                 </p>
                 <p className="font-graphikRegular text-base text-gray-700 mt-4">
                   Call <span>Maryann</span> on{" "}
-                  <span href="tel:+234916349452" className="font-graphikMedium">
-                    0916349452
+                  <span
+                    href="tel:+2349163494952"
+                    className="font-graphikMedium"
+                  >
+                    09163494952
                   </span>{" "}
                   or <span>Cindy</span> on{" "}
                   <span
@@ -272,10 +292,20 @@ function Footer() {
                   </button>
                 </li>
                 <li className="mr-8 cursor-pointer">
-                  <button type="button">Gallery</button>
+                  <button
+                    type="button"
+                    onClick={() => navigate(NonAuthRoutes.gallery)}
+                  >
+                    Gallery
+                  </button>
                 </li>
                 <li className="mr-8 cursor-pointer">
-                  <button type="button">Apartmemts</button>
+                  <button
+                    type="button"
+                    onClick={() => navigate(NonAuthRoutes.gallery)}
+                  >
+                    Apartmemts
+                  </button>
                 </li>
               </ul>
               <ul>
@@ -335,6 +365,7 @@ function Footer() {
                 <TwitterIcon title="Twitter" className="cursor-pointer w-10" />
                 <LinkedinIcon
                   title="LinkedIn"
+                  href="https://www.linkedin.com/company/land-tower-limited/"
                   className="cursor-pointer w-10"
                 />
               </div>
@@ -342,6 +373,12 @@ function Footer() {
           </div>
           <div className="flex justify-center items-center pt-10">
             <a href="https://www.TheFrenzyEmpire.com/">
+              <p
+                title="The Frenzy Empire - Redefining Excellence!"
+                className="tfe-font-size text-center font-graphikMedium"
+              >
+                The Frenzy Empire TECHNOLOGY
+              </p>
               <img
                 src={TheFrenzyEmpireLogo}
                 alt="Software and Technology Development by The Frenzy Empire

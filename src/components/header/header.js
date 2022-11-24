@@ -69,10 +69,20 @@ function Header() {
                 </button>
               </li>
               <li className="mr-8 cursor-pointer">
-                <button type="button">APARTMENTS</button>
+                <button
+                  type="button"
+                  onClick={() => navigate(NonAuthRoutes.gallery)}
+                >
+                  APARTMENTS
+                </button>
               </li>
               <li className="mr-8 cursor-pointer">
-                <button type="button">GALLERY</button>
+                <button
+                  type="button"
+                  onClick={() => navigate(NonAuthRoutes.gallery)}
+                >
+                  GALLERY
+                </button>
               </li>
               <li className="mr-8 cursor-pointer">
                 <button

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import PagesHeader from "../../components/header/pagesHeader";
 import Footer from "../../components/footer/footer";
+import LandTowerButton from "../../components/landTowerButton/landTowerButton";
 
 function ContactUs() {
   const [cardDisplayed, setCardDisplayed] = useState(false);
@@ -23,7 +24,13 @@ function ContactUs() {
     };
   }, []);
 
-  const handleContactForm = () => {
+  const specificButtonTitle = "Submit";
+  const specificButtonStyling = "w-522 mb-40";
+  const specificButtonStylingMobile = "w-250 mb-40";
+  const specificButtonText = "Submit";
+
+  const handleContactForm = (e) => {
+    e.preventDefault();
     if (
       name.length === 0 ||
       email.length === 0 ||
@@ -44,15 +51,17 @@ function ContactUs() {
     }
     setTimeout(() => {
       setWarning(false);
-    }, 2000);
+    }, 5000);
   };
 
   /** displays Warning */
   const displayWarning = () => {
     return (
-      <p className="my-2 px-4 py-4 font-graphikRegular text-base text-center text-red-500 border-2 border-red-400 bg-red-100">
-        All entries and required to send a contact email...
-      </p>
+      <div className="flex justify-center items-center">
+        <p className="my-2 px-4 py-2 w-250 md:w-full lg:w-full rounded font-graphikRegular text-base text-center text-red-500 border-2 border-red-400 bg-red-100">
+          All entries and required to send a contact email...
+        </p>
+      </div>
     );
   };
 
@@ -160,14 +169,12 @@ function ContactUs() {
             <div className="flex justify-center items-center w-full my-6">
               <div>
                 {warning ? displayWarning() : <span />}
-                <button
-                  onClick={() => handleContactForm()}
-                  type="submit"
-                  title="submit"
-                  className="font-georgiaBold w-522 py-4 px-10 text-2xl outline-none bg-landTower-gold-color text-white"
-                >
-                  Submit
-                </button>
+                <LandTowerButton
+                  specificButtonTitle={specificButtonTitle}
+                  specificButtonStyling={specificButtonStyling}
+                  specificButtonText={specificButtonText}
+                  specificButtonClick={(e) => handleContactForm(e)}
+                />
               </div>
             </div>
           </div>
@@ -254,15 +261,14 @@ function ContactUs() {
               </div>
             </form>
           </div>
+          {warning ? displayWarning() : <span />}
           <div className="flex justify-center items-center mt-6 mb-10">
-            <button
-              // onClick={() => navigate(memberLink)}
-              type="submit"
-              title="submit"
-              className="font-georgiaBold py-4 px-10 text-2xl outline-none bg-landTower-gold-color text-white"
-            >
-              Submit
-            </button>
+            <LandTowerButton
+              specificButtonTitle={specificButtonTitle}
+              specificButtonStyling={specificButtonStylingMobile}
+              specificButtonText={specificButtonText}
+              specificButtonClick={(e) => handleContactForm(e)}
+            />
           </div>
         </div>
         <Footer />

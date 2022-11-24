@@ -67,22 +67,30 @@ function PagesHeader({ setCardDisplayed, cardDisplayed }) {
               <li className="mr-8 cursor-pointer">
                 <button
                   type="button"
-                  // className="pl-5 w-full text-left border-y-is0point5 border-gray-500"
                   onClick={() => navigate(NonAuthRoutes.landingPage)}
                 >
                   HOME
                 </button>
               </li>
               <li className="mr-8 cursor-pointer">
-                <button type="button">APARTMENTS</button>
-              </li>
-              <li className="mr-8 cursor-pointer">
-                <button type="button">GALLERY</button>
+                <button
+                  type="button"
+                  onClick={() => navigate(NonAuthRoutes.gallery)}
+                >
+                  APARTMENTS
+                </button>
               </li>
               <li className="mr-8 cursor-pointer">
                 <button
                   type="button"
-                  // className="px-5 w-full text-left border-b-is0point5 border-gray-500"
+                  onClick={() => navigate(NonAuthRoutes.gallery)}
+                >
+                  GALLERY
+                </button>
+              </li>
+              <li className="mr-8 cursor-pointer">
+                <button
+                  type="button"
                   onClick={() => navigate(NonAuthRoutes.ourTeam)}
                 >
                   OUR TEAM

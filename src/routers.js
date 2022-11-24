@@ -2,23 +2,49 @@ import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { NonAuthRoutes } from "./url";
 import { ReactComponent as LoadingIcon } from "./assets/svg/loadingIcon.svg";
-import LandingPage from "./pages/landingPage/landingPage";
-import OurTeam from "./pages/ourTeam/ourTeam";
-import AboutUs from "./pages/aboutUs/aboutUs";
-import ContactUs from "./pages/contactUs/contactUs";
 
-import MunachimNweke from "./pages/ourTeam/members/munachimNweke";
-import IfeanyiClementNweke from "./pages/ourTeam/members/ifeanyiClementNweke";
-import ObioraNworji from "./pages/ourTeam/members/obioraNworji";
-import SundayEmeagwai from "./pages/ourTeam/members/sundayEmeagwai";
-import OluwaseunAdeyemiSekoni from "./pages/ourTeam/members/oluwaseunAdeyemiSekoni";
-import NzeakorIfeanyichukwu from "./pages/ourTeam/members/nzeakorIfeanyichukwu";
-import ChristopherNwankwo from "./pages/ourTeam/members/christopherNwankwo";
-import ChukwudubemOkechukwu from "./pages/ourTeam/members/chukwudubemOkechukwu";
-import KingsleyNwaokobia from "./pages/ourTeam/members/kingsleyNwaokobia";
-import RasaqOlaniyiIsiaq from "./pages/ourTeam/members/rasaqOlaniyiIsiaq";
-import UdenkaChukwuemeka from "./pages/ourTeam/members/udenkaChukwuemeka";
-import AyinlaQuadri from "./pages/ourTeam/members/ayinlaQuadri";
+const LandingPage = React.lazy(() => import("./pages/landingPage/landingPage"));
+const Gallery = React.lazy(() => import("./pages/gallery/gallery"));
+const OurTeam = React.lazy(() => import("./pages/ourTeam/ourTeam"));
+const AboutUs = React.lazy(() => import("./pages/aboutUs/aboutUs"));
+const ContactUs = React.lazy(() => import("./pages/contactUs/contactUs"));
+
+const MunachimNweke = React.lazy(() =>
+  import("./pages/ourTeam/members/munachimNweke")
+);
+const IfeanyiClementNweke = React.lazy(() =>
+  import("./pages/ourTeam/members/ifeanyiClementNweke")
+);
+const ObioraNworji = React.lazy(() =>
+  import("./pages/ourTeam/members/obioraNworji")
+);
+const SundayEmeagwai = React.lazy(() =>
+  import("./pages/ourTeam/members/sundayEmeagwai")
+);
+const OluwaseunAdeyemiSekoni = React.lazy(() =>
+  import("./pages/ourTeam/members/oluwaseunAdeyemiSekoni")
+);
+const NzeakorIfeanyichukwu = React.lazy(() =>
+  import("./pages/ourTeam/members/nzeakorIfeanyichukwu")
+);
+const ChristopherNwankwo = React.lazy(() =>
+  import("./pages/ourTeam/members/christopherNwankwo")
+);
+const ChukwudubemOkechukwu = React.lazy(() =>
+  import("./pages/ourTeam/members/chukwudubemOkechukwu")
+);
+const KingsleyNwaokobia = React.lazy(() =>
+  import("./pages/ourTeam/members/kingsleyNwaokobia")
+);
+const RasaqOlaniyiIsiaq = React.lazy(() =>
+  import("./pages/ourTeam/members/rasaqOlaniyiIsiaq")
+);
+const UdenkaChukwuemeka = React.lazy(() =>
+  import("./pages/landingPage/landingPage")
+);
+const AyinlaQuadri = React.lazy(() =>
+  import("./pages/ourTeam/members/ayinlaQuadri")
+);
 
 function Routers() {
   return (
@@ -32,6 +58,7 @@ function Routers() {
       >
         <Routes>
           <Route path={NonAuthRoutes.landingPage} element={<LandingPage />} />
+          <Route path={NonAuthRoutes.gallery} element={<Gallery />} />
           <Route path={NonAuthRoutes.ourTeam} element={<OurTeam />} />
           <Route path={NonAuthRoutes.aboutUs} element={<AboutUs />} />
           <Route path={NonAuthRoutes.contactUs} element={<ContactUs />} />
