@@ -56,7 +56,7 @@ function PagesHeaderCard({ setCardDisplayed, cardDisplayed }) {
               <button
                 type="button"
                 className="px-5 w-full text-left border-b-is0point5 border-gray-500"
-                onClick={() => navigate(NonAuthRoutes.gallery)}
+                onClick={() => navigate(NonAuthRoutes.projectsGallery)}
               >
                 APARTMENTS
               </button>
@@ -65,7 +65,7 @@ function PagesHeaderCard({ setCardDisplayed, cardDisplayed }) {
               <button
                 type="button"
                 className="px-5 w-full text-left border-b-is0point5 border-gray-500"
-                onClick={() => navigate(NonAuthRoutes.gallery)}
+                onClick={() => navigate(NonAuthRoutes.projectsGallery)}
               >
                 GALLERY
               </button>

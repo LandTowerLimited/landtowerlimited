@@ -75,7 +75,7 @@ function PagesHeader({ setCardDisplayed, cardDisplayed }) {
               <li className="mr-8 cursor-pointer">
                 <button
                   type="button"
-                  onClick={() => navigate(NonAuthRoutes.gallery)}
+                  onClick={() => navigate(NonAuthRoutes.projectsGallery)}
                 >
                   APARTMENTS
                 </button>
@@ -83,7 +83,7 @@ function PagesHeader({ setCardDisplayed, cardDisplayed }) {
               <li className="mr-8 cursor-pointer">
                 <button
                   type="button"
-                  onClick={() => navigate(NonAuthRoutes.gallery)}
+                  onClick={() => navigate(NonAuthRoutes.projectsGallery)}
                 >
                   GALLERY
                 </button>

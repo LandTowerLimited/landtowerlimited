@@ -4,10 +4,12 @@ import { NonAuthRoutes } from "./url";
 import { ReactComponent as LoadingIcon } from "./assets/svg/loadingIcon.svg";
 
 const LandingPage = React.lazy(() => import("./pages/landingPage/landingPage"));
-const Gallery = React.lazy(() => import("./pages/gallery/gallery"));
 const OurTeam = React.lazy(() => import("./pages/ourTeam/ourTeam"));
 const AboutUs = React.lazy(() => import("./pages/aboutUs/aboutUs"));
 const ContactUs = React.lazy(() => import("./pages/contactUs/contactUs"));
+const ProjectsGallery = React.lazy(() =>
+  import("./pages/projectsGallery/projectsGallery")
+);
 
 const MunachimNweke = React.lazy(() =>
   import("./pages/ourTeam/members/munachimNweke")
@@ -58,10 +60,14 @@ function Routers() {
       >
         <Routes>
           <Route path={NonAuthRoutes.landingPage} element={<LandingPage />} />
-          <Route path={NonAuthRoutes.gallery} element={<Gallery />} />
           <Route path={NonAuthRoutes.ourTeam} element={<OurTeam />} />
           <Route path={NonAuthRoutes.aboutUs} element={<AboutUs />} />
           <Route path={NonAuthRoutes.contactUs} element={<ContactUs />} />
+          <Route path={NonAuthRoutes.contactUs} element={<ContactUs />} />
+          <Route
+            path={NonAuthRoutes.projectsGallery}
+            element={<ProjectsGallery />}
+          />
 
           <Route
             path={NonAuthRoutes.munachimNweke}

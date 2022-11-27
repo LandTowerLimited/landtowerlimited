@@ -2,7 +2,7 @@ const AuthRoutes = {};
 
 const NonAuthRoutes = {
   landingPage: "/",
-  gallery: "/projects-gallery",
+  projectsGallery: "/projects-gallery",
   ourTeam: "/our-team",
   aboutUs: "/about-us",
   contactUs: "/contact-us",

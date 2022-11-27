@@ -102,7 +102,7 @@ function Footer() {
                   <li className="mr-8 cursor-pointer">
                     <button
                       type="button"
-                      onClick={() => navigate(NonAuthRoutes.gallery)}
+                      onClick={() => navigate(NonAuthRoutes.projectsGallery)}
                     >
                       Gallery
                     </button>
@@ -110,7 +110,7 @@ function Footer() {
                   <li className="mr-8 cursor-pointer">
                     <button
                       type="button"
-                      onClick={() => navigate(NonAuthRoutes.gallery)}
+                      onClick={() => navigate(NonAuthRoutes.projectsGallery)}
                     >
                       Apartmemts
                     </button>
@@ -294,7 +294,7 @@ function Footer() {
                 <li className="mr-8 cursor-pointer">
                   <button
                     type="button"
-                    onClick={() => navigate(NonAuthRoutes.gallery)}
+                    onClick={() => navigate(NonAuthRoutes.projectsGallery)}
                   >
                     Gallery
                   </button>
@@ -302,7 +302,7 @@ function Footer() {
                 <li className="mr-8 cursor-pointer">
                   <button
                     type="button"
-                    onClick={() => navigate(NonAuthRoutes.gallery)}
+                    onClick={() => navigate(NonAuthRoutes.projectsGallery)}
                   >
                     Apartmemts
                   </button>

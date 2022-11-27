@@ -21,6 +21,7 @@ module.exports = {
         is3: "3rem",
         is29: "29px",
         18: "70px",
+        is38: "38px",
         250: "250px",
         300: "300px",
         350: "350px",

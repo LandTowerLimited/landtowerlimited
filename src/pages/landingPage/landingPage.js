@@ -7,9 +7,6 @@ import { useNavigate } from "react-router-dom";
 import { NonAuthRoutes } from "../../url";
 import Header from "../../components/header/header";
 import HeaderCard from "../../components/header/headerCard";
-import LTLSliderImage1 from "../../assets/img/ltl-landing-page-sliderImage1.jpg";
-import LTLSliderImage2 from "../../assets/img/ltl-landing-page-sliderImage2.jpg";
-import LTLSliderImage3 from "../../assets/img/ltl-landing-page-sliderImage3.jpg";
 import Slide01Image from "../../assets/img/slide01Image.png";
 import DuluxLogo from "../../assets/img/dulux.png";
 import TwyfordBathroomsLogo from "../../assets/img/twyfordBathrooms.png";
@@ -41,17 +38,17 @@ function LandingPage() {
   /** Displays Slider */
   const sliderData = [
     {
-      url: `${LTLSliderImage1}`,
+      url: "https://res.cloudinary.com/dipzi1vv6/image/upload/v1669578855/ltl-landing-page-sliderImage1_cx9ay2.jpg",
       captionHeader: "Land Tower Constructions",
       captionDescription: "Developing Outstanding Living Spaces Around Nigeria",
     },
     {
-      url: `${LTLSliderImage2}`,
+      url: "https://res.cloudinary.com/dipzi1vv6/image/upload/v1669578854/ltl-landing-page-sliderImage2_gzjbw7.jpg",
       captionHeader: "World Class Interiors",
       captionDescription: "From Tokyo - Japan to Banana Island - Lagos",
     },
     {
-      url: `${LTLSliderImage3}`,
+      url: "https://res.cloudinary.com/dipzi1vv6/image/upload/v1669578854/ltl-landing-page-sliderImage3_rtyylt.jpg",
       captionHeader: "Equipments By Land Tower",
       captionDescription: "Heavy-Duty Industry Equipments at Your Service",
     },
@@ -602,7 +599,7 @@ function LandingPage() {
                 type="button"
                 title="SEE ALL GALLERY"
                 className="flex mt-8 items-center cursor-pointer w-40 pb-2 pl-2 border-b-4 border-black"
-                onClick={() => navigate(NonAuthRoutes.gallery)}
+                onClick={() => navigate(NonAuthRoutes.projectsGallery)}
               >
                 <p className="font-graphikMedium text-sm text-gray-700">
                   SEE ALL GALLERY
@@ -687,7 +684,7 @@ function LandingPage() {
                 type="button"
                 title="SEE ALL GALLERY"
                 className="flex my-8 items-center cursor-pointer w-40 pb-2 pl-2 border-b border-black"
-                onClick={() => navigate(NonAuthRoutes.gallery)}
+                onClick={() => navigate(NonAuthRoutes.projectsGallery)}
               >
                 <p className="font-graphikMedium text-sm text-gray-700">
                   SEE ALL GALLERY

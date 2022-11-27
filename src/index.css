@@ -238,3 +238,47 @@ Font Weight	Numerical Weight
 .tfe-font-size {
   font-size: 8px;
 }
+
+.overlay-container {
+  position: relative;
+  background-color: rgba(245, 40, 145, 0.8);
+  width: 50%;
+}
+
+.overlay-container::hover .image {
+  opacity: 0.3;
+}
+
+.overlay-container::hover .middle {
+  opacity: 1;
+}
+
+.overlay-image {
+  opacity: 1;
+  display: block;
+  /* width: 100%;
+  height: auto; */
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  background-color: rgba(245, 40, 145, 0.8);
+}
+
+.overlay-middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(245, 40, 145, 0.8);
+}
+
+.overlay-text {
+  background-color: #04aa6d;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  background-color: rgba(245, 40, 145, 0.8);
+}
