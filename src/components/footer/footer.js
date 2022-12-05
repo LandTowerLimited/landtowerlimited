@@ -162,23 +162,46 @@ function Footer() {
                   </a>
                 </p>
                 <div className="flex mt-10 float-right justify-between items-center">
-                  <InstagramIcon
-                    title="Instagram"
-                    className="cursor-pointer w-10"
-                  />
-                  <FacebookIcon
-                    title="Facebook"
-                    className="cursor-pointer w-10"
-                  />
-                  <TwitterIcon
-                    title="Twitter"
-                    className="cursor-pointer w-10"
-                  />
-                  <LinkedinIcon
-                    title="LinkedIn"
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/landtowerlimited/"
+                    rel="noreferrer"
+                  >
+                    <InstagramIcon
+                      title="Instagram"
+                      className="cursor-pointer w-10"
+                    />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/landtowerlimited/"
+                    rel="noreferrer"
+                  >
+                    <FacebookIcon
+                      title="Facebook"
+                      className="cursor-pointer w-10"
+                    />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.twitter.com/landtowerlimited/"
+                    rel="noreferrer"
+                  >
+                    <TwitterIcon
+                      title="Twitter"
+                      className="cursor-pointer w-10"
+                    />
+                  </a>
+                  <a
+                    target="_blank"
                     href="https://www.linkedin.com/company/land-tower-limited/"
-                    className="cursor-pointer w-10"
-                  />
+                    rel="noreferrer"
+                  >
+                    <LinkedinIcon
+                      title="LinkedIn"
+                      className="cursor-pointer w-10"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -354,20 +377,47 @@ function Footer() {
                 </a>
               </p>
               <div className="flex mt-4 w-1/2 -ml-2 justify-between items-center">
-                <InstagramIcon
-                  title="Instagram"
-                  className="cursor-pointer w-10"
-                />
-                <FacebookIcon
-                  title="Facebook"
-                  className="cursor-pointer w-10"
-                />
-                <TwitterIcon title="Twitter" className="cursor-pointer w-10" />
-                <LinkedinIcon
-                  title="LinkedIn"
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/landtowerlimited/"
+                  rel="noreferrer"
+                >
+                  <InstagramIcon
+                    title="Instagram"
+                    className="cursor-pointer w-10"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/landtowerlimited/"
+                  rel="noreferrer"
+                >
+                  <FacebookIcon
+                    title="Facebook"
+                    className="cursor-pointer w-10"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.twitter.com/landtowerlimited/"
+                  rel="noreferrer"
+                >
+                  <TwitterIcon
+                    title="Twitter"
+                    className="cursor-pointer w-10"
+                  />
+                </a>
+
+                <a
+                  target="_blank"
                   href="https://www.linkedin.com/company/land-tower-limited/"
-                  className="cursor-pointer w-10"
-                />
+                  rel="noreferrer"
+                >
+                  <LinkedinIcon
+                    title="LinkedIn"
+                    className="cursor-pointer w-10"
+                  />
+                </a>
               </div>
             </div>
           </div>
