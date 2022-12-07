@@ -23,8 +23,8 @@ function ImageViewer({
   };
 
   return (
-    <div className="z-20 absolute h-full w-full pt-4 bg-slate-900">
-      <div className=" w-full h-full">
+    <div className="absolute h-screen w-screen z-20 px-10 pt-6 bg-slate-900">
+      <div>
         <button
           type="button"
           title="Close Gallery"
