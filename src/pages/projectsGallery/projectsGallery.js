@@ -235,9 +235,9 @@ function ProjectsGallery() {
   }
 
   return (
-    <div className="">
+    <div>
       {imageViewerEnabled ? (
-        <div className="relative">
+        <div>
           <ImageViewer
             imageViewerEnabled={imageViewerEnabled}
             setImageViewerEnabled={setImageViewerEnabled}
