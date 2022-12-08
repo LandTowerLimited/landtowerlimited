@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 import { NonAuthRoutes } from "../../url";
 import Header from "../../components/header/header";
 import HeaderCard from "../../components/header/headerCard";
-import Slide01Image from "../../assets/img/slide01Image.png";
 import DuluxLogo from "../../assets/img/dulux.png";
 import TwyfordBathroomsLogo from "../../assets/img/twyfordBathrooms.png";
 import DangoteLogo from "../../assets/img/dangote.png";
@@ -319,7 +318,7 @@ function LandingPage() {
           <div className="flex justify-center w-full mb-10">
             <div className="z-20">
               <img
-                src={Slide01Image}
+                src="https://res.cloudinary.com/dipzi1vv6/image/upload/v1670505553/Landing%20Page/ltl-about-us-page-Image2_tpo3ab.jpg"
                 alt="Land Tower Projects 1"
                 className="h-522 -mt-14"
               />
@@ -403,7 +402,7 @@ function LandingPage() {
         <div className="mb-10 md:hidden lg:hidden">
           <div className="justify-center flex">
             <img
-              src={Slide01Image}
+              src="https://res.cloudinary.com/dipzi1vv6/image/upload/v1670505553/Landing%20Page/ltl-about-us-page-Image2_tpo3ab.jpg"
               alt="Land Tower Projects 1"
               className=" -mt-is29 px-4 bg-cover"
             />
