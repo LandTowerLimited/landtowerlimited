@@ -298,9 +298,9 @@ function Footer() {
               </button>
               <p className="font-graphikRegular text-white text-xs leading-5 mt-6">
                 Land Tower is a competent team of engineers that design,
-                construct, market and sell building projects from foundation to
-                furnishing. An integrated force of talents that exceeds limits,
-                clients expectations of projects under within any given
+                construct, render external & interior home finishing and
+                furnishing services. An integrated force of talents that exceeds
+                limits, clients expectations of projects under within any given
                 timeline.
               </p>
             </div>

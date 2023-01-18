@@ -42,7 +42,7 @@ const RasaqOlaniyiIsiaq = React.lazy(() =>
   import("./pages/ourTeam/members/rasaqOlaniyiIsiaq")
 );
 const UdenkaChukwuemeka = React.lazy(() =>
-  import("./pages/landingPage/landingPage")
+  import("./pages/ourTeam/members/udenkaChukwuemeka")
 );
 const AyinlaQuadri = React.lazy(() =>
   import("./pages/ourTeam/members/ayinlaQuadri")

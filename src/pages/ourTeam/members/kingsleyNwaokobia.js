@@ -57,21 +57,21 @@ function KingsleyNwaokobia() {
                   He later joined Powerflow Installation company as an
                   Electrical supervisor. Access Bank Delta state, Guardian
                   newspaper Abuja, Periwinkle Towers Lagos are project
-                  supervised durning this period.
+                  supervised during this period.
                 </p>
                 <p className="py-3">
-                  He later joined jerad project where he is presently the
-                  supervisor and site engineer handling project in lagos state
-                  multi agency Alausa Lagos , Landwey lagos, J44 project Banana
-                  Island . He supervised Ime towels banana Island Lagos, Walter
-                  Vagebor tower osbourne Lagos.
+                  He later joined jerad project; where he became the supervisor
+                  and site engineer handling project in lagos state multi agency
+                  Alausa Lagos , Landwey lagos, J44 project Banana Island. He
+                  supervised Ime towels banana Island Lagos, Walter Vagebor
+                  tower osbourne Lagos.
                 </p>
                 <p className="py-3">
-                  Mr Kingsley Nwaokobia alias Nasiru has key skills in domestic
-                  and industrial electrical installation and maintanance which
-                  ensure a high standard of work being delivered on every
+                  Mr Kingsley Nwaokobia alias Nasiru has key skills in domestic,
+                  industrial electrical installation and maintenance which
+                  results to high standard of work being delivered on every
                   project handled. His hobbies include watching football and
-                  listening to music. He is Barchelor.
+                  listening to music. He is a Barchelor.
                 </p>
               </div>
             </div>

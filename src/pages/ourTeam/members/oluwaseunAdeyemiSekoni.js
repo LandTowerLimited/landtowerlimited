@@ -58,11 +58,10 @@ function OluwaseunAdeyemiSekoni() {
                   Limited and later joined Periwinkle Residence Ltd as
                   Electrical/Mechanical Engineer before proceeding to join
                   African United Consultants Ltd as Lead Electrical/Mechanical
-                  Engineer where he is currently seeing to the actuality of the
-                  aim and objectives of AUC. Engr. Sekoni ensures that
-                  compliance standards are followed whilst displaying financial
-                  prudence in the allocation of resources for the projects at
-                  hand.
+                  Engineer where he’s seeing to the actuality of the aim and
+                  objectives of AUC. Engr. Sekoni ensures that compliance
+                  standards are followed whilst displaying financial prudence in
+                  the allocation of resources for the projects at hand.
                 </p>
                 <p className="py-3">
                   He is also a goal getter. He is a very good listener of ideas

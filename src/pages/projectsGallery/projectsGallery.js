@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Footer from "../../components/footer/footer";
 import ImageViewer from "../../components/imageViewer/imageViewer";
 import PagesHeader from "../../components/header/pagesHeader";
 
@@ -367,6 +368,7 @@ function ProjectsGallery() {
               />
             </div>
           </div>
+          <Footer />
         </div>
       )}
     </div>

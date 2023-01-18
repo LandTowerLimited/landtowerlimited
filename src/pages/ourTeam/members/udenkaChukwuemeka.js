@@ -44,16 +44,18 @@ function UdenkaChukwuemeka() {
               </p>
               <div className="mt-6 mb-20 font-graphikRe gular text-base md:text-lg lg:text-lg text-grey-400 text-center">
                 <p className="py-3">
-                  Udenka Chukwuemeka joel is an HVAC Technician (Heating,
-                  ventilation, and air conditioning), with over 9years
-                  experience he started working with Gods time insulation
-                  company at sokoto in 2013 till 2018 as air conditioner
-                  technician later join de light company as supervisor in 2018
-                  till 2021 later join powerful insulation company till date as
-                  a foreman later as supervisor at periwinkle towers lagos
-                  udenka chukwuemeka joel has the skills in domestic and technic
-                  of maintenance repair and instillation my hubbies is music and
-                  cooking.
+                  Udenka Chukwuemeka Joel is an HVAC Technician (Heating,
+                  ventilation, and air conditioning), with over 9 years
+                  experience he started working with Gods Time Insulation
+                  Company at Sokoto in 2013 till 2018 as air conditioner
+                  technician later join De-Light Company as supervisor in 2018
+                  till 2021. Went on to work for powerflow installation company
+                  as a supervisor
+                </p>
+                <p className="py-3">
+                  Udenka Chukwuemeka Joel has the deft in domestic, technical
+                  maintenance repairs and installation. His hubbies are music
+                  and cooking
                 </p>
               </div>
             </div>

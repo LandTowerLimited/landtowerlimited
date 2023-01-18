@@ -44,22 +44,22 @@ function ChukwudubemOkechukwu() {
               </p>
               <div className="mt-6 mb-20 font-graphikRe gular text-base md:text-lg lg:text-lg text-grey-400 text-center">
                 <p className="py-3">
-                  Chukwudubem Okechukwu is a Metal Works and Aluminium
-                  Fabricator (Iron Doors, Massive Gates, Standtion Tanks
-                  Protectors, Aluminium windows, Aluminium Doors e.t.c, He has
-                  over 10 years experience, he has worked with varios iron
-                  construction companies around Nigeria and delivers the highest
-                  of qualities and standards on every project he handles.
+                  Chukwudubem Okechukwu is a Metal work consummate and aluminum
+                  fabricator (Iron Doors, Massive Gates, Stanchion tanks
+                  protectors, aluminum windows, aluminum Doors e.t.c, He has
+                  over 10 years experience, he has worked with various iron
+                  construction companies around Nigeria, delivers the highest of
+                  qualities and keeps high standard on every project he handles.
                 </p>
                 <p className="py-3">
-                  I have handled so many work such as construction of Nnamdi
-                  azikiwe University beautiful gate awka anambra state, I have
-                  worked for petals cosmetics *, I have worked in several
-                  estate&#39;s and private sectors.
+                  He has indulged in so many work such as; construction of
+                  Nnamdi Azikiwe University beautiful gate Awka Anambra State.
                 </p>
                 <p className="py-3">
-                  My hobbies include always being busy at work, listen to music,
-                  and reading. I am a bachelor.
+                  He has worked in several estates and private sectors.
+                </p>
+                <p className="py-3">
+                  His hobbies are listen to music, and reading. His a bachelor
                 </p>
               </div>
             </div>

@@ -4,6 +4,9 @@ import LTLAboutImage1 from "../../assets/img/ltl-about-us-page-Image1.jpg";
 import LTLAboutImage2 from "../../assets/img/ltl-about-us-page-Image2.jpg";
 import LTLAboutImage3 from "../../assets/img/ltl-about-us-page-Image3.jpg";
 import LTLAboutImage4 from "../../assets/img/ltl-about-us-page-Image4.jpg";
+import { ReactComponent as HonestyIcon } from "../../assets/svg/honesty-icon.svg";
+import { ReactComponent as TransparencyIcon } from "../../assets/svg/transparency-icon.svg";
+import { ReactComponent as StrengthIcon } from "../../assets/svg/strength-icon.svg";
 import Footer from "../../components/footer/footer";
 
 function AboutUs() {
@@ -112,7 +115,23 @@ function AboutUs() {
                 building finishing and furnishing; with an experience
                 professional competent team and state of the art equipments.
               </p>
-              <p>Our Values are Honesty, Transparency, and Strength</p>
+              <p className=" font-graphikMedium">Our Values are...</p>
+              <div className="flex justify-between items-center mt-6">
+                <div>
+                  <HonestyIcon />
+                  <p className="pt-4 font-graphikBold">Honesty</p>
+                </div>
+                <div>
+                  <div className="flex justify-center items-center">
+                    <TransparencyIcon />
+                  </div>
+                  <p className="pt-4 font-graphikBold">Transparency</p>
+                </div>
+                <div>
+                  <StrengthIcon />
+                  <p className="pt-4 font-graphikBold">Strength</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

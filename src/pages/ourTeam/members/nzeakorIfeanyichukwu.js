@@ -44,20 +44,26 @@ function NzeakorIfeanyichukwu() {
               </p>
               <div className="mt-6 mb-20 font-graphikRe gular text-base md:text-lg lg:text-lg text-grey-400 text-center">
                 <p className="py-3">
-                  Nzeakor Ifeanyichukwu, am a Trained and Registered Engineer. I
-                  am actively involved in Civil/Structural Engineering
-                  Consulting and Construction firms and an Architectural firm.
-                  The experience garnered are under the following areas,
-                  Civil/Structural Engineering Project Management and
-                  Monitoring, Project Design and Appraisals (for Residential,
-                  Schools, Banks, Offices and Mixed-use buildings and Roads),
-                  Piling and Foundation Analysis, Design and Construction,
-                  Contract Administration and Scheduling, Post-Tensioning and
-                  Pre-Stressed, Estimation and Costing, Quality Control and
-                  Quality Assurance, Safety and Impact Assessment, Maintenance
-                  and Planning, Execution and Commissioning, Use of
-                  Computer-Aided Design (CAD), Mastery of Design Spreadsheets,
-                  etc.
+                  Nzeakor Ifeanyichukwu, is a Trained and Registered Engineer.
+                  He is actively involved in Civil/Structural Engineering
+                  Consulting and Construction. The experience garnered are under
+                  the following areas, Civil/Structural Engineering Project
+                  Management and Monitoring, Project Design and Appraisals (for
+                  Residential, Schools, Banks, Offices and Mixed-use buildings
+                  and Roads), Piling and Foundation Analysis, Design and
+                  Construction, Contract Administration and Scheduling,
+                  Post-Tensioning and Pre-Stressed Concrete, Estimation and
+                  Costing, Quality Control and Quality Assurance, Safety and
+                  Impact Assessment, Maintenance and Planning, Execution and
+                  Commissioning, Use of Computer-Aided Design (CAD), Mastery of
+                  Design Spreadsheets, etc.
+                </p>
+                <p className="py-3">
+                  He obtained his first Degree (2nd Class, Upper Division) in
+                  Civil Engineering from the University of Benin, Edo State.
+                  With over 14 Years experience in the Civil/Structural
+                  Engineering Construction/Consulting Industry, moving from a
+                  Pupil Engineer to a Consultant. He is happily married.
                 </p>
               </div>
             </div>
