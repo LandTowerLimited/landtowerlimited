@@ -116,20 +116,48 @@ function AboutUs() {
                 professional competent team and state of the art equipments.
               </p>
               <p className=" font-graphikMedium">Our Values are...</p>
-              <div className="flex justify-between items-center mt-6">
-                <div>
-                  <HonestyIcon />
-                  <p className="pt-4 font-graphikBold">Honesty</p>
-                </div>
-                <div>
-                  <div className="flex justify-center items-center">
-                    <TransparencyIcon />
+              <div className="hidden md:block lg:block ">
+                <div className="flex justify-evenly items-center mt-6 ">
+                  <div>
+                    <div className="flex justify-center items-center">
+                      <HonestyIcon />
+                    </div>
+                    <p className="pt-4 font-graphikBold">Honesty</p>
                   </div>
-                  <p className="pt-4 font-graphikBold">Transparency</p>
+                  <div>
+                    <div className="flex justify-center items-center">
+                      <TransparencyIcon />
+                    </div>
+                    <p className="pt-6 font-graphikBold">Transparency</p>
+                  </div>
+                  <div>
+                    <div className="flex justify-center items-center">
+                      <StrengthIcon />
+                    </div>
+                    <p className="pt-2 font-graphikBold">Strength</p>
+                  </div>
                 </div>
+              </div>
+              <div className="md:hidden lg:hidden">
                 <div>
-                  <StrengthIcon />
-                  <p className="pt-4 font-graphikBold">Strength</p>
+                  <div>
+                    <div className="mt-6 flex justify-center items-center">
+                      <HonestyIcon />
+                    </div>
+                    <p className="pt-4 font-graphikBold">Honesty</p>
+                  </div>
+                  <div>
+                    <div className="mt-6 flex justify-center items-center">
+                      <TransparencyIcon />
+                    </div>
+                    <p className="pt-2 font-graphikBold">Transparency</p>
+                  </div>
+                  <div>
+                    <div className="mt-6 flex justify-center items-center">
+                      <StrengthIcon />
+                    </div>
+                    <p className="pt-2 font-graphikBold">Strength</p>
+                  </div>
                 </div>
               </div>
             </div>

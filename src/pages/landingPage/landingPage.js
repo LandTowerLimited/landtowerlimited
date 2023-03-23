@@ -174,7 +174,7 @@ function LandingPage() {
 
                           <a
                             target="_blank"
-                            href="https://www.twitter.com/landtowerlimited/"
+                            href="https://www.twitter.com/LandTowerLTD/"
                             rel="noreferrer"
                           >
                             <TwitterIcon
@@ -265,7 +265,7 @@ function LandingPage() {
                           </a>
                           <a
                             target="_blank"
-                            href="https://www.twitter.com/landtowerlimited/"
+                            href="https://www.twitter.com/LandTowerLTD/"
                             rel="noreferrer"
                           >
                             <TwitterIcon
