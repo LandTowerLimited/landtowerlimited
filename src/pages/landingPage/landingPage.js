@@ -3,13 +3,10 @@
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/no-array-index-key */
 import React, { useEffect, useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { NonAuthRoutes } from "../../url";
 import Header from "../../components/header/header";
 import HeaderCard from "../../components/header/headerCard";
-import LTLSliderImage1 from "../../assets/img/ltl-landing-page-sliderImage1.jpg";
-import LTLSliderImage2 from "../../assets/img/ltl-landing-page-sliderImage2.jpg";
-import LTLSliderImage3 from "../../assets/img/ltl-landing-page-sliderImage3.jpg";
-import Slide01Image from "../../assets/img/slide01Image.png";
 import DuluxLogo from "../../assets/img/dulux.png";
 import TwyfordBathroomsLogo from "../../assets/img/twyfordBathrooms.png";
 import DangoteLogo from "../../assets/img/dangote.png";
@@ -32,26 +29,25 @@ import { ReactComponent as SkyscrapperIcon } from "../../assets/svg/skyscrapperI
 import { ReactComponent as NextIcon } from "../../assets/svg/nextIcon.svg";
 import { ReactComponent as PreviousIcon } from "../../assets/svg/previousIcon.svg";
 import Footer from "../../components/footer/footer";
-// import authHandler from "../../authHandler";
 
 function LandingPage() {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [cardDisplayed, setCardDisplayed] = useState(false);
 
   /** Displays Slider */
   const sliderData = [
     {
-      url: `${LTLSliderImage1}`,
+      url: "https://res.cloudinary.com/dipzi1vv6/image/upload/v1669578855/Landing%20Page/ltl-landing-page-sliderImage1_cx9ay2.jpg",
       captionHeader: "Land Tower Constructions",
       captionDescription: "Developing Outstanding Living Spaces Around Nigeria",
     },
     {
-      url: `${LTLSliderImage2}`,
+      url: "https://res.cloudinary.com/dipzi1vv6/image/upload/v1669578854/Landing%20Page/ltl-landing-page-sliderImage2_gzjbw7.jpg",
       captionHeader: "World Class Interiors",
-      captionDescription: "From Tokyo - Japan to Banana Island - Ikoyi",
+      captionDescription: "From Tokyo - Japan to Banana Island - Lagos",
     },
     {
-      url: `${LTLSliderImage3}`,
+      url: "https://res.cloudinary.com/dipzi1vv6/image/upload/v1669578854/Landing%20Page/ltl-landing-page-sliderImage3_rtyylt.jpg",
       captionHeader: "Equipments By Land Tower",
       captionDescription: "Heavy-Duty Industry Equipments at Your Service",
     },
@@ -92,7 +88,7 @@ function LandingPage() {
   useEffect(() => {
     const ac = new AbortController();
 
-    document.title = "Land Tower • Exceeds Limits!";
+    document.title = "Land Tower Limited • The Brand That Exceeds Limits!";
     window.scrollTo(0, 0);
 
     return function cleanup() {
@@ -103,7 +99,7 @@ function LandingPage() {
   /** Displays Slide 0 */
   const slide0 = () => {
     return (
-      <div>
+      <div className="bg-black">
         {cardDisplayed ? (
           <HeaderCard
             setCardDisplayed={setCardDisplayed}
@@ -143,6 +139,7 @@ function LandingPage() {
                           className="getConsultationCSS border-landTower-gold-color 
                           cursor-pointer items-center mr-8
                           justify-center py-4 px-6 flex border-2 h-14"
+                          onClick={() => navigate(NonAuthRoutes.contactUs)}
                         >
                           <p className=" font-graphikSemibold text-sm text-white mr-4 leading-3">
                             GET A CONSULTATION
@@ -153,22 +150,48 @@ function LandingPage() {
                       </div>
                       <div className="flex w-full mt-10 md:mt-2 justify-between items-center">
                         <div className="flex w-56 mt-10 justify-between items-center">
-                          <InstagramIcon
-                            title="Instagram"
-                            className="cursor-pointer w-10"
-                          />
-                          <FacebookIcon
-                            title="Facebook"
-                            className="cursor-pointer w-10"
-                          />
-                          <TwitterIcon
-                            title="Twitter"
-                            className="cursor-pointer w-10"
-                          />
-                          <LinkedinIcon
-                            title="LinkedIn"
-                            className="cursor-pointer w-10"
-                          />
+                          <a
+                            target="_blank"
+                            href="https://www.instagram.com/landtowerlimited/"
+                            rel="noreferrer"
+                          >
+                            <InstagramIcon
+                              title="Instagram"
+                              className="cursor-pointer w-10"
+                            />
+                          </a>
+
+                          <a
+                            target="_blank"
+                            href="https://www.facebook.com/landtowerlimited/"
+                            rel="noreferrer"
+                          >
+                            <FacebookIcon
+                              title="Facebook"
+                              className="cursor-pointer w-10"
+                            />
+                          </a>
+
+                          <a
+                            target="_blank"
+                            href="https://www.twitter.com/LandTowerLTD/"
+                            rel="noreferrer"
+                          >
+                            <TwitterIcon
+                              title="Twitter"
+                              className="cursor-pointer w-10"
+                            />
+                          </a>
+                          <a
+                            target="_blank"
+                            href="https://www.linkedin.com/company/land-tower-limited/"
+                            rel="noreferrer"
+                          >
+                            <LinkedinIcon
+                              title="LinkedIn"
+                              className="cursor-pointer w-10"
+                            />
+                          </a>
                         </div>
                         <div className="flex w-56 mt-10 items-center justify-between">
                           <button
@@ -210,6 +233,7 @@ function LandingPage() {
                             className="getConsultationCSS border-landTower-gold-color 
                           cursor-pointer items-center mr-8
                           justify-center py-4 px-6 flex border-2 h-14"
+                            onClick={() => navigate(NonAuthRoutes.contactUs)}
                           >
                             <p className=" font-graphikMedium text-sm text-white mr-4">
                               GET A CONSULTATION
@@ -219,22 +243,46 @@ function LandingPage() {
                           <CraneIconGold className="w-6" />
                         </div>
                         <div className="flex w-52 my-10 justify-between items-center">
-                          <InstagramIcon
-                            title="Instagram"
-                            className="cursor-pointer w-10"
-                          />
-                          <FacebookIcon
-                            title="Facebook"
-                            className="cursor-pointer w-10"
-                          />
-                          <TwitterIcon
-                            title="Twitter"
-                            className="cursor-pointer w-10"
-                          />
-                          <LinkedinIcon
-                            title="LinkedIn"
-                            className="cursor-pointer w-10"
-                          />
+                          <a
+                            target="_blank"
+                            href="https://www.instagram.com/landtowerlimited/"
+                            rel="noreferrer"
+                          >
+                            <InstagramIcon
+                              title="Instagram"
+                              className="cursor-pointer w-10"
+                            />
+                          </a>
+                          <a
+                            target="_blank"
+                            href="https://www.facebook.com/landtowerlimited/"
+                            rel="noreferrer"
+                          >
+                            <FacebookIcon
+                              title="Facebook"
+                              className="cursor-pointer w-10"
+                            />
+                          </a>
+                          <a
+                            target="_blank"
+                            href="https://www.twitter.com/LandTowerLTD/"
+                            rel="noreferrer"
+                          >
+                            <TwitterIcon
+                              title="Twitter"
+                              className="cursor-pointer w-10"
+                            />
+                          </a>
+                          <a
+                            target="_blank"
+                            href="https://www.linkedin.com/company/land-tower-limited/"
+                            rel="noreferrer"
+                          >
+                            <LinkedinIcon
+                              title="LinkedIn"
+                              className="cursor-pointer w-10"
+                            />
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -268,9 +316,9 @@ function LandingPage() {
       <div>
         <div className="lg:h-screen mb-10 hidden md:block lg:block">
           <div className="flex justify-center w-full mb-10">
-            <div>
+            <div className="z-20">
               <img
-                src={Slide01Image}
+                src="https://res.cloudinary.com/dipzi1vv6/image/upload/v1670505553/Landing%20Page/ltl-about-us-page-Image2_tpo3ab.jpg"
                 alt="Land Tower Projects 1"
                 className="h-522 -mt-14"
               />
@@ -293,8 +341,9 @@ function LandingPage() {
                 <p className="font-graphikMedium text-gray-700 ">
                   from design to furnishing.
                 </p>
-
-                <div
+                <button
+                  type="button"
+                  onClick={() => navigate(NonAuthRoutes.projectsGallery)}
                   title="SEE OUR PROJECTS"
                   className="flex mt-8 items-center cursor-pointer w-44 pb-2 pl-2 border-b-4 border-black"
                 >
@@ -302,7 +351,7 @@ function LandingPage() {
                     SEE OUR PROJECTS
                   </p>
                   <ArrowRightBlack className="ml-4 w-2 h-2" />
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -353,7 +402,7 @@ function LandingPage() {
         <div className="mb-10 md:hidden lg:hidden">
           <div className="justify-center flex">
             <img
-              src={Slide01Image}
+              src="https://res.cloudinary.com/dipzi1vv6/image/upload/v1670505553/Landing%20Page/ltl-about-us-page-Image2_tpo3ab.jpg"
               alt="Land Tower Projects 1"
               className=" -mt-is29 px-4 bg-cover"
             />
@@ -377,7 +426,10 @@ function LandingPage() {
               <p className="font-graphikMedium text-gray-700 ">
                 from design to furnishing.
               </p>
-              <div
+
+              <button
+                type="button"
+                onClick={() => navigate(NonAuthRoutes.projectsGallery)}
                 title="SEE OUR PROJECTS"
                 className="flex mt-8 items-center pb-2 cursor-pointer w-40 border-b border-black"
               >
@@ -385,7 +437,7 @@ function LandingPage() {
                   SEE OUR PROJECTS
                 </p>
                 <ArrowRightBlack className="ml-4 w-2 h-2" />
-              </div>
+              </button>
             </div>
           </div>
 
@@ -449,7 +501,7 @@ function LandingPage() {
                   Homes
                 </span>
                 <p className="font-graphikMedium text-gray-600 text-xl mt-2">
-                  Exceeds Limits ...
+                  The Brand That Exceeds Limits!
                 </p>
               </div>
             </div>
@@ -519,7 +571,7 @@ function LandingPage() {
                   Homes
                 </span>
                 <p className="font-graphikMedium text-gray-600 text-xl mt-2">
-                  Exceeds Limits ...
+                  The Brand That Exceeds Limits!
                 </p>
               </div>
             </div>
@@ -596,15 +648,17 @@ function LandingPage() {
               <p className="font-graphikMedium text-gray-600 text-xl mt-3">
                 View our luxury living spaces...
               </p>
-              <div
+              <button
+                type="button"
                 title="SEE ALL GALLERY"
                 className="flex mt-8 items-center cursor-pointer w-40 pb-2 pl-2 border-b-4 border-black"
+                onClick={() => navigate(NonAuthRoutes.projectsGallery)}
               >
                 <p className="font-graphikMedium text-sm text-gray-700">
                   SEE ALL GALLERY
                 </p>
                 <ArrowRightBlack className="ml-4 w-2 h-2" />
-              </div>
+              </button>
             </div>
             <div className="flex items-center justify-end w-9/12">
               <div className="mx-4">
@@ -679,15 +733,17 @@ function LandingPage() {
               </div>
             </div>
             <div className="flex justify-center">
-              <div
+              <button
+                type="button"
                 title="SEE ALL GALLERY"
                 className="flex my-8 items-center cursor-pointer w-40 pb-2 pl-2 border-b border-black"
+                onClick={() => navigate(NonAuthRoutes.projectsGallery)}
               >
                 <p className="font-graphikMedium text-sm text-gray-700">
                   SEE ALL GALLERY
                 </p>
                 <ArrowRightBlack className="ml-4 w-2 h-2" />
-              </div>
+              </button>
             </div>
           </div>
         </div>

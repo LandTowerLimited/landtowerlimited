@@ -2,21 +2,23 @@ const AuthRoutes = {};
 
 const NonAuthRoutes = {
   landingPage: "/",
+  projectsGallery: "/projects-gallery",
   ourTeam: "/our-team",
   aboutUs: "/about-us",
   contactUs: "/contact-us",
 
-  munachimNweke: "/team/member/munachim-nweke",
+  munachimNweke: "/Founder-and-CEO/munachim-nweke",
   ifeanyiClementNweke: "/team/member/ifeanyi-clement-nweke",
   obioraNworji: "/team/member/obiora-nworji",
-  rasaqOlaniyiIsiaq: "/team/member/rasaq-olaniyi-isiaq",
+  sundayEmeagwai: "/team/member/sunday-emeagwai",
   oluwaseunAdeyemiSekoni: "/team/member/oluwaseun-adeyemi-sekoni",
   nzeakorIfeanyichukwu: "/team/member/nzeakor-ifeanyichukwu",
   christopherNwankwo: "/team/member/christopher-nwankwo",
   chukwudubemOkechukwu: "/team/member/chukwudubem-okechukwu",
   kingsleyNwaokobia: "/team/member/kingsley-nwaokobia",
-  ayinlaQuadri: "/team/member/ayinla-quadri",
+  rasaqOlaniyiIsiaq: "/team/member/rasaq-olaniyi-isiaq",
   udenkaChukwuemeka: "/team/member/udenka-chukwuemeka",
+  ayinlaQuadri: "/team/member/ayinla-quadri",
 };
 
 export { AuthRoutes, NonAuthRoutes };

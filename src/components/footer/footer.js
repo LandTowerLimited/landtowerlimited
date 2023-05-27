@@ -1,4 +1,6 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { NonAuthRoutes } from "../../url";
 import { ReactComponent as MapIcon } from "../../assets/svg/mapIcon.svg";
 import { ReactComponent as TimeIcon } from "../../assets/svg/timeIcon.svg";
 import { ReactComponent as PhoneOfficeIcon } from "../../assets/svg/phoneOfficeIcon.svg";
@@ -10,6 +12,8 @@ import LandTowerLogoImage from "../../assets/img/landTowerLogo.png";
 import TheFrenzyEmpireLogo from "../../assets/img/TheFrenzyEmpire-Technology-Software-and-Technology-Development.png";
 
 function Footer() {
+  const navigate = useNavigate();
+
   return (
     <div className="lg:pt-40">
       <div className="relative w-full hidden md:hidden lg:block bg-black">
@@ -49,7 +53,7 @@ function Footer() {
                 <p className="font-graphikRegular text-base text-gray-700 mt-4">
                   Call <span className="font-graphikMedium">Maryann</span> on{" "}
                   <a href="tel:+2349163494952" className="font-graphikMedium">
-                    0916349452
+                    09163494952
                   </a>{" "}
                   or <span className="font-graphikMedium">Cindy</span> on{" "}
                   <a href="tel:+2347015011779" className="font-graphikMedium">
@@ -66,11 +70,17 @@ function Footer() {
           <div>
             <div className="flex items-center justify-between w-full">
               <div className="w-450">
-                <img
-                  src={LandTowerLogoImage}
-                  alt="Land Tower Logo"
-                  className="w-60 h-10"
-                />
+                <button
+                  type="button"
+                  onClick={() => navigate(NonAuthRoutes.landingPage)}
+                >
+                  <img
+                    src={LandTowerLogoImage}
+                    alt="Land Tower Logo"
+                    title="Land Tower"
+                    className="w-60 h-10"
+                  />
+                </button>
                 <p className="font-graphikRegular text-white text-xs leading-5 mt-6 ml-3 pr-20">
                   Land Tower is a competent team of engineers that design,
                   construct, market and sell building projects from foundation
@@ -79,20 +89,58 @@ function Footer() {
                   given timeline.
                 </p>
               </div>
-              <div className="flex justify-between w-350 pl-10 font-graphikRegular text-white text-sm leading-8 ">
+              <div className="flex justify-between w-350 pl-10 font-graphikMedium text-white text-sm leading-10 ">
                 <ul>
-                  <li>Apartmemts</li>
-                  <li>Suites</li>
-                  <li>News</li>
-                  <li>Team</li>
-                  <li>Contact Center</li>
+                  <li className="mr-8 cursor-pointer">
+                    <button
+                      type="button"
+                      onClick={() => navigate(NonAuthRoutes.landingPage)}
+                    >
+                      Home
+                    </button>
+                  </li>
+                  <li className="mr-8 cursor-pointer">
+                    <button
+                      type="button"
+                      onClick={() => navigate(NonAuthRoutes.projectsGallery)}
+                    >
+                      Gallery
+                    </button>
+                  </li>
+                  <li className="mr-8 cursor-pointer">
+                    <button
+                      type="button"
+                      onClick={() => navigate(NonAuthRoutes.projectsGallery)}
+                    >
+                      Apartmemts
+                    </button>
+                  </li>
                 </ul>
                 <ul>
-                  <li>Apartmemts</li>
-                  <li>Suites</li>
-                  <li>News</li>
-                  <li>Team</li>
-                  <li>Contact Center</li>
+                  <li className="mr-8 cursor-pointer">
+                    <button
+                      type="button"
+                      onClick={() => navigate(NonAuthRoutes.ourTeam)}
+                    >
+                      Our Team
+                    </button>
+                  </li>
+                  <li className="mr-8 cursor-pointer">
+                    <button
+                      type="button"
+                      onClick={() => navigate(NonAuthRoutes.aboutUs)}
+                    >
+                      About Us
+                    </button>
+                  </li>
+                  <li className="mr-8 cursor-pointer">
+                    <button
+                      type="button"
+                      onClick={() => navigate(NonAuthRoutes.contactUs)}
+                    >
+                      Contact Us
+                    </button>
+                  </li>
                 </ul>
               </div>
               <div className="w-522 text-right">
@@ -114,27 +162,57 @@ function Footer() {
                   </a>
                 </p>
                 <div className="flex mt-10 float-right justify-between items-center">
-                  <InstagramIcon
-                    title="Instagram"
-                    className="cursor-pointer w-10"
-                  />
-                  <FacebookIcon
-                    title="Facebook"
-                    className="cursor-pointer w-10"
-                  />
-                  <TwitterIcon
-                    title="Twitter"
-                    className="cursor-pointer w-10"
-                  />
-                  <LinkedinIcon
-                    title="LinkedIn"
-                    className="cursor-pointer w-10"
-                  />
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/landtowerlimited/"
+                    rel="noreferrer"
+                  >
+                    <InstagramIcon
+                      title="Instagram"
+                      className="cursor-pointer w-10"
+                    />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/landtowerlimited/"
+                    rel="noreferrer"
+                  >
+                    <FacebookIcon
+                      title="Facebook"
+                      className="cursor-pointer w-10"
+                    />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.twitter.com/LandTowerLTD/"
+                    rel="noreferrer"
+                  >
+                    <TwitterIcon
+                      title="Twitter"
+                      className="cursor-pointer w-10"
+                    />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/company/land-tower-limited/"
+                    rel="noreferrer"
+                  >
+                    <LinkedinIcon
+                      title="LinkedIn"
+                      className="cursor-pointer w-10"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
             <div className="flex pt-4 justify-center items-center">
               <a href="https://www.TheFrenzyEmpire.com/">
+                <p
+                  title="The Frenzy Empire - Redefining Excellence!"
+                  className="tfe-font-size text-center font-graphikMedium"
+                >
+                  The Frenzy Empire TECHNOLOGY
+                </p>
                 <img
                   src={TheFrenzyEmpireLogo}
                   alt="Software and Technology Development by The Frenzy Empire
@@ -185,8 +263,11 @@ function Footer() {
                 </p>
                 <p className="font-graphikRegular text-base text-gray-700 mt-4">
                   Call <span>Maryann</span> on{" "}
-                  <span href="tel:+234916349452" className="font-graphikMedium">
-                    0916349452
+                  <span
+                    href="tel:+2349163494952"
+                    className="font-graphikMedium"
+                  >
+                    09163494952
                   </span>{" "}
                   or <span>Cindy</span> on{" "}
                   <span
@@ -205,33 +286,76 @@ function Footer() {
         <div className="w-full mt-10 bg-black">
           <div className="mx-4">
             <div className="py-6">
-              <img
-                src={LandTowerLogoImage}
-                alt="Land Tower Logo"
-                className=" mt-2 mb-4"
-              />
+              <button
+                type="button"
+                onClick={() => navigate(NonAuthRoutes.landingPage)}
+              >
+                <img
+                  src={LandTowerLogoImage}
+                  alt="Land Tower Logo"
+                  className=" mt-2 mb-4"
+                />
+              </button>
               <p className="font-graphikRegular text-white text-xs leading-5 mt-6">
                 Land Tower is a competent team of engineers that design,
-                construct, market and sell building projects from foundation to
-                furnishing. An integrated force of talents that exceeds limits,
-                clients expectations of projects under within any given
+                construct, render external & interior home finishing and
+                furnishing services. An integrated force of talents that exceeds
+                limits, clients expectations of projects under within any given
                 timeline.
               </p>
             </div>
-            <div className="flex px-4 py-6 justify-between font-graphikRegular text-white text-sm leading-8">
+            <div className="flex px-4 py-6 justify-between font-graphikMedium text-white text-sm leading-10">
               <ul>
-                <li>Apartmemts</li>
-                <li>Suites</li>
-                <li>News</li>
-                <li>Team</li>
-                <li>Contact Center</li>
+                <li className="mr-8 cursor-pointer">
+                  <button
+                    type="button"
+                    onClick={() => navigate(NonAuthRoutes.landingPage)}
+                  >
+                    Home
+                  </button>
+                </li>
+                <li className="mr-8 cursor-pointer">
+                  <button
+                    type="button"
+                    onClick={() => navigate(NonAuthRoutes.projectsGallery)}
+                  >
+                    Gallery
+                  </button>
+                </li>
+                <li className="mr-8 cursor-pointer">
+                  <button
+                    type="button"
+                    onClick={() => navigate(NonAuthRoutes.projectsGallery)}
+                  >
+                    Apartmemts
+                  </button>
+                </li>
               </ul>
               <ul>
-                <li>Apartmemts</li>
-                <li>Suites</li>
-                <li>News</li>
-                <li>Team</li>
-                <li>Contact Center</li>
+                <li className="mr-8 cursor-pointer">
+                  <button
+                    type="button"
+                    onClick={() => navigate(NonAuthRoutes.ourTeam)}
+                  >
+                    Our Team
+                  </button>
+                </li>
+                <li className="mr-8 cursor-pointer">
+                  <button
+                    type="button"
+                    onClick={() => navigate(NonAuthRoutes.aboutUs)}
+                  >
+                    About Us
+                  </button>
+                </li>
+                <li className="mr-8 cursor-pointer">
+                  <button
+                    type="button"
+                    onClick={() => navigate(NonAuthRoutes.contactUs)}
+                  >
+                    Contact Us
+                  </button>
+                </li>
               </ul>
             </div>
             <div className="py-6">
@@ -253,24 +377,58 @@ function Footer() {
                 </a>
               </p>
               <div className="flex mt-4 w-1/2 -ml-2 justify-between items-center">
-                <InstagramIcon
-                  title="Instagram"
-                  className="cursor-pointer w-10"
-                />
-                <FacebookIcon
-                  title="Facebook"
-                  className="cursor-pointer w-10"
-                />
-                <TwitterIcon title="Twitter" className="cursor-pointer w-10" />
-                <LinkedinIcon
-                  title="LinkedIn"
-                  className="cursor-pointer w-10"
-                />
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/landtowerlimited/"
+                  rel="noreferrer"
+                >
+                  <InstagramIcon
+                    title="Instagram"
+                    className="cursor-pointer w-10"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/landtowerlimited/"
+                  rel="noreferrer"
+                >
+                  <FacebookIcon
+                    title="Facebook"
+                    className="cursor-pointer w-10"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.twitter.com/LandTowerLTD/"
+                  rel="noreferrer"
+                >
+                  <TwitterIcon
+                    title="Twitter"
+                    className="cursor-pointer w-10"
+                  />
+                </a>
+
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/company/land-tower-limited/"
+                  rel="noreferrer"
+                >
+                  <LinkedinIcon
+                    title="LinkedIn"
+                    className="cursor-pointer w-10"
+                  />
+                </a>
               </div>
             </div>
           </div>
           <div className="flex justify-center items-center pt-10">
             <a href="https://www.TheFrenzyEmpire.com/">
+              <p
+                title="The Frenzy Empire - Redefining Excellence!"
+                className="tfe-font-size text-center font-graphikMedium"
+              >
+                The Frenzy Empire TECHNOLOGY
+              </p>
               <img
                 src={TheFrenzyEmpireLogo}
                 alt="Software and Technology Development by The Frenzy Empire
