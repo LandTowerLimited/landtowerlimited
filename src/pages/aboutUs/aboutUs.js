@@ -71,13 +71,13 @@ function AboutUs() {
                 &#34;Leonardo Da Vinci&#34;...
               </p>
               <p className="pb-6">
-                The Brand that exceeds Limits, Land Tower LTD (RC: 1930480) is a
-                reliable contracting engineering company that is known for
-                building &#34;State of the art&#34; residential buildings as
-                well as private and public sectors projects from inception. Our
-                success and reputation today are built up on honesty, deep trust
-                and consistency in the delivery of quality projects. Our
-                paramount objective is our utmost client satisfaction.
+                We Exceed Limits, Land Tower LTD (RC: 1930480) is a reliable
+                contracting engineering company that is known for building
+                &#34;State of the art&#34; residential buildings as well as
+                private and public sectors projects from inception. Our success
+                and reputation today are built up on honesty, deep trust and
+                consistency in the delivery of quality projects. Our paramount
+                objective is our utmost client satisfaction.
               </p>
               <p className="pb-6">
                 &#34;Everyone knows the way but few actually walk it&#34;.
