@@ -7,11 +7,14 @@ import LandTowerButton from "../../components/landTowerButton/landTowerButton";
 function ContactUs() {
   const [cardDisplayed, setCardDisplayed] = useState(false);
   const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [companyName, setCompanyName] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [warning, setWarning] = useState(false);
+  const [emailWarning, setEmailWarning] = useState(false);
+  const [phoneWarning, setPhoneWarning] = useState(false);
 
   useEffect(() => {
     const ac = new AbortController();
@@ -29,18 +32,35 @@ function ContactUs() {
   const specificButtonStylingMobile = "w-250 mb-40";
   const specificButtonText = "Submit";
 
+  function isValidEmail(isemail) {
+    // Regular expression for basic email validation
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(isemail);
+  }
+  function isValidPhoneNumber(phoneNumber) {
+    // Regular expression for phone number validation
+    const phoneRegex =
+      /^\+?[1-9]\d{1,14}$|^(\(\d{3}\))?[\s.-]?\d{3}[\s.-]?\d{4}$|^\d{11}$/;
+    return phoneRegex.test(phoneNumber);
+  }
+
   const handleContactForm = (e) => {
     e.preventDefault();
     if (
       name.length === 0 ||
       email.length === 0 ||
+      phone.length === 0 ||
       companyName.length === 0 ||
       subject.length === 0 ||
       message.length === 0
     ) {
       setWarning(true);
+    } else if (!isValidEmail(email)) {
+      setEmailWarning(true);
+    } else if (!isValidPhoneNumber(phone)) {
+      setPhoneWarning(true);
     } else {
-      window.location = `mailto:LandTower.Ltd@gmail.com?subject=LandTowerLimited Contact Us Page: My name is ${name} and I'll like to talk about ${subject}&body=I work at ${companyName}, and ${message}`;
+      window.location = `mailto:LandTower.Ltd@gmail.com?subject=LandTowerLimited Contact Us Page: My name is ${name}, My phone number is ${phone},and I'll like to talk about ${subject}&body=I work at ${companyName}, and ${message}`;
       setTimeout(() => {
         setName("");
         setEmail("");
@@ -52,6 +72,12 @@ function ContactUs() {
     setTimeout(() => {
       setWarning(false);
     }, 5000);
+    setTimeout(() => {
+      setEmailWarning(false);
+    }, 5000);
+    setTimeout(() => {
+      setPhoneWarning(false);
+    }, 5000);
   };
 
   /** displays Warning */
@@ -60,6 +86,29 @@ function ContactUs() {
       <div className="flex justify-center items-center">
         <p className="my-2 px-4 py-2 w-250 md:w-full lg:w-full rounded font-graphikRegular text-base text-center text-red-500 border-2 border-red-400 bg-red-100">
           All entries and required to send a contact email...
+        </p>
+      </div>
+    );
+  };
+
+  /** displays email Warning */
+  const displayEmailWarning = () => {
+    return (
+      <div className="flex justify-center items-center">
+        <p className="my-2 px-4 py-2 w-250 md:w-full lg:w-full rounded font-graphikRegular text-base text-center text-red-500 border-2 border-red-400 bg-red-100">
+          Email is Invalid, kindly check to confirm.
+        </p>
+      </div>
+    );
+  };
+
+  /** displays phone Warning */
+  const displayPhoneWarning = () => {
+    return (
+      <div className="flex justify-center items-center">
+        <p className="my-2 px-4 py-2 w-250 md:w-full lg:w-full rounded font-graphikRegular text-base text-center text-red-500 border-2 border-red-400 bg-red-100">
+          Phone number is Invalid, kindly check to confirm, make sure to add a
+          country code.
         </p>
       </div>
     );
@@ -96,9 +145,27 @@ function ContactUs() {
                     <p className="text-lg font-graphikRegular w-48">Name</p>
                     <input
                       id="name"
+                      autoComplete="name"
                       placeholder="Enter Name"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
+                      className="ml-4 h-14 w-full text-base leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
+                    />
+                  </label>
+                </div>
+                <div className="mt-6 w-522">
+                  <label
+                    className="flex justify-center items-center text-gray-700 text-sm mb-2 leading-5"
+                    htmlFor="phone"
+                  >
+                    <p className="text-lg font-graphikRegular w-48">Phone</p>
+                    <input
+                      id="phone"
+                      autoComplete="tel"
+                      type="tel"
+                      placeholder="Enter Phone Number"
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
                       className="ml-4 h-14 w-full text-base leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
                     />
                   </label>
@@ -111,6 +178,7 @@ function ContactUs() {
                     <p className="text-lg font-graphikRegular w-48">Email</p>
                     <input
                       id="email"
+                      autoComplete="email"
                       type="email"
                       placeholder="Enter Email Address"
                       value={email}
@@ -169,6 +237,8 @@ function ContactUs() {
             <div className="flex justify-center items-center w-full my-6">
               <div>
                 {warning ? displayWarning() : <span />}
+                {emailWarning ? displayEmailWarning() : <span />}
+                {phoneWarning ? displayPhoneWarning() : <span />}
                 <LandTowerButton
                   specificButtonTitle={specificButtonTitle}
                   specificButtonStyling={specificButtonStyling}
@@ -191,9 +261,27 @@ function ContactUs() {
                   <p className="text-lg font-graphikRegular mb-2">Name</p>
                   <input
                     id="name"
+                    autoComplete="name"
                     placeholder="Enter Name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
+                    className="h-14 w-full text-lg leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
+                  />
+                </label>
+              </div>
+              <div className="mt-6 mx-8">
+                <label
+                  className="text-gray-700 text-sm mb-2 leading-5"
+                  htmlFor="phone"
+                >
+                  <p className="text-lg font-graphikRegular mb-2">Phone</p>
+                  <input
+                    id="phone"
+                    autoComplete="tel"
+                    type="tel"
+                    placeholder="Enter Phone Number"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                     className="h-14 w-full text-lg leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
                   />
                 </label>
@@ -206,9 +294,10 @@ function ContactUs() {
                   <p className="text-lg font-graphikRegular mb-2">Email</p>
                   <input
                     id="email"
+                    autoComplete="email"
                     type="email"
                     placeholder="Enter Email Address"
-                    value={name}
+                    value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="h-14 w-full text-lg leading-4 py-3 px-4 appearance-none border-2 font-graphikRegular border-landTower-gold2-color rounded-sm focus:outline-none"
                   />
@@ -262,6 +351,8 @@ function ContactUs() {
             </form>
           </div>
           {warning ? displayWarning() : <span />}
+          {emailWarning ? displayEmailWarning() : <span />}
+          {phoneWarning ? displayPhoneWarning() : <span />}
           <div className="flex justify-center items-center mt-6 mb-10">
             <LandTowerButton
               specificButtonTitle={specificButtonTitle}

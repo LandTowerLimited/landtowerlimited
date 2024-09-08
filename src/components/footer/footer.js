@@ -51,13 +51,13 @@ function Footer() {
                   Sales Contact
                 </p>
                 <p className="font-graphikRegular text-base text-gray-700 mt-4">
-                  Call <span className="font-graphikMedium">Maryann</span> on{" "}
+                  Call <span className="font-graphikMedium">Munachim</span> on{" "}
                   <a href="tel:+2349163494952" className="font-graphikMedium">
-                    09163494952
+                    +23409163494952
                   </a>{" "}
-                  or <span className="font-graphikMedium">Cindy</span> on{" "}
-                  <a href="tel:+2347015011779" className="font-graphikMedium">
-                    07015011779
+                  or <span className="font-graphikMedium">Jennifer</span> on{" "}
+                  <a href="tel:+2348167703416" className="font-graphikMedium">
+                    +2348167703416
                   </a>
                   .
                 </p>
@@ -82,11 +82,10 @@ function Footer() {
                   />
                 </button>
                 <p className="font-graphikRegular text-white text-xs leading-5 mt-6 ml-3 pr-20">
-                  Land Tower is a competent team of engineers that design,
-                  construct, market and sell building projects from foundation
-                  to furnishing. An integrated force of talents that exceeds
-                  limits, clients expectations of projects under within any
-                  given timeline.
+                  Land Tower is a company that design, construct, sell, render
+                  external & interior home finishing and furnishing services. An
+                  integrated force of talents that exceeds limits, clients
+                  expectations of projects under within any given timeline.
                 </p>
               </div>
               <div className="flex justify-between w-350 pl-10 font-graphikMedium text-white text-sm leading-10 ">
@@ -262,19 +261,19 @@ function Footer() {
                   Sales Contact
                 </p>
                 <p className="font-graphikRegular text-base text-gray-700 mt-4">
-                  Call <span>Maryann</span> on{" "}
+                  Call <span>Munachim</span> on{" "}
                   <span
-                    href="tel:+2349163494952"
+                    href="tel:+23409163494952"
                     className="font-graphikMedium"
                   >
-                    09163494952
+                    +23409163494952
                   </span>{" "}
-                  or <span>Cindy</span> on{" "}
+                  or <span>Jennifer</span> on{" "}
                   <span
-                    href="tel:+2347015011779"
+                    href="tel:+2348167703416"
                     className="font-graphikMedium"
                   >
-                    07015011779
+                    +2348167703416
                   </span>
                   .
                 </p>
@@ -297,11 +296,10 @@ function Footer() {
                 />
               </button>
               <p className="font-graphikRegular text-white text-xs leading-5 mt-6">
-                Land Tower is a competent team of engineers that design,
-                construct, render external & interior home finishing and
-                furnishing services. An integrated force of talents that exceeds
-                limits, clients expectations of projects under within any given
-                timeline.
+                Land Tower is a company that design, construct, sell, render
+                external & interior home finishing and furnishing services. An
+                integrated force of talents that exceeds limits, clients
+                expectations of projects under within any given timeline.
               </p>
             </div>
             <div className="flex px-4 py-6 justify-between font-graphikMedium text-white text-sm leading-10">
