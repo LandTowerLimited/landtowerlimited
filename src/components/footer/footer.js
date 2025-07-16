@@ -55,9 +55,9 @@ function Footer() {
                   <a href="tel:+2349163494952" className="font-graphikMedium">
                     +23409163494952
                   </a>{" "}
-                  or <span className="font-graphikMedium">Jennifer</span> on{" "}
-                  <a href="tel:+2348167703416" className="font-graphikMedium">
-                    +2348167703416
+                  or <span className="font-graphikMedium">Stephen</span> on{" "}
+                  <a href="tel:+2347015011779" className="font-graphikMedium">
+                    +2347015011779
                   </a>
                   .
                 </p>
@@ -268,12 +268,12 @@ function Footer() {
                   >
                     +23409163494952
                   </span>{" "}
-                  or <span>Jennifer</span> on{" "}
+                  or <span>Stephen</span> on{" "}
                   <span
-                    href="tel:+2348167703416"
+                    href="tel:+2347015011779"
                     className="font-graphikMedium"
                   >
-                    +2348167703416
+                    +2347015011779
                   </span>
                   .
                 </p>
