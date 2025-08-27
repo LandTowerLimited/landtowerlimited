@@ -9,7 +9,6 @@ import { ReactComponent as FacebookIcon } from "../../assets/svg/facebookIcon.sv
 import { ReactComponent as TwitterIcon } from "../../assets/svg/twitterIcon.svg";
 import { ReactComponent as LinkedinIcon } from "../../assets/svg/linkedinIcon.svg";
 import LandTowerLogoImage from "../../assets/img/landTowerLogo.png";
-import TheFrenzyEmpireLogo from "../../assets/img/TheFrenzyEmpire-Technology-Software-and-Technology-Development.png";
 
 function Footer() {
   const navigate = useNavigate();
@@ -26,7 +25,7 @@ function Footer() {
                   Office Address
                 </p>
                 <p className="font-graphikRegular text-base text-gray-700 mt-4">
-                  Block 20, Asamankese Street, Wuse Zone 2. FCT, Abuja.
+                  122y Morija Cl, off Adetokunbo Ademola Crescent, Wuse 2, Abuja 904101, Federal Capital Territory
                 </p>
               </div>
             </div>
@@ -84,8 +83,8 @@ function Footer() {
                 <p className="font-graphikRegular text-white text-xs leading-5 mt-6 ml-3 pr-20">
                   Land Tower is a company that design, construct, sell, render
                   external & interior home finishing and furnishing services. An
-                  integrated force of talents that exceeds limits, clients
-                  expectations of projects under within any given timeline.
+                  integrated force of professional expertises that exceed limits, client
+                  expectations of projects within any given timeline.
                 </p>
               </div>
               <div className="flex justify-between w-350 pl-10 font-graphikMedium text-white text-sm leading-10 ">
@@ -205,22 +204,6 @@ function Footer() {
               </div>
             </div>
             <div className="flex pt-4 justify-center items-center">
-              <a href="https://www.TheFrenzyEmpire.com/">
-                <p
-                  title="The Frenzy Empire - Redefining Excellence!"
-                  className="tfe-font-size text-center font-graphikMedium"
-                >
-                  The Frenzy Empire TECHNOLOGY
-                </p>
-                <img
-                  src={TheFrenzyEmpireLogo}
-                  alt="Software and Technology Development by The Frenzy Empire
-                  TECHNOLOGY"
-                  title="Software and Technology Development by The Frenzy Empire
-                  TECHNOLOGY"
-                  className="mt-6 h-24"
-                />
-              </a>
             </div>
           </div>
         </div>
@@ -236,7 +219,7 @@ function Footer() {
                   Office Address
                 </p>
                 <p className="font-graphikRegular text-base text-gray-700 mt-4">
-                  Block 20, Asamankese Street, Wuse Zone 2. FCT, Abuja.
+                  122y Morija Cl, off Adetokunbo Ademola Crescent, Wuse 2, Abuja 904101, Federal Capital Territory
                 </p>
               </div>
             </div>
@@ -298,8 +281,8 @@ function Footer() {
               <p className="font-graphikRegular text-white text-xs leading-5 mt-6">
                 Land Tower is a company that design, construct, sell, render
                 external & interior home finishing and furnishing services. An
-                integrated force of talents that exceeds limits, clients
-                expectations of projects under within any given timeline.
+                integrated force of professional expertises that exceed limits, client
+                expectations of projects within any given timeline.
               </p>
             </div>
             <div className="flex px-4 py-6 justify-between font-graphikMedium text-white text-sm leading-10">
@@ -418,23 +401,6 @@ function Footer() {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="flex justify-center items-center pt-10">
-            <a href="https://www.TheFrenzyEmpire.com/">
-              <p
-                title="The Frenzy Empire - Redefining Excellence!"
-                className="tfe-font-size text-center font-graphikMedium"
-              >
-                The Frenzy Empire TECHNOLOGY
-              </p>
-              <img
-                src={TheFrenzyEmpireLogo}
-                alt="Software and Technology Development by The Frenzy Empire
-                  TECHNOLOGY"
-                title="Software and Technology Development by The Frenzy Empire
-                  TECHNOLOGY"
-              />
-            </a>
           </div>
         </div>
       </div>
