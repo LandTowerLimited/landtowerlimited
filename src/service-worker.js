@@ -91,7 +91,7 @@ self.addEventListener("fetch", (event) => {
 });
 
 // Add version and name variables
-const version = "v2.03"; // increase for new version
+const version = "v1.7-10-2025"; // increase for new version
 const staticCacheName = `${version}_pwa-static`;
 const dynamicCacheName = `${version}_pwa-dynamic`;
 // Delete caches, when their names do not fit the current version
