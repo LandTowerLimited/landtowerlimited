@@ -7,9 +7,10 @@ import { useNavigate } from "react-router-dom";
 import { NonAuthRoutes } from "../../url";
 import Header from "../../components/header/header";
 import HeaderCard from "../../components/header/headerCard";
-import DuluxLogo from "../../assets/img/dulux.png";
-import TwyfordBathroomsLogo from "../../assets/img/twyfordBathrooms.png";
+import DantataLogo from "../../assets/img/dantata.png";
 import DangoteLogo from "../../assets/img/dangote.png";
+import DuluxLogo from "../../assets/img/dulux.png";
+// import TwyfordBathroomsLogo from "../../assets/img/twyfordBathrooms.png";
 import WichtechRoofingLogo from "../../assets/img/wichtechRoofing.png";
 import Slide4Image1 from "../../assets/img/ltl-slide4-gallery-image-1.png";
 import Slide4Image2 from "../../assets/img/ltl-slide4-gallery-image-2.png";
@@ -374,12 +375,20 @@ function LandingPage() {
             </div>
             <div className="md:w-full md:flex md:justify-center">
               <img
+                src={DantataLogo}
+                alt="Dantata Logo"
+                title="Dantata"
+                className="h-12 mt-6 md:my-10"
+              />
+            </div>
+            {/* <div className="md:w-full md:flex md:justify-center">
+              <img
                 src={TwyfordBathroomsLogo}
                 alt="Twyford Bathrooms Logo"
                 title="Twyford Bathrooms"
                 className="h-16 md:my-10"
               />
-            </div>
+            </div> */}
             <div className="md:w-full md:flex md:justify-center">
               <img
                 src={DuluxLogo}
@@ -458,12 +467,20 @@ function LandingPage() {
           </div>
           <div className="w-full flex justify-center">
             <img
+              src={DantataLogo}
+              alt="Dantata Logo"
+              title="Dantata"
+              className="h-12 mt-6 my-10"
+            />
+          </div>
+          {/* <div className="w-full flex justify-center">
+            <img
               src={TwyfordBathroomsLogo}
               alt="Twyford Bathrooms Logo"
               title="Twyford Bathrooms"
               className="h-16 my-10"
             />
-          </div>
+          </div> */}
           <div className="w-full flex justify-center">
             <img
               src={DuluxLogo}

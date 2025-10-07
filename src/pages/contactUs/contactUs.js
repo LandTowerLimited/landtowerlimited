@@ -14,7 +14,6 @@ function ContactUs() {
   const [message, setMessage] = useState("");
   const [warning, setWarning] = useState(false);
   const [emailWarning, setEmailWarning] = useState(false);
-  const [phoneWarning, setPhoneWarning] = useState(false);
 
   useEffect(() => {
     const ac = new AbortController();
@@ -37,12 +36,6 @@ function ContactUs() {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailRegex.test(isemail);
   }
-  function isValidPhoneNumber(phoneNumber) {
-    // Regular expression for phone number validation
-    const phoneRegex =
-      /^\+?[1-9]\d{1,14}$|^(\(\d{3}\))?[\s.-]?\d{3}[\s.-]?\d{4}$|^\d{11}$/;
-    return phoneRegex.test(phoneNumber);
-  }
 
   const handleContactForm = (e) => {
     e.preventDefault();
@@ -57,8 +50,6 @@ function ContactUs() {
       setWarning(true);
     } else if (!isValidEmail(email)) {
       setEmailWarning(true);
-    } else if (!isValidPhoneNumber(phone)) {
-      setPhoneWarning(true);
     } else {
       window.location = `mailto:LandTower.Ltd@gmail.com?subject=LandTowerLimited Contact Us Page: My name is ${name}, My phone number is ${phone},and I'll like to talk about ${subject}&body=I work at ${companyName}, and ${message}`;
       setTimeout(() => {
@@ -74,9 +65,6 @@ function ContactUs() {
     }, 5000);
     setTimeout(() => {
       setEmailWarning(false);
-    }, 5000);
-    setTimeout(() => {
-      setPhoneWarning(false);
     }, 5000);
   };
 
@@ -97,18 +85,6 @@ function ContactUs() {
       <div className="flex justify-center items-center">
         <p className="my-2 px-4 py-2 w-250 md:w-full lg:w-full rounded font-graphikRegular text-base text-center text-red-500 border-2 border-red-400 bg-red-100">
           Email is Invalid, kindly check to confirm.
-        </p>
-      </div>
-    );
-  };
-
-  /** displays phone Warning */
-  const displayPhoneWarning = () => {
-    return (
-      <div className="flex justify-center items-center">
-        <p className="my-2 px-4 py-2 w-250 md:w-full lg:w-full rounded font-graphikRegular text-base text-center text-red-500 border-2 border-red-400 bg-red-100">
-          Phone number is Invalid, kindly check to confirm, make sure to add a
-          country code.
         </p>
       </div>
     );
@@ -238,7 +214,6 @@ function ContactUs() {
               <div>
                 {warning ? displayWarning() : <span />}
                 {emailWarning ? displayEmailWarning() : <span />}
-                {phoneWarning ? displayPhoneWarning() : <span />}
                 <LandTowerButton
                   specificButtonTitle={specificButtonTitle}
                   specificButtonStyling={specificButtonStyling}
@@ -352,7 +327,6 @@ function ContactUs() {
           </div>
           {warning ? displayWarning() : <span />}
           {emailWarning ? displayEmailWarning() : <span />}
-          {phoneWarning ? displayPhoneWarning() : <span />}
           <div className="flex justify-center items-center mt-6 mb-10">
             <LandTowerButton
               specificButtonTitle={specificButtonTitle}

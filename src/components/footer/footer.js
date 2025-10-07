@@ -25,7 +25,8 @@ function Footer() {
                   Office Address
                 </p>
                 <p className="font-graphikRegular text-base text-gray-700 mt-4">
-                  122y Morija Cl, off Adetokunbo Ademola Crescent, Wuse 2, Abuja 904101, Federal Capital Territory
+                  122y Morija Cl, off Adetokunbo Ademola Crescent, Wuse 2,
+                  Abuja, 904101, Federal Capital Territory, Nigeria.
                 </p>
               </div>
             </div>
@@ -81,10 +82,9 @@ function Footer() {
                   />
                 </button>
                 <p className="font-graphikRegular text-white text-xs leading-5 mt-6 ml-3 pr-20">
-                  Land Tower is a company that design, construct, sell, render
-                  external & interior home finishing and furnishing services. An
-                  integrated force of professional expertises that exceed limits, client
-                  expectations of projects within any given timeline.
+                  Land Tower is a company that designs, constructs, sells, and
+                  furnishes homes, driven by a team of professional experts who
+                  push beyond limits.
                 </p>
               </div>
               <div className="flex justify-between w-350 pl-10 font-graphikMedium text-white text-sm leading-10 ">
@@ -203,8 +203,7 @@ function Footer() {
                 </div>
               </div>
             </div>
-            <div className="flex pt-4 justify-center items-center">
-            </div>
+            <div className="flex pt-4 justify-center items-center" />
           </div>
         </div>
       </div>
@@ -219,7 +218,8 @@ function Footer() {
                   Office Address
                 </p>
                 <p className="font-graphikRegular text-base text-gray-700 mt-4">
-                  122y Morija Cl, off Adetokunbo Ademola Crescent, Wuse 2, Abuja 904101, Federal Capital Territory
+                  122y Morija Cl, off Adetokunbo Ademola Crescent, Wuse 2,
+                  Abuja, 904101, Federal Capital Territory, Nigeria.
                 </p>
               </div>
             </div>
@@ -279,10 +279,9 @@ function Footer() {
                 />
               </button>
               <p className="font-graphikRegular text-white text-xs leading-5 mt-6">
-                Land Tower is a company that design, construct, sell, render
-                external & interior home finishing and furnishing services. An
-                integrated force of professional expertises that exceed limits, client
-                expectations of projects within any given timeline.
+                Land Tower is a company that designs, constructs, sells, and
+                furnishes homes, driven by a team of professional experts who
+                push beyond limits.
               </p>
             </div>
             <div className="flex px-4 py-6 justify-between font-graphikMedium text-white text-sm leading-10">
