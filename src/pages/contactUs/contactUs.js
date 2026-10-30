@@ -26,10 +26,16 @@ function ContactUs() {
     };
   }, []);
 
+  const WEB3FORMS_ACCESS_KEY = process.env.REACT_APP_WEB3FORMS_ACCESS_KEY;
+  const COMPANY_EMAIL = "Landtower.ltd@gmail.com";
+
+  // "idle" | "sending" | "success" | "error"
+  const [sendStatus, setSendStatus] = useState("idle");
+
   const specificButtonTitle = "Submit";
   const specificButtonStyling = "w-522 mb-40";
   const specificButtonStylingMobile = "w-250 mb-40";
-  const specificButtonText = "Submit";
+  const specificButtonText = sendStatus === "sending" ? "Sending..." : "Submit";
 
   function isValidEmail(isemail) {
     // Regular expression for basic email validation
@@ -37,35 +43,82 @@ function ContactUs() {
     return emailRegex.test(isemail);
   }
 
-  const handleContactForm = (e) => {
+  const resetForm = () => {
+    setName("");
+    setPhone("");
+    setEmail("");
+    setCompanyName("");
+    setSubject("");
+    setMessage("");
+  };
+
+  const handleContactForm = async (e) => {
     e.preventDefault();
+
+    // Ignore extra clicks while a message is already being sent
+    if (sendStatus === "sending") return;
+
     if (
-      name.length === 0 ||
-      email.length === 0 ||
-      phone.length === 0 ||
-      companyName.length === 0 ||
-      subject.length === 0 ||
-      message.length === 0
+      name.trim().length === 0 ||
+      email.trim().length === 0 ||
+      phone.trim().length === 0 ||
+      companyName.trim().length === 0 ||
+      subject.trim().length === 0 ||
+      message.trim().length === 0
     ) {
       setWarning(true);
-    } else if (!isValidEmail(email)) {
-      setEmailWarning(true);
-    } else {
-      window.location = `mailto:LandTower.Ltd@gmail.com?subject=LandTowerLimited Contact Us Page: My name is ${name}, My phone number is ${phone},and I'll like to talk about ${subject}&body=I work at ${companyName}, and ${message}`;
-      setTimeout(() => {
-        setName("");
-        setEmail("");
-        setCompanyName("");
-        setSubject("");
-        setMessage("");
-      }, 5000);
+      setTimeout(() => setWarning(false), 5000);
+      return;
     }
-    setTimeout(() => {
-      setWarning(false);
-    }, 5000);
-    setTimeout(() => {
-      setEmailWarning(false);
-    }, 5000);
+
+    if (!isValidEmail(email.trim())) {
+      setEmailWarning(true);
+      setTimeout(() => setEmailWarning(false), 5000);
+      return;
+    }
+
+    if (!WEB3FORMS_ACCESS_KEY) {
+      // Key missing from .env: show the fallback message instead of failing silently
+      setSendStatus("error");
+      return;
+    }
+
+    setSendStatus("sending");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `Land Tower Website Enquiry: ${subject.trim()}`,
+          from_name: "Land Tower Website",
+          // Lets the company click "Reply" in Gmail to answer the visitor directly
+          replyto: email.trim(),
+          Name: name.trim(),
+          Email: email.trim(),
+          Phone: phone.trim(),
+          Company: companyName.trim(),
+          Subject: subject.trim(),
+          Message: message.trim(),
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSendStatus("success");
+        resetForm();
+        setTimeout(() => setSendStatus("idle"), 8000);
+      } else {
+        setSendStatus("error");
+      }
+    } catch (error) {
+      setSendStatus("error");
+    }
   };
 
   /** displays Warning */
@@ -73,7 +126,7 @@ function ContactUs() {
     return (
       <div className="flex justify-center items-center">
         <p className="my-2 px-4 py-2 w-250 md:w-full lg:w-full rounded font-graphikRegular text-base text-center text-red-500 border-2 border-red-400 bg-red-100">
-          All entries and required to send a contact email...
+          All fields are required to send your message.
         </p>
       </div>
     );
@@ -88,6 +141,35 @@ function ContactUs() {
         </p>
       </div>
     );
+  };
+
+  /** displays the result of sending the message */
+  const displaySendStatus = () => {
+    if (sendStatus === "success") {
+      return (
+        <div className="flex justify-center items-center">
+          <p className="my-2 px-4 py-2 w-250 md:w-full lg:w-full rounded font-graphikRegular text-base text-center text-green-700 border-2 border-green-400 bg-green-100">
+            Thank you! Your message has been sent. We will get back to you
+            shortly.
+          </p>
+        </div>
+      );
+    }
+    if (sendStatus === "error") {
+      return (
+        <div className="flex justify-center items-center">
+          <p className="my-2 px-4 py-2 w-250 md:w-full lg:w-full rounded font-graphikRegular text-base text-center text-red-500 border-2 border-red-400 bg-red-100">
+            Sorry, your message could not be sent. Please try again or email us
+            directly at{" "}
+            <a href={`mailto:${COMPANY_EMAIL}`} className="underline">
+              {COMPANY_EMAIL}
+            </a>
+            .
+          </p>
+        </div>
+      );
+    }
+    return <span />;
   };
 
   return (
@@ -112,7 +194,7 @@ function ContactUs() {
           </div>
           <div className="hidden md:block lg:block">
             <div className="flex justify-center items-center">
-              <form action="mailto:TheFrenzyEmpireInfo@gmail.com?subject=The Celeb Frenzy - Contact Page Form">
+              <form onSubmit={(e) => handleContactForm(e)}>
                 <div className="mt-16 w-522">
                   <label
                     className="flex justify-center items-center text-gray-700 text-sm mb-2 leading-5"
@@ -214,6 +296,7 @@ function ContactUs() {
               <div>
                 {warning ? displayWarning() : <span />}
                 {emailWarning ? displayEmailWarning() : <span />}
+                {displaySendStatus()}
                 <LandTowerButton
                   specificButtonTitle={specificButtonTitle}
                   specificButtonStyling={specificButtonStyling}
@@ -227,7 +310,7 @@ function ContactUs() {
 
         <div className="md:hidden lg:hidden">
           <div className="flex justify-center items-center px-6 ">
-            <form>
+            <form onSubmit={(e) => handleContactForm(e)}>
               <div className="mt-16 mx-8">
                 <label
                   className="text-gray-700 text-sm mb-2 leading-5"
@@ -327,6 +410,7 @@ function ContactUs() {
           </div>
           {warning ? displayWarning() : <span />}
           {emailWarning ? displayEmailWarning() : <span />}
+          {displaySendStatus()}
           <div className="flex justify-center items-center mt-6 mb-10">
             <LandTowerButton
               specificButtonTitle={specificButtonTitle}
