@@ -161,7 +161,7 @@ function Footer() {
                 <div className="flex mt-10 float-right justify-between items-center">
                   <a
                     target="_blank"
-                    href="https://www.instagram.com/landtowerlimited/"
+                    href="https://www.instagram.com/landtower_empire/"
                     rel="noreferrer"
                   >
                     <InstagramIcon
@@ -171,7 +171,7 @@ function Footer() {
                   </a>
                   <a
                     target="_blank"
-                    href="https://www.facebook.com/landtowerlimited/"
+                    href="https://www.facebook.com/share/1CaXJa9aGZ/"
                     rel="noreferrer"
                   >
                     <FacebookIcon
@@ -181,17 +181,17 @@ function Footer() {
                   </a>
                   <a
                     target="_blank"
-                    href="https://www.twitter.com/LandTowerLTD/"
+                    href="https://x.com/landtowerltd"
                     rel="noreferrer"
                   >
                     <TwitterIcon
-                      title="Twitter"
+                      title="X (Twitter)"
                       className="cursor-pointer w-10"
                     />
                   </a>
                   <a
                     target="_blank"
-                    href="https://www.linkedin.com/company/land-tower-limited/"
+                    href="https://www.linkedin.com/company/landtowerlimited/"
                     rel="noreferrer"
                   >
                     <LinkedinIcon
@@ -358,7 +358,7 @@ function Footer() {
               <div className="flex mt-4 w-1/2 -ml-2 justify-between items-center">
                 <a
                   target="_blank"
-                  href="https://www.instagram.com/landtowerlimited/"
+                  href="https://www.instagram.com/landtower_empire/"
                   rel="noreferrer"
                 >
                   <InstagramIcon
@@ -368,7 +368,7 @@ function Footer() {
                 </a>
                 <a
                   target="_blank"
-                  href="https://www.facebook.com/landtowerlimited/"
+                  href="https://www.facebook.com/share/1CaXJa9aGZ/"
                   rel="noreferrer"
                 >
                   <FacebookIcon
@@ -378,18 +378,18 @@ function Footer() {
                 </a>
                 <a
                   target="_blank"
-                  href="https://www.twitter.com/LandTowerLTD/"
+                  href="https://x.com/landtowerltd"
                   rel="noreferrer"
                 >
                   <TwitterIcon
-                    title="Twitter"
+                    title="X (Twitter)"
                     className="cursor-pointer w-10"
                   />
                 </a>
 
                 <a
                   target="_blank"
-                  href="https://www.linkedin.com/company/land-tower-limited/"
+                  href="https://www.linkedin.com/company/landtowerlimited/"
                   rel="noreferrer"
                 >
                   <LinkedinIcon

@@ -12,6 +12,7 @@ import DangoteLogo from "../../assets/img/dangote.png";
 import DuluxLogo from "../../assets/img/dulux.png";
 // import TwyfordBathroomsLogo from "../../assets/img/twyfordBathrooms.png";
 import WichtechRoofingLogo from "../../assets/img/wichtechRoofing.png";
+import FidelityBankLogo from "../../assets/img/fidelityBank.png";
 import Slide4Image1 from "../../assets/img/ltl-slide4-gallery-image-1.png";
 import Slide4Image2 from "../../assets/img/ltl-slide4-gallery-image-2.png";
 import Slide4Image3 from "../../assets/img/ltl-slide4-gallery-image-3.png";
@@ -153,7 +154,7 @@ function LandingPage() {
                         <div className="flex w-56 mt-10 justify-between items-center">
                           <a
                             target="_blank"
-                            href="https://www.instagram.com/landtowerlimited/"
+                            href="https://www.instagram.com/landtower_empire/"
                             rel="noreferrer"
                           >
                             <InstagramIcon
@@ -164,7 +165,7 @@ function LandingPage() {
 
                           <a
                             target="_blank"
-                            href="https://www.facebook.com/landtowerlimited/"
+                            href="https://www.facebook.com/share/1CaXJa9aGZ/"
                             rel="noreferrer"
                           >
                             <FacebookIcon
@@ -175,17 +176,17 @@ function LandingPage() {
 
                           <a
                             target="_blank"
-                            href="https://www.twitter.com/LandTowerLTD/"
+                            href="https://x.com/landtowerltd"
                             rel="noreferrer"
                           >
                             <TwitterIcon
-                              title="Twitter"
+                              title="X (Twitter)"
                               className="cursor-pointer w-10"
                             />
                           </a>
                           <a
                             target="_blank"
-                            href="https://www.linkedin.com/company/land-tower-limited/"
+                            href="https://www.linkedin.com/company/landtowerlimited/"
                             rel="noreferrer"
                           >
                             <LinkedinIcon
@@ -246,7 +247,7 @@ function LandingPage() {
                         <div className="flex w-52 my-10 justify-between items-center">
                           <a
                             target="_blank"
-                            href="https://www.instagram.com/landtowerlimited/"
+                            href="https://www.instagram.com/landtower_empire/"
                             rel="noreferrer"
                           >
                             <InstagramIcon
@@ -256,7 +257,7 @@ function LandingPage() {
                           </a>
                           <a
                             target="_blank"
-                            href="https://www.facebook.com/landtowerlimited/"
+                            href="https://www.facebook.com/share/1CaXJa9aGZ/"
                             rel="noreferrer"
                           >
                             <FacebookIcon
@@ -266,17 +267,17 @@ function LandingPage() {
                           </a>
                           <a
                             target="_blank"
-                            href="https://www.twitter.com/LandTowerLTD/"
+                            href="https://x.com/landtowerltd"
                             rel="noreferrer"
                           >
                             <TwitterIcon
-                              title="Twitter"
+                              title="X (Twitter)"
                               className="cursor-pointer w-10"
                             />
                           </a>
                           <a
                             target="_blank"
-                            href="https://www.linkedin.com/company/land-tower-limited/"
+                            href="https://www.linkedin.com/company/landtowerlimited/"
                             rel="noreferrer"
                           >
                             <LinkedinIcon
@@ -358,51 +359,51 @@ function LandingPage() {
           </div>
 
           <div className="w-full flex justify-center">
-            <div className="flex items-center cursor-pointer w-28 pb-1 border-b-2 border-gray-700">
+            <div className="flex items-center cursor-pointer px-2 pb-1 border-b-2 border-gray-700">
               <p className="font-graphikMedium text-lg w-full text-center text-gray-700">
-                Partners
+                Collaborators
               </p>
             </div>
           </div>
-          <div className="w-full lg:flex lg:-ml-12">
-            <div className="md:w-full md:flex md:justify-center">
+          <div className="w-full flex flex-wrap justify-center items-center lg:flex-nowrap lg:justify-between lg:gap-8 lg:px-16 my-10">
+            <div className="w-1/3 lg:w-auto lg:flex-1 h-24 px-4 flex justify-center items-center">
+              <img
+                src={FidelityBankLogo}
+                alt="Fidelity Bank Plc Logo"
+                title="Fidelity Bank Plc"
+                className="max-h-20 max-w-full w-auto object-contain"
+              />
+            </div>
+            <div className="w-1/3 lg:w-auto lg:flex-1 h-24 px-4 flex justify-center items-center">
               <img
                 src={DangoteLogo}
                 alt="Dangote Logo"
                 title="Dangote"
-                className="h-16 md:my-10"
+                className="max-h-16 max-w-full w-auto object-contain"
               />
             </div>
-            <div className="md:w-full md:flex md:justify-center">
+            <div className="w-1/3 lg:w-auto lg:flex-1 h-24 px-4 flex justify-center items-center">
               <img
                 src={DantataLogo}
                 alt="Dantata Logo"
                 title="Dantata"
-                className="h-12 mt-6 md:my-10"
+                className="max-h-12 max-w-full w-auto object-contain"
               />
             </div>
-            {/* <div className="md:w-full md:flex md:justify-center">
-              <img
-                src={TwyfordBathroomsLogo}
-                alt="Twyford Bathrooms Logo"
-                title="Twyford Bathrooms"
-                className="h-16 md:my-10"
-              />
-            </div> */}
-            <div className="md:w-full md:flex md:justify-center">
+            <div className="w-1/3 lg:w-auto lg:flex-1 h-24 px-4 flex justify-center items-center">
               <img
                 src={DuluxLogo}
                 alt="Dulux Logo"
                 title="Dulux"
-                className="h-16 md:my-10"
+                className="max-h-16 max-w-full w-auto object-contain"
               />
             </div>
-            <div className="md:w-full md:flex md:justify-center">
+            <div className="w-1/3 lg:w-auto lg:flex-1 h-24 px-4 flex justify-center items-center">
               <img
                 src={WichtechRoofingLogo}
                 alt="Wichtech Roofing Logo"
                 title="Wichtech Roofing"
-                className="h-16 md:my-10"
+                className="max-h-14 max-w-full w-auto object-contain"
               />
             </div>
           </div>
@@ -451,51 +452,53 @@ function LandingPage() {
           </div>
 
           <div className="w-full flex justify-center mt-20 mb-6">
-            <div className="flex items-center cursor-pointer w-24 pb-1 border-b-2 border-gray-700">
+            <div className="flex items-center cursor-pointer px-2 pb-1 border-b-2 border-gray-700">
               <p className="font-graphikMedium text-lg w-full text-center text-gray-700">
-                Partners
+                Collaborators
               </p>
             </div>
           </div>
-          <div className="w-full flex justify-center">
-            <img
-              src={DangoteLogo}
-              alt="Dangote Logo"
-              title="Dangote"
-              className="h-16 my-10"
-            />
-          </div>
-          <div className="w-full flex justify-center">
-            <img
-              src={DantataLogo}
-              alt="Dantata Logo"
-              title="Dantata"
-              className="h-12 mt-6 my-10"
-            />
-          </div>
-          {/* <div className="w-full flex justify-center">
-            <img
-              src={TwyfordBathroomsLogo}
-              alt="Twyford Bathrooms Logo"
-              title="Twyford Bathrooms"
-              className="h-16 my-10"
-            />
-          </div> */}
-          <div className="w-full flex justify-center">
-            <img
-              src={DuluxLogo}
-              alt="Dulux Logo"
-              title="Dulux"
-              className="h-16 my-10"
-            />
-          </div>
-          <div className="w-full flex justify-center">
-            <img
-              src={WichtechRoofingLogo}
-              alt="Wichtech Roofing Logo"
-              title="Wichtech Roofing"
-              className="h-16 mt-10"
-            />
+          <div className="w-full flex flex-wrap justify-center items-center">
+            <div className="w-1/2 h-24 px-4 flex justify-center items-center">
+              <img
+                src={FidelityBankLogo}
+                alt="Fidelity Bank Plc Logo"
+                title="Fidelity Bank Plc"
+                className="max-h-20 max-w-full w-auto object-contain"
+              />
+            </div>
+            <div className="w-1/2 h-24 px-4 flex justify-center items-center">
+              <img
+                src={DangoteLogo}
+                alt="Dangote Logo"
+                title="Dangote"
+                className="max-h-16 max-w-full w-auto object-contain"
+              />
+            </div>
+            <div className="w-1/2 h-24 px-4 flex justify-center items-center">
+              <img
+                src={DantataLogo}
+                alt="Dantata Logo"
+                title="Dantata"
+                className="max-h-12 max-w-full w-auto object-contain"
+              />
+            </div>
+            <div className="w-1/2 h-24 px-4 flex justify-center items-center">
+              <img
+                src={DuluxLogo}
+                alt="Dulux Logo"
+                title="Dulux"
+                className="max-h-16 max-w-full w-auto object-contain"
+              />
+            </div>
+            <div className="w-1/2 h-24 px-4 flex justify-center items-center">
+              <img
+                src={WichtechRoofingLogo}
+                alt="Wichtech Roofing Logo"
+                title="Wichtech Roofing"
+                className="max-h-14 max-w-full w-auto object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -558,7 +561,7 @@ function LandingPage() {
                   Years of Experience
                 </p>
                 <p className="flex items-baseline mt-2 justify-center font-graphikBold">
-                  <span className="font-graphikBold text-4xl mr-1">3</span>
+                  <span className="font-graphikBold text-4xl mr-1">5+</span>
                   years
                 </p>
               </div>
@@ -627,7 +630,7 @@ function LandingPage() {
                   Years of Experience
                 </p>
                 <p className="flex items-baseline mt-2 justify-center font-graphikMedium">
-                  <span className="font-graphikMedium text-4xl mr-1">3</span>
+                  <span className="font-graphikMedium text-4xl mr-1">5+</span>
                   years
                 </p>
               </div>
