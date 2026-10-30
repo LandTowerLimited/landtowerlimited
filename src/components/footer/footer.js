@@ -8,7 +8,7 @@ import { ReactComponent as InstagramIcon } from "../../assets/svg/instagramIcon.
 import { ReactComponent as FacebookIcon } from "../../assets/svg/facebookIcon.svg";
 import { ReactComponent as TwitterIcon } from "../../assets/svg/twitterIcon.svg";
 import { ReactComponent as LinkedinIcon } from "../../assets/svg/linkedinIcon.svg";
-import LandTowerLogoImage from "../../assets/img/landTowerLogo.png";
+import BrandLogo from "../brandLogo/brandLogo";
 
 function Footer() {
   const navigate = useNavigate();
@@ -74,11 +74,10 @@ function Footer() {
                   type="button"
                   onClick={() => navigate(NonAuthRoutes.landingPage)}
                 >
-                  <img
-                    src={LandTowerLogoImage}
-                    alt="Land Tower Logo"
-                    title="Land Tower"
-                    className="w-60 h-10"
+                  <BrandLogo
+                    imageClassName="h-14"
+                    taglineClassName="text-sm"
+                    className="mb-2"
                   />
                 </button>
                 <p className="font-graphikRegular text-white text-xs leading-5 mt-6 ml-3 pr-20">
@@ -272,10 +271,10 @@ function Footer() {
                 type="button"
                 onClick={() => navigate(NonAuthRoutes.landingPage)}
               >
-                <img
-                  src={LandTowerLogoImage}
-                  alt="Land Tower Logo"
-                  className=" mt-2 mb-4"
+                <BrandLogo
+                  imageClassName="h-12"
+                  taglineClassName="text-xs"
+                  className="mt-2 mb-4"
                 />
               </button>
               <p className="font-graphikRegular text-white text-xs leading-5 mt-6">

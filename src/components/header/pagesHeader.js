@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { ReactComponent as LandTowerLogo } from "../../assets/svg/landTowerLogoBlack.svg";
-import LandTowerLogoImage from "../../assets/img/landTowerLogoBlack.png";
+import BrandLogo from "../brandLogo/brandLogo";
 import { ReactComponent as MobilePhoneIcon } from "../../assets/svg/mobilePhoneIconBlack.svg";
 import { ReactComponent as MenuBar } from "../../assets/svg/menuBarBlack.svg";
 import { NonAuthRoutes } from "../../url";
@@ -26,7 +25,12 @@ function PagesHeader({ setCardDisplayed, cardDisplayed }) {
             className="left-0 outline-none"
             onClick={() => navigate(NonAuthRoutes.landingPage)}
           >
-            <LandTowerLogo className="w-64 h-14" />
+            <BrandLogo
+              variant="dark"
+              imageClassName="h-14"
+              taglineClassName="text-xs"
+              className="mb-2"
+            />
           </button>
           <div className="flex justify-center items-center text-right ">
             <div>
@@ -131,10 +135,11 @@ function PagesHeader({ setCardDisplayed, cardDisplayed }) {
             className="left-0 outline-none"
             onClick={() => navigate(NonAuthRoutes.landingPage)}
           >
-            <img
-              src={LandTowerLogoImage}
-              alt="Land Tower Logo"
-              className=" mt-2 mb-4"
+            <BrandLogo
+              variant="dark"
+              imageClassName="h-10"
+              taglineClassName="text-[10px]"
+              className="mt-2 mb-3"
             />
           </button>
           <button

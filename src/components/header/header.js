@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { ReactComponent as LandTowerLogo } from "../../assets/svg/landTowerLogo.svg";
-import LandTowerLogoImage from "../../assets/img/landTowerLogo.png";
+import BrandLogo from "../brandLogo/brandLogo";
 import { ReactComponent as MobilePhoneIcon } from "../../assets/svg/mobilePhoneIcon.svg";
 import { ReactComponent as MenuBar } from "../../assets/svg/menuBar.svg";
 import { NonAuthRoutes } from "../../url";
@@ -22,7 +21,11 @@ function Header() {
       <div className="hidden md:block lg:block">
         <div className="pt-3 mx-12 flex justify-between border-b-is0point5 border-gray-400">
           <button type="button" className="left-0 outline-none">
-            <LandTowerLogo className="w-64 h-14" />
+            <BrandLogo
+              imageClassName="h-14"
+              taglineClassName="text-xs"
+              className="mb-2"
+            />
           </button>
           <div className="flex justify-center items-center text-right ">
             <div>
@@ -114,10 +117,10 @@ function Header() {
       </div>
       <div className="md:hidden lg:hidden">
         <div className="px-4 flex justify-between border-b-is0point5 border-gray-400">
-          <img
-            src={LandTowerLogoImage}
-            alt="Land Tower Logo"
-            className=" mt-2 mb-4"
+          <BrandLogo
+            imageClassName="h-10"
+            taglineClassName="text-[10px]"
+            className="mt-2 mb-3"
           />
           <button
             type="button"
