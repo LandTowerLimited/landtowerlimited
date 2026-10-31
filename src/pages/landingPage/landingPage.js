@@ -344,7 +344,13 @@ function LandingPage() {
                 </p>
                 <button
                   type="button"
-                  onClick={() => navigate(NonAuthRoutes.projectsGallery)}
+                  onClick={() =>
+                    window.open(
+                      ExternalLinks.instagramGallery,
+                      "_blank",
+                      "noopener,noreferrer"
+                    )
+                  }
                   title="SEE OUR PROJECTS"
                   className="flex mt-8 items-center cursor-pointer w-44 pb-2 pl-2 border-b-4 border-black"
                 >
@@ -430,7 +436,13 @@ function LandingPage() {
 
               <button
                 type="button"
-                onClick={() => navigate(NonAuthRoutes.projectsGallery)}
+                onClick={() =>
+                  window.open(
+                    ExternalLinks.instagramGallery,
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
                 title="SEE OUR PROJECTS"
                 className="flex mt-8 items-center pb-2 cursor-pointer w-40 border-b border-black"
               >

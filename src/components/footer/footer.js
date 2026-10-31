@@ -9,6 +9,7 @@ import { ReactComponent as FacebookIcon } from "../../assets/svg/facebookIcon.sv
 import { ReactComponent as TwitterIcon } from "../../assets/svg/twitterIcon.svg";
 import { ReactComponent as LinkedinIcon } from "../../assets/svg/linkedinIcon.svg";
 import BrandLogo from "../brandLogo/brandLogo";
+import OfficeMap from "../officeMap/officeMap";
 
 function Footer() {
   const navigate = useNavigate();
@@ -67,6 +68,9 @@ function Footer() {
         </div>
         <div className="h-1/5 w-full bg-white" />
         <div className="h-4/5 px-20 pt-36 w-full ">
+          <div className="flex justify-center -mx-20 -mt-4 mb-16">
+            <OfficeMap className="w-4/5" heightClassName="h-72" />
+          </div>
           <div>
             <div className="flex items-center justify-between w-full">
               <div className="w-450">
@@ -250,24 +254,22 @@ function Footer() {
                 </p>
                 <p className="font-graphikRegular text-base text-gray-700 mt-4">
                   Call <span>Munachim</span> on{" "}
-                  <span
-                    href="tel:+23409163494952"
-                    className="font-graphikMedium"
-                  >
+                  <a href="tel:+2349163494952" className="font-graphikMedium">
                     +23409163494952
-                  </span>{" "}
+                  </a>{" "}
                   or <span>Stephen</span> on{" "}
-                  <span
-                    href="tel:+2347015011779"
-                    className="font-graphikMedium"
-                  >
+                  <a href="tel:+2347015011779" className="font-graphikMedium">
                     +2347015011779
-                  </span>
+                  </a>
                   .
                 </p>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="flex justify-center w-full mt-8">
+          <OfficeMap className="w-4/5" heightClassName="h-60" />
         </div>
 
         <div className="w-full mt-10 bg-black">

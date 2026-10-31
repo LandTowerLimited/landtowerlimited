@@ -23,6 +23,11 @@ const NonAuthRoutes = {
 
 const ExternalLinks = {
   instagramGallery: "https://www.instagram.com/landtower_empire/",
+  // Exact office location (from the client's Google Maps pin)
+  officeMapEmbed:
+    "https://maps.google.com/maps?q=9.078717,7.481913&z=17&output=embed",
+  officeMapLink:
+    "https://www.google.com/maps/dir/?api=1&destination=9.078717,7.481913",
 };
 
 export { AuthRoutes, NonAuthRoutes, ExternalLinks };
