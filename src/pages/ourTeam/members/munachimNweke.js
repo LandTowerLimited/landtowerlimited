@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PagesHeader from "../../../components/header/pagesHeader";
 import Footer from "../../../components/footer/footer";
-import MunachimNwekeImage from "../../../assets/img/ltl-team-Munachim-Nweke.png";
+import MunachimNwekeImage from "../../../assets/img/ltl-team-Munachim-Nweke-founder.jpg";
 
 function MunachimNweke() {
   const [cardDisplayed, setCardDisplayed] = useState(false);
@@ -34,7 +34,7 @@ function MunachimNweke() {
                 src={MunachimNwekeImage}
                 alt="Munachim Nweke Chief Engineer & CEO at Land Tower Limited"
                 title="Munachim Nweke Chief Engineer & CEO at Land Tower Limited"
-                className="mb-6 flex justify-center items-center w-full"
+                className="mb-6 mx-auto block w-full max-w-md shadow-xl"
               />
               <p className="my-4 font-georgiaBold text-xl md:text-4xl lg:text-4xl text-grey-400 text-center">
                 Chief Engineer & CEO

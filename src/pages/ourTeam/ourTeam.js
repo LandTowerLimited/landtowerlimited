@@ -7,7 +7,7 @@ import LTLTeamImage1 from "../../assets/img/ltl-team-page-Image1.jpeg";
 import LTLTeamImage2 from "../../assets/img/ltl-team-page-Image2.jpeg";
 import LTLTeamImage3 from "../../assets/img/ltl-team-page-Image3.jpeg";
 import LTLTeamImage4 from "../../assets/img/ltl-team-page-Image4.jpeg";
-import MunachimNweke from "../../assets/img/ltl-team-Munachim-Nweke.png";
+import MunachimNweke from "../../assets/img/ltl-team-Munachim-Nweke-founder.jpg";
 import IfeanyiClementNweke from "../../assets/img/ltl-team-Ifeanyi-Clement-Nweke.png";
 import ObioraNworji from "../../assets/img/ltl-team-Obiora-Nworji.png";
 import SundayEmeagwai from "../../assets/img/ltl-team-Sunday-Emeagwai.png";
