@@ -9,7 +9,6 @@ import Header from "../../components/header/header";
 import HeaderCard from "../../components/header/headerCard";
 import DantataLogo from "../../assets/img/dantata.png";
 import DangoteLogo from "../../assets/img/dangote.png";
-import DuluxLogo from "../../assets/img/dulux.png";
 // import TwyfordBathroomsLogo from "../../assets/img/twyfordBathrooms.png";
 import WichtechRoofingLogo from "../../assets/img/wichtechRoofing.png";
 import FidelityBankLogo from "../../assets/img/fidelityBank.png";
@@ -360,13 +359,13 @@ function LandingPage() {
 
           <div className="w-full flex justify-center">
             <div className="flex items-center cursor-pointer px-2 pb-1 border-b-2 border-gray-700">
-              <p className="font-graphikMedium text-lg w-full text-center text-gray-700">
+              <p className="font-graphikMedium text-sm md:text-base tracking-wide w-full text-center text-gray-700">
                 Collaborators
               </p>
             </div>
           </div>
-          <div className="w-full flex flex-wrap justify-center items-center lg:flex-nowrap lg:justify-between lg:gap-8 lg:px-16 my-10">
-            <div className="w-1/3 lg:w-auto lg:flex-1 h-24 px-4 flex justify-center items-center">
+          <div className="w-full max-w-5xl mx-auto flex flex-wrap justify-center items-center lg:flex-nowrap lg:justify-evenly lg:gap-8 my-10">
+            <div className="w-1/2 md:w-1/4 lg:w-auto lg:flex-1 h-24 px-4 flex justify-center items-center">
               <img
                 src={FidelityBankLogo}
                 alt="Fidelity Bank Plc Logo"
@@ -374,7 +373,7 @@ function LandingPage() {
                 className="max-h-20 max-w-full w-auto object-contain"
               />
             </div>
-            <div className="w-1/3 lg:w-auto lg:flex-1 h-24 px-4 flex justify-center items-center">
+            <div className="w-1/2 md:w-1/4 lg:w-auto lg:flex-1 h-24 px-4 flex justify-center items-center">
               <img
                 src={DangoteLogo}
                 alt="Dangote Logo"
@@ -382,7 +381,7 @@ function LandingPage() {
                 className="max-h-16 max-w-full w-auto object-contain"
               />
             </div>
-            <div className="w-1/3 lg:w-auto lg:flex-1 h-24 px-4 flex justify-center items-center">
+            <div className="w-1/2 md:w-1/4 lg:w-auto lg:flex-1 h-24 px-4 flex justify-center items-center">
               <img
                 src={DantataLogo}
                 alt="Dantata Logo"
@@ -390,15 +389,7 @@ function LandingPage() {
                 className="max-h-12 max-w-full w-auto object-contain"
               />
             </div>
-            <div className="w-1/3 lg:w-auto lg:flex-1 h-24 px-4 flex justify-center items-center">
-              <img
-                src={DuluxLogo}
-                alt="Dulux Logo"
-                title="Dulux"
-                className="max-h-16 max-w-full w-auto object-contain"
-              />
-            </div>
-            <div className="w-1/3 lg:w-auto lg:flex-1 h-24 px-4 flex justify-center items-center">
+            <div className="w-1/2 md:w-1/4 lg:w-auto lg:flex-1 h-24 px-4 flex justify-center items-center">
               <img
                 src={WichtechRoofingLogo}
                 alt="Wichtech Roofing Logo"
@@ -453,13 +444,13 @@ function LandingPage() {
 
           <div className="w-full flex justify-center mt-20 mb-6">
             <div className="flex items-center cursor-pointer px-2 pb-1 border-b-2 border-gray-700">
-              <p className="font-graphikMedium text-lg w-full text-center text-gray-700">
+              <p className="font-graphikMedium text-sm md:text-base tracking-wide w-full text-center text-gray-700">
                 Collaborators
               </p>
             </div>
           </div>
-          <div className="w-full flex flex-wrap justify-center items-center">
-            <div className="w-1/2 h-24 px-4 flex justify-center items-center">
+          <div className="w-full flex flex-wrap justify-center items-center gap-y-6 pb-4">
+            <div className="w-1/2 h-20 px-5 flex justify-center items-center">
               <img
                 src={FidelityBankLogo}
                 alt="Fidelity Bank Plc Logo"
@@ -467,7 +458,7 @@ function LandingPage() {
                 className="max-h-20 max-w-full w-auto object-contain"
               />
             </div>
-            <div className="w-1/2 h-24 px-4 flex justify-center items-center">
+            <div className="w-1/2 h-20 px-5 flex justify-center items-center">
               <img
                 src={DangoteLogo}
                 alt="Dangote Logo"
@@ -475,7 +466,7 @@ function LandingPage() {
                 className="max-h-16 max-w-full w-auto object-contain"
               />
             </div>
-            <div className="w-1/2 h-24 px-4 flex justify-center items-center">
+            <div className="w-1/2 h-20 px-5 flex justify-center items-center">
               <img
                 src={DantataLogo}
                 alt="Dantata Logo"
@@ -483,15 +474,7 @@ function LandingPage() {
                 className="max-h-12 max-w-full w-auto object-contain"
               />
             </div>
-            <div className="w-1/2 h-24 px-4 flex justify-center items-center">
-              <img
-                src={DuluxLogo}
-                alt="Dulux Logo"
-                title="Dulux"
-                className="max-h-16 max-w-full w-auto object-contain"
-              />
-            </div>
-            <div className="w-1/2 h-24 px-4 flex justify-center items-center">
+            <div className="w-1/2 h-20 px-5 flex justify-center items-center">
               <img
                 src={WichtechRoofingLogo}
                 alt="Wichtech Roofing Logo"
