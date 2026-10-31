@@ -1,15 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
-User-agent: Googlebot
-Crawl-delay: 300
-Disallow: 
-
-User-agent: Yandex
-Allow: /index.html
-Disallow: /
-
-User-agent: bingbot
-Allow: /tools
-Disallow: /
-
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://www.landtowerlimited.com/sitemap.xml
