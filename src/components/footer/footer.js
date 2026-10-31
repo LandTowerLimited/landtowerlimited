@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { NonAuthRoutes } from "../../url";
+import { NonAuthRoutes, ExternalLinks } from "../../url";
 import { ReactComponent as MapIcon } from "../../assets/svg/mapIcon.svg";
 import { ReactComponent as TimeIcon } from "../../assets/svg/timeIcon.svg";
 import { ReactComponent as PhoneOfficeIcon } from "../../assets/svg/phoneOfficeIcon.svg";
@@ -99,7 +99,13 @@ function Footer() {
                   <li className="mr-8 cursor-pointer">
                     <button
                       type="button"
-                      onClick={() => navigate(NonAuthRoutes.projectsGallery)}
+                      onClick={() =>
+                        window.open(
+                          ExternalLinks.instagramGallery,
+                          "_blank",
+                          "noopener,noreferrer"
+                        )
+                      }
                     >
                       Gallery
                     </button>
@@ -109,7 +115,7 @@ function Footer() {
                       type="button"
                       onClick={() => navigate(NonAuthRoutes.projectsGallery)}
                     >
-                      Apartmemts
+                      Apartments
                     </button>
                   </li>
                 </ul>
@@ -119,7 +125,7 @@ function Footer() {
                       type="button"
                       onClick={() => navigate(NonAuthRoutes.ourTeam)}
                     >
-                      Our Team
+                      The Directorate
                     </button>
                   </li>
                   <li className="mr-8 cursor-pointer">
@@ -296,7 +302,13 @@ function Footer() {
                 <li className="mr-8 cursor-pointer">
                   <button
                     type="button"
-                    onClick={() => navigate(NonAuthRoutes.projectsGallery)}
+                    onClick={() =>
+                      window.open(
+                        ExternalLinks.instagramGallery,
+                        "_blank",
+                        "noopener,noreferrer"
+                      )
+                    }
                   >
                     Gallery
                   </button>
@@ -306,7 +318,7 @@ function Footer() {
                     type="button"
                     onClick={() => navigate(NonAuthRoutes.projectsGallery)}
                   >
-                    Apartmemts
+                    Apartments
                   </button>
                 </li>
               </ul>
@@ -316,7 +328,7 @@ function Footer() {
                     type="button"
                     onClick={() => navigate(NonAuthRoutes.ourTeam)}
                   >
-                    Our Team
+                    The Directorate
                   </button>
                 </li>
                 <li className="mr-8 cursor-pointer">

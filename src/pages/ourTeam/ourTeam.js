@@ -71,7 +71,7 @@ function OurTeam() {
   useEffect(() => {
     const ac = new AbortController();
 
-    document.title = "Our Team • Land Tower";
+    document.title = "The Directorate • Land Tower";
     window.scrollTo(0, 0);
 
     return function cleanup() {
@@ -118,8 +118,8 @@ function OurTeam() {
         </div>
         <div className="flex justify-center items-center w-full ">
           <div className="px-6 lg:w-3/5 md:lg:w-3/5 ">
-            <p className="mt-14 font-georgiaBold text-7xl text-grey-400 text-center">
-              Our Team
+            <p className="mt-14 font-georgiaBold text-5xl md:text-7xl lg:text-7xl text-grey-400 text-center">
+              The Directorate
             </p>
             <div className="mb-20 mt-6 font-graphikRegular text-lg text-grey-400 text-center">
               <p className="pb-6 font-graphikMedium">
@@ -148,13 +148,7 @@ function OurTeam() {
             title="Munachim Nweke Chief Engineer & CEO at Land Tower Limited"
             name="Munachim Nweke"
             position="Chief Engineer & CEO"
-            biography="Munachim Nweke built his organization where diligence, hard work is
-          appreciated and rewarded. To contribute effectively and enhance
-          organizations goals through quality service and good behavior,there
-          is need for innovation of good ideas that will develop and grow the
-          organization. The organisation has to set target deadlines with a
-          view of enhancing the profitability of the organization in a
-          competitive setting..."
+            biography="Munachim Nweke does not merely build real estate; he dictates the architectural, physical, and infrastructural destiny of the landscape. As the Founder, Executive Chairman, and Sovereign Commander of Land Tower Limited, he has engineered an international, multi-billion-Naira empire that operates with absolute geometric precision and unyielding momentum..."
           />
           <TeamDetails
             memberLink={NonAuthRoutes.ifeanyiClementNweke}

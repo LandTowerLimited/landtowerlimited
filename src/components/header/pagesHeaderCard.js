@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ReactComponent as CancelIcon } from "../../assets/svg/cancelIcon.svg";
 import { ReactComponent as MobilePhoneIcon } from "../../assets/svg/mobilePhoneIcon.svg";
-import { NonAuthRoutes } from "../../url";
+import { NonAuthRoutes, ExternalLinks } from "../../url";
 
 function PagesHeaderCard({ setCardDisplayed, cardDisplayed }) {
   const navigate = useNavigate();
@@ -65,7 +65,13 @@ function PagesHeaderCard({ setCardDisplayed, cardDisplayed }) {
               <button
                 type="button"
                 className="px-5 w-full text-left border-b-is0point5 border-gray-500"
-                onClick={() => navigate(NonAuthRoutes.projectsGallery)}
+                onClick={() =>
+                  window.open(
+                    ExternalLinks.instagramGallery,
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
               >
                 GALLERY
               </button>
@@ -76,7 +82,7 @@ function PagesHeaderCard({ setCardDisplayed, cardDisplayed }) {
                 className="px-5 w-full text-left border-b-is0point5 border-gray-500"
                 onClick={() => navigate(NonAuthRoutes.ourTeam)}
               >
-                OUR TEAM
+                THE DIRECTORATE
               </button>
             </li>
             <li>

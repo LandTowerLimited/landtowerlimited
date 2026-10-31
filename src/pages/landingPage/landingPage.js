@@ -4,7 +4,7 @@
 /* eslint-disable react/no-array-index-key */
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { NonAuthRoutes } from "../../url";
+import { NonAuthRoutes, ExternalLinks } from "../../url";
 import Header from "../../components/header/header";
 import HeaderCard from "../../components/header/headerCard";
 import DantataLogo from "../../assets/img/dantata.png";
@@ -655,7 +655,13 @@ function LandingPage() {
                 type="button"
                 title="SEE ALL GALLERY"
                 className="flex mt-8 items-center cursor-pointer w-40 pb-2 pl-2 border-b-4 border-black"
-                onClick={() => navigate(NonAuthRoutes.projectsGallery)}
+                onClick={() =>
+                  window.open(
+                    ExternalLinks.instagramGallery,
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
               >
                 <p className="font-graphikMedium text-sm text-gray-700">
                   SEE ALL GALLERY
@@ -740,7 +746,13 @@ function LandingPage() {
                 type="button"
                 title="SEE ALL GALLERY"
                 className="flex my-8 items-center cursor-pointer w-40 pb-2 pl-2 border-b border-black"
-                onClick={() => navigate(NonAuthRoutes.projectsGallery)}
+                onClick={() =>
+                  window.open(
+                    ExternalLinks.instagramGallery,
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
               >
                 <p className="font-graphikMedium text-sm text-gray-700">
                   SEE ALL GALLERY

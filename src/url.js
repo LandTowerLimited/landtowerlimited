@@ -21,4 +21,8 @@ const NonAuthRoutes = {
   ayinlaQuadri: "/team/member/ayinla-quadri",
 };
 
-export { AuthRoutes, NonAuthRoutes };
+const ExternalLinks = {
+  instagramGallery: "https://www.instagram.com/landtower_empire/",
+};
+
+export { AuthRoutes, NonAuthRoutes, ExternalLinks };

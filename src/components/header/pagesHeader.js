@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import BrandLogo from "../brandLogo/brandLogo";
 import { ReactComponent as MobilePhoneIcon } from "../../assets/svg/mobilePhoneIconBlack.svg";
 import { ReactComponent as MenuBar } from "../../assets/svg/menuBarBlack.svg";
-import { NonAuthRoutes } from "../../url";
+import { NonAuthRoutes, ExternalLinks } from "../../url";
 import PagesHeaderCard from "./pagesHeaderCard";
 
 function PagesHeader({ setCardDisplayed, cardDisplayed }) {
@@ -87,7 +87,13 @@ function PagesHeader({ setCardDisplayed, cardDisplayed }) {
               <li className="mr-8 cursor-pointer">
                 <button
                   type="button"
-                  onClick={() => navigate(NonAuthRoutes.projectsGallery)}
+                  onClick={() =>
+                    window.open(
+                      ExternalLinks.instagramGallery,
+                      "_blank",
+                      "noopener,noreferrer"
+                    )
+                  }
                 >
                   GALLERY
                 </button>
@@ -97,7 +103,7 @@ function PagesHeader({ setCardDisplayed, cardDisplayed }) {
                   type="button"
                   onClick={() => navigate(NonAuthRoutes.ourTeam)}
                 >
-                  OUR TEAM
+                  THE DIRECTORATE
                 </button>
               </li>
               <li className="mr-8 cursor-pointer">
