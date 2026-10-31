@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PagesHeader from "../../../components/header/pagesHeader";
 import Footer from "../../../components/footer/footer";
+import { ReactComponent as LinkedinIcon } from "../../../assets/svg/linkedinIcon.svg";
 import MunachimNwekeImage from "../../../assets/img/ltl-team-Munachim-Nweke-founder.jpg";
 
 function MunachimNweke() {
@@ -132,6 +133,18 @@ function MunachimNweke() {
                 <p className="pt-6 font-georgiaBold text-xl md:text-2xl lg:text-2xl text-landTower-gold3-color">
                   The gates are closed. The empire is live. We Exceed Limits.
                 </p>
+                <div className="flex justify-center mt-8">
+                  <a
+                    href="https://www.linkedin.com/in/%F0%9F%91%91-munachim-nweke-819608135/"
+                    target="_blank"
+                    rel="noreferrer"
+                    title="Munachim Nweke on LinkedIn"
+                    className="inline-flex items-center gap-3 px-6 py-3 rounded-sm bg-[#0A66C2] text-white font-graphikMedium text-base shadow-md transition-opacity hover:opacity-90"
+                  >
+                    <LinkedinIcon className="w-5 h-5" />
+                    Connect on LinkedIn
+                  </a>
+                </div>
               </div>
             </div>
           </div>
