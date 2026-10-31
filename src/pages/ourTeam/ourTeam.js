@@ -8,17 +8,6 @@ import LTLTeamImage2 from "../../assets/img/ltl-team-page-Image2.jpeg";
 import LTLTeamImage3 from "../../assets/img/ltl-team-page-Image3.jpeg";
 import LTLTeamImage4 from "../../assets/img/ltl-team-page-Image4.jpeg";
 import MunachimNweke from "../../assets/img/ltl-team-Munachim-Nweke-founder.jpg";
-import IfeanyiClementNweke from "../../assets/img/ltl-team-Ifeanyi-Clement-Nweke.png";
-import ObioraNworji from "../../assets/img/ltl-team-Obiora-Nworji.png";
-import SundayEmeagwai from "../../assets/img/ltl-team-Sunday-Emeagwai.png";
-import OluwaseunAdeyemiSekoni from "../../assets/img/ltl-team-Oluwaseun-Adeyemi-Sekoni.png";
-import NzeakorIfeanyichukwu from "../../assets/img/ltl-team-Nzeakor-Ifeanyichukwu.png";
-import ChristopherNwankwo from "../../assets/img/ltl-team-Christopher-Nwankwo.png";
-import ChukwudubemOkechukwu from "../../assets/img/ltl-team-Chukwudubem-Okechukwu.png";
-import KingsleyNwaokobia from "../../assets/img/ltl-team-Kingsley-Nwaokobia.png";
-import RasaqOlaniyiIsiaq from "../../assets/img/ltl-team-Rasaq-Olaniyi-Isiaq.png";
-import UdenkaChukwuemeka from "../../assets/img/ltl-team-Udenka-Chukwuemeka.png";
-import AyinlaQuadri from "../../assets/img/ltl-team-Ayinla-Quadri.jpg";
 import Footer from "../../components/footer/footer";
 import { NonAuthRoutes } from "../../url";
 
@@ -56,7 +45,7 @@ function TeamDetails({
         <button
           onClick={() => navigate(memberLink)}
           type="button"
-          className="font-georgiaRegular py-2 px-10 mr-6 text-base outline-none bg-landTower-gold3-color text-white"
+          className="font-georgiaRegular py-2 px-10 text-base outline-none bg-landTower-gold3-color text-white"
         >
           Read More
         </button>
@@ -141,147 +130,17 @@ function OurTeam() {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 px-6 my-6">
-          <TeamDetails
-            memberLink={NonAuthRoutes.munachimNweke}
-            image={MunachimNweke}
-            title="Munachim Nweke Chief Engineer & CEO at Land Tower Limited"
-            name="Munachim Nweke"
-            position="Chief Engineer & CEO"
-            biography="Munachim Nweke does not merely build real estate; he dictates the architectural, physical, and infrastructural destiny of the landscape. As the Founder, Executive Chairman, and Sovereign Commander of Land Tower Limited, he has engineered an international, multi-billion-Naira empire that operates with absolute geometric precision and unyielding momentum..."
-          />
-          <TeamDetails
-            memberLink={NonAuthRoutes.ifeanyiClementNweke}
-            image={IfeanyiClementNweke}
-            title="Ifeanyi Clement Nweke Head Lawyer & Business Relations at Land Tower Limited"
-            name="Ifeanyi Clement Nweke"
-            position="Head Lawyer & Business Relations"
-            biography="Ifeanyi Clement Nweke is a Lawyer, Writer, Finance and Media Consultant. 
-            He holds a Bachelor in law ( LLB) from Nnamdi Azikiwe University, a Law School Qualification 
-            Certificate from Nigerian Law School, Lagos Campus, a Post Graduate Diploma (PGD) in Journalism 
-            from International Institute of Journalism and Associate of the institute of Chartered 
-            Secretary, Nigeria (ACIS) (in view)..."
-          />
-          <TeamDetails
-            memberLink={NonAuthRoutes.obioraNworji}
-            image={ObioraNworji}
-            title="Obiora Nworji Head of Design & Architecture at Land Tower Limited"
-            name="Obiora Nworji"
-            position="Head of Design & Architecture"
-            biography="Obiora Nworji is an Architect of over 8 years of experience. He has a Master’s 
-            Degree from Covenant University's Department of Architecture and has certificates in Interior 
-            Design, Architectural Imagination and green building from institutions such as the Harvard 
-            Graduate School of Design and Ugreen building school. He started his professional career with 
-            Matrix Design & Works Ltd as a company Architect before being promoted to Head of Design..."
-          />
-          <TeamDetails
-            memberLink={NonAuthRoutes.sundayEmeagwai}
-            image={SundayEmeagwai}
-            title="Sunday Emeagwai Lead Mechanical Expert at Land Tower Limited"
-            name="Sunday Emeagwai"
-            position="Lead Mechanical Expert"
-            biography="Sunday Emeagwai is a Mechanical Expert with over 20 years of experience he is highly 
-            specialised in both domestic and industrial plumbing installation and services, He has worked 
-            in numerous electromechanical companies with various years of experience, He later joined 
-            NAIRDA Electromechanical company as a plumbing supervisor CBN Lokoja projects in Kogi state, 
-            FF Millenium Towers Lagos, Festival Mall Festac Lagos, Golden Tulip Hotels / Residence Lagos, 
-            Tinapa Projects Calabar..."
-          />
-          <TeamDetails
-            memberLink={NonAuthRoutes.oluwaseunAdeyemiSekoni}
-            image={OluwaseunAdeyemiSekoni}
-            title="Oluwaseun Adeyemi Sekoni Head of Mechanical, Electrical & Plumbing Engineer at Land Tower Limited"
-            name="Oluwaseun Adeyemi Sekoni"
-            position="Head of Mechanical, Electrical & Plumbing Engineering"
-            biography="Oluwaseun Adeyemi Sekoni is an Engineer of over 10 years of experience. He graduated
-             from Ladoke Akintola University of Technology Ogbomoso with Second Class division in 
-             Electrical/Electronic Engineering. Sequel to the completion of the mandatory NYSC in year 2012, 
-             Engr. Sekoni proceeded to acquire additional qualification at University of Ibadan, Ibadan, Oyo State, 
-             where he obtained a Master of Science in Electrical/Electronic Engineering..."
-          />
-          <TeamDetails
-            memberLink={NonAuthRoutes.nzeakorIfeanyichukwu}
-            image={NzeakorIfeanyichukwu}
-            title="Nzeakor Ifeanyichukwu Head of Civil and Structural Engineer at Land Tower Limited"
-            name="Nzeakor Ifeanyichukwu"
-            position="Head of Civil and Structural Engineering"
-            biography="Nzeakor Ifeanyichukwu, is a Trained and Registered Engineer. He is actively involved 
-            in Civil/Structural Engineering Consulting and Construction. The experience garnered are under 
-            the following areas, Civil/Structural Engineering Project Management and Monitoring, Project 
-            Design and Appraisals (for Residential, Schools, Banks, Offices and Mixed-use buildings and Roads), 
-            Piling and Foundation Analysis, Design and Construction..."
-          />
-          <TeamDetails
-            memberLink={NonAuthRoutes.christopherNwankwo}
-            image={ChristopherNwankwo}
-            title="Christopher Nwankwo Head of Paints and Decorations at Land Tower Limited"
-            name="Christopher Nwankwo"
-            position="Head of Paints and Decorations"
-            biography="Christopher Nwankwo is an expert in paint production with over 10 years of experience, 
-            he is highly specialized in both painting, screeding and pop. He went to government college 
-            Arochukwu in Abia state. He has worked in numerous production companies with various years of 
-            experience , he started his professional career with prosper paint company as a work man before 
-            being promoted to a foreman...."
-          />
-          <TeamDetails
-            memberLink={NonAuthRoutes.chukwudubemOkechukwu}
-            image={ChukwudubemOkechukwu}
-            title="Chukwudubem Okechukwu Head of Metal Works & Fabrication at Land Tower Limited"
-            name="Chukwudubem Okechukwu"
-            position="Head of Metal Works & Fabrication"
-            biography="Chukwudubem Okechukwu is a Metal work consummate and aluminum fabricator (Iron Doors, 
-              Massive Gates, Stanchion tanks protectors, aluminum windows, aluminum Doors e.t.c, He has over 
-              10 years experience, he has worked with various iron construction companies around Nigeria, 
-              delivers the highest of qualities and keeps high standard on every project he handles..."
-          />
-          <TeamDetails
-            memberLink={NonAuthRoutes.kingsleyNwaokobia}
-            image={KingsleyNwaokobia}
-            title="Kingsley Nwaokobia Electrical Expert at Land Tower Limited"
-            name="Kingsley Nwaokobia"
-            position="Lead Electrical Expert"
-            biography="Kingsley Nwaokobia is an Electrical Expert with over 15 years of experience he is highly 
-            specialised in both domestic and industrial Electrical installation and services . He has 
-            trade test grade A B C in Electrical works. He has worked in numerous electromechanical companies 
-            with various years of experience. He started his professional career with Rhomega electrical 
-            company where he worked as a work man before being promoted to a foreman..."
-          />
-          <TeamDetails
-            memberLink={NonAuthRoutes.rasaqOlaniyiIsiaq}
-            image={RasaqOlaniyiIsiaq}
-            title="Rasaq Olaniyi Isiaq Lead Quantity Surveyor at Land Tower Limited"
-            name="Rasaq Olaniyi Isiaq"
-            position="Lead Quantity Surveyor"
-            biography="Rasaq Olaniyi Isiaq is a seasoned Quantity Surveyor with over 5 years working experience. 
-            He graduated from the University of Ilorin with second class upper division in Quantity Surveying 
-            and undergo his one year mandatory NYSC service at Ministry of Works,  state secretariat Owerri, 
-            Imo state. He started his career with Avalon and Partner, Ibadan. A QS consulting firm saddled with 
-            contract administration and..."
-          />
-          <TeamDetails
-            memberLink={NonAuthRoutes.udenkaChukwuemeka}
-            image={UdenkaChukwuemeka}
-            title="Udenka Chukwuemeka HVAC Technician at Land Tower Limited"
-            name="Udenka Chukwuemeka"
-            position="Lead HVAC Technician"
-            biography="Udenka Chukwuemeka Joel is an HVAC Technician (Heating, ventilation, 
-              and air conditioning), with over 9 years experience he started working with Gods 
-              Time Insulation Company at Sokoto in 2013 till 2018 as air conditioner technician 
-              later join De-Light Company as supervisor in 2018 till 2021. Went on to  work for 
-              powerflow installation company as a supervisor...."
-          />
-          <TeamDetails
-            memberLink={NonAuthRoutes.ayinlaQuadri}
-            image={AyinlaQuadri}
-            title="Ayinla Quadri Head of Upholstery & Carpentry at Land Tower Limited"
-            name="Ayinla Quadri"
-            position="Head of Upholstery & Carpentry"
-            biography="Ayinla Quadri Ayomide is a professional  Upholstery and Carpentry expert, interior 
-            and exterior decorator in all classes of doors, kitchen, wardrobes, naminate doors. with over 
-            10 years of experience and highly specialised in all classes of house furnishings. I went to 
-            Iroko Community College, Oyo State. where I obtained my SSCE, I've worked with so many companies 
-            the likes,  home and you group of furniture..."
-          />
+        <div className="flex justify-center px-6 my-6 mb-16">
+          <div className="w-full max-w-md">
+            <TeamDetails
+              memberLink={NonAuthRoutes.munachimNweke}
+              image={MunachimNweke}
+              title="Munachim Nweke, Principal Allocator / CEO at Land Tower Limited"
+              name="Munachim Nweke"
+              position="Principal Allocator / CEO"
+              biography="Munachim Nweke does not merely build real estate; he dictates the architectural, physical, and infrastructural destiny of the landscape. As the Founder, Executive Chairman, and Sovereign Commander of Land Tower Limited, he has engineered an international, multi-billion-Naira empire that operates with absolute geometric precision and unyielding momentum..."
+            />
+          </div>
         </div>
         <Footer />
       </div>

@@ -32,12 +32,12 @@ function MunachimNweke() {
               </p>
               <img
                 src={MunachimNwekeImage}
-                alt="Munachim Nweke Chief Engineer & CEO at Land Tower Limited"
-                title="Munachim Nweke Chief Engineer & CEO at Land Tower Limited"
+                alt="Munachim Nweke, Principal Allocator / CEO at Land Tower Limited"
+                title="Munachim Nweke, Principal Allocator / CEO at Land Tower Limited"
                 className="mb-6 mx-auto block w-full max-w-md shadow-xl"
               />
               <p className="my-4 font-georgiaBold text-xl md:text-4xl lg:text-4xl text-grey-400 text-center">
-                Chief Engineer & CEO
+                Principal Allocator / CEO
               </p>
               <p className="font-georgiaBold text-lg md:text-2xl lg:text-2xl text-landTower-gold3-color text-center">
                 Land Tower Limited

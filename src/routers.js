@@ -14,39 +14,6 @@ const ProjectsGallery = React.lazy(() =>
 const MunachimNweke = React.lazy(() =>
   import("./pages/ourTeam/members/munachimNweke")
 );
-const IfeanyiClementNweke = React.lazy(() =>
-  import("./pages/ourTeam/members/ifeanyiClementNweke")
-);
-const ObioraNworji = React.lazy(() =>
-  import("./pages/ourTeam/members/obioraNworji")
-);
-const SundayEmeagwai = React.lazy(() =>
-  import("./pages/ourTeam/members/sundayEmeagwai")
-);
-const OluwaseunAdeyemiSekoni = React.lazy(() =>
-  import("./pages/ourTeam/members/oluwaseunAdeyemiSekoni")
-);
-const NzeakorIfeanyichukwu = React.lazy(() =>
-  import("./pages/ourTeam/members/nzeakorIfeanyichukwu")
-);
-const ChristopherNwankwo = React.lazy(() =>
-  import("./pages/ourTeam/members/christopherNwankwo")
-);
-const ChukwudubemOkechukwu = React.lazy(() =>
-  import("./pages/ourTeam/members/chukwudubemOkechukwu")
-);
-const KingsleyNwaokobia = React.lazy(() =>
-  import("./pages/ourTeam/members/kingsleyNwaokobia")
-);
-const RasaqOlaniyiIsiaq = React.lazy(() =>
-  import("./pages/ourTeam/members/rasaqOlaniyiIsiaq")
-);
-const UdenkaChukwuemeka = React.lazy(() =>
-  import("./pages/ourTeam/members/udenkaChukwuemeka")
-);
-const AyinlaQuadri = React.lazy(() =>
-  import("./pages/ourTeam/members/ayinlaQuadri")
-);
 
 function Routers() {
   return (
@@ -63,7 +30,6 @@ function Routers() {
           <Route path={NonAuthRoutes.ourTeam} element={<OurTeam />} />
           <Route path={NonAuthRoutes.aboutUs} element={<AboutUs />} />
           <Route path={NonAuthRoutes.contactUs} element={<ContactUs />} />
-          <Route path={NonAuthRoutes.contactUs} element={<ContactUs />} />
           <Route
             path={NonAuthRoutes.projectsGallery}
             element={<ProjectsGallery />}
@@ -73,44 +39,6 @@ function Routers() {
             path={NonAuthRoutes.munachimNweke}
             element={<MunachimNweke />}
           />
-          <Route
-            path={NonAuthRoutes.ifeanyiClementNweke}
-            element={<IfeanyiClementNweke />}
-          />
-          <Route path={NonAuthRoutes.obioraNworji} element={<ObioraNworji />} />
-          <Route
-            path={NonAuthRoutes.sundayEmeagwai}
-            element={<SundayEmeagwai />}
-          />
-          <Route
-            path={NonAuthRoutes.oluwaseunAdeyemiSekoni}
-            element={<OluwaseunAdeyemiSekoni />}
-          />
-          <Route
-            path={NonAuthRoutes.nzeakorIfeanyichukwu}
-            element={<NzeakorIfeanyichukwu />}
-          />
-          <Route
-            path={NonAuthRoutes.christopherNwankwo}
-            element={<ChristopherNwankwo />}
-          />
-          <Route
-            path={NonAuthRoutes.chukwudubemOkechukwu}
-            element={<ChukwudubemOkechukwu />}
-          />
-          <Route
-            path={NonAuthRoutes.kingsleyNwaokobia}
-            element={<KingsleyNwaokobia />}
-          />
-          <Route
-            path={NonAuthRoutes.rasaqOlaniyiIsiaq}
-            element={<RasaqOlaniyiIsiaq />}
-          />
-          <Route
-            path={NonAuthRoutes.udenkaChukwuemeka}
-            element={<UdenkaChukwuemeka />}
-          />
-          <Route path={NonAuthRoutes.ayinlaQuadri} element={<AyinlaQuadri />} />
         </Routes>
       </Suspense>
     </div>
