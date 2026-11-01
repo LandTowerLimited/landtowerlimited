@@ -12,6 +12,10 @@ const NonAuthRoutes = {
 
 const ExternalLinks = {
   instagramGallery: "https://www.instagram.com/landtower_empire/",
+  // Google Business Profile ("LandTower Empire")
+  googleReviews: "https://maps.app.goo.gl/1r1zQzVEz7wshb318",
+  // Swap this for the g.page/r/.../review link when available
+  googleWriteReview: "https://maps.app.goo.gl/1r1zQzVEz7wshb318",
   whatsApp:
     "https://wa.me/2349163494952?text=Hello%20Land%20Tower%20Limited%2C%20I%20found%20you%20on%20your%20website%20and%20I%20would%20like%20to%20make%20an%20enquiry.",
   // Exact office location (from the client's Google Maps pin)

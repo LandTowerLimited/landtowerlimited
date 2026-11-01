@@ -5,6 +5,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { NonAuthRoutes, ExternalLinks } from "../../url";
+import ClientReviews from "../../components/clientReviews/clientReviews";
 import Header from "../../components/header/header";
 import HeaderCard from "../../components/header/headerCard";
 import DantataLogo from "../../assets/img/dantata.png";
@@ -315,7 +316,7 @@ function LandingPage() {
   const slide1 = () => {
     return (
       <div>
-        <div className="lg:h-screen mb-10 hidden md:block lg:block">
+        <div className="mb-4 hidden md:block lg:block">
           <div className="flex justify-center w-full mb-10">
             <div className="z-20">
               <img
@@ -782,6 +783,7 @@ function LandingPage() {
     <>
       {slide0()}
       {slide1()}
+      <ClientReviews />
       {slide2()}
       {slide3()}
       <Footer />
