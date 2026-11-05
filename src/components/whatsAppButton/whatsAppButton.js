@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { ExternalLinks } from "../../url";
+import { useLocation } from "react-router-dom";
+import { ExternalLinks, NonAuthRoutes } from "../../url";
 
-/** Floating WhatsApp chat button shown on every page. */
+/** Floating WhatsApp chat button shown on every page except the portal. */
 function WhatsAppButton() {
+  const { pathname } = useLocation();
   const [showBubble, setShowBubble] = useState(false);
 
   // Show the "Chat with us" bubble a few seconds after the page opens,
@@ -15,6 +17,8 @@ function WhatsAppButton() {
       clearTimeout(hideTimer);
     };
   }, []);
+
+  if (pathname.startsWith(NonAuthRoutes.portal)) return null;
 
   return (
     <div className="fixed bottom-5 right-4 md:bottom-8 md:right-8 z-50 flex items-center gap-3">

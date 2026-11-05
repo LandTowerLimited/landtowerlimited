@@ -11,6 +11,8 @@ const ProjectsGallery = React.lazy(() =>
   import("./pages/projectsGallery/projectsGallery")
 );
 
+const Portal = React.lazy(() => import("./pages/portal/portal"));
+
 const MunachimNweke = React.lazy(() =>
   import("./pages/ourTeam/members/munachimNweke")
 );
@@ -39,6 +41,7 @@ function Routers() {
             path={NonAuthRoutes.munachimNweke}
             element={<MunachimNweke />}
           />
+          <Route path={NonAuthRoutes.portal} element={<Portal />} />
         </Routes>
       </Suspense>
     </div>
